@@ -18,4 +18,12 @@ class StoryPolicy < ApplicationPolicy
   def show?
     return true
   end
+
+  def update?
+    return true
+  end
+
+  def destroy?
+    return true
+  end
 end

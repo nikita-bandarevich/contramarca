@@ -1,5 +1,6 @@
 class StoriesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
+  before_action :set_story, only: [:show, :edit, :update, :destroy]
 
   def index
     # @storys = story.all
@@ -24,7 +25,7 @@ class StoriesController < ApplicationController
     authorize(@story)
     @story.user = current_user
     if @story.save
-      redirect_to @story, notice: 'story was successfully created.'
+      redirect_to @story, notice: 'Story was successfully created.'
     else
       render :new
     end
@@ -34,11 +35,18 @@ class StoriesController < ApplicationController
   end
 
   def update
+    authorize(@story)
+    if @story.update(story_params)
+      redirect_to @story, notice: 'Story was successfully updated.'
+    else
+      render :edit
+    end
   end
 
   def destroy
+    @story.destroy
+    redirect_to stories_path, notice: 'Story was successfully destroyed.'
   end
-
 
   private
   # Use callbacks to share common setup or constraints between actions.
