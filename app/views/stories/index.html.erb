@@ -1,11 +1,12 @@
 
 
   <% @stories.each do |story| %>
-  <h1>user id</h1>
-  <%= story.user_id %>
-  <h1>title</h1>
+
+<div><%= story.user_id %>
+  <%= story.id %>
   <%= story.title %>
-  <%= link_to 'Show', story %>
+  <%= link_to 'Show', story %></div>
+  <%= link_to story.user.first_name, user_path(story.user_id) %>
   <% end %>
 
 

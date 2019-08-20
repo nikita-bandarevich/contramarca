@@ -4,6 +4,7 @@ class UsersController < ApplicationController
 
   def show
     @stories = Story.where(user: @user)
+    authorize(@stories)
   end
 
   private
@@ -14,6 +15,6 @@ class UsersController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def story_params
-    params.require(:user).permit(:first_name)
+    params.require(:user).permit(:first_name, :last_name, :author, :email, :password, :username)
   end
 end
