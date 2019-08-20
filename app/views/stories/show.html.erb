@@ -1,3 +1,7 @@
 <h1>Stories#show</h1>
 
 <%= @story.user_id %>
+<%= @story.title %>
+<%= link_to 'Edit', edit_story_path(@story) %> |
+<%= link_to 'Back', stories_path %> |
+<%= link_to 'Delete', story_path(@story), method: :delete, data: {confirm: "you sure mec?"} %>
