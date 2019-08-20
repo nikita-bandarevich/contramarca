@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'users/show'
   # get 'stories/index'
   # get 'stories/show'
   # get 'stories/edit'
