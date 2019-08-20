@@ -11,13 +11,11 @@ class StoryPolicy < ApplicationPolicy
     end
   end
 
-  def create?
-    return false
+  # def create?
+  #   return false
+  # end
+
+  def show?
+    return true
   end
-
-  def show
-
-  end
-
-
 end
