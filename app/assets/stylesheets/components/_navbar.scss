@@ -2,32 +2,36 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: black;
+  background: #2a2a2a;
   color: white;
-  padding: 8px 16px;
   margin: auto;
 }
 
 
 
 .navbar .logo {
-  font-family: Adobe Caslon Pro;
   font-size: 33px;
-  line-height: 0%;
-  background: #C5B97E;
-  border-radius: 1px;
+  color: #C5B97E;
   flex-grow: 3;
+  line-height: 90%;
   text-align: center;
   padding-left: 45px;
+  padding-top: 5px;
   // position: absolute;
    // left: 50%;
    // transform: translateX(165%);
 
 }
 
-.navbar .searchicon {
+.searchicon {
   width: 30px;
+  fill: #bcbcbc;
+
   // align-self: flex-end;
+}
+
+.searchicon:hover {
+
 }
 
 .navbar .navbar-collapse {
