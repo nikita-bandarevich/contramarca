@@ -15,7 +15,8 @@ Matthis = User.create!(
   last_name: "Parisot",
   author: "false",
   email: "matthisParisot@mail.com",
-  password: "password"
+  password: "password",
+  username: "matthisParisot"
   )
 
 lorenGrush = User.create!(
