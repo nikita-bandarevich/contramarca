@@ -3,7 +3,6 @@
   <%= @user.last_name %>
 </h1>
 
-
 <% @stories.each do |s| %>
   <%#= link_to 'Stories Setting', functionality_path(s.id) %>
   <br>
@@ -12,8 +11,12 @@
   <br>
   <%= render "functionality", s: s %>
 <% end %>
-  <br>
-  <%= link_to 'Back', stories_path %>
+  
+<%= link_to 'New Story', new_story_path, class: "btn-gold" %>
+<br>
+<%= link_to 'Back', stories_path %>
+
+
 
 <%#= link_to 'Edit', edit_story_path(@story) %>
 <%#= link_to 'Delete', story_path(@story), method: :delete, data: {confirm: "you sure mec?"} %>
