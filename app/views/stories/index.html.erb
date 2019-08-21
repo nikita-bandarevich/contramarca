@@ -5,8 +5,11 @@
 <div><%= story.user_id %>
   <%= story.id %>
   <%= story.title %>
+  <% if story.images %>
+    <% story.images.each do |image| %>
+      <%= cl_image_tag image.data %>
+    <% end %>
+  <% end %>
   <%= link_to 'Show', story %></div>
   <%= link_to story.user.first_name, user_path(story.user_id) %>
   <% end %>
-
-

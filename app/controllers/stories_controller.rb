@@ -25,7 +25,8 @@ class StoriesController < ApplicationController
     authorize(@story)
     @story.user = current_user
     if @story.save
-      redirect_to @story, notice: 'Story was successfully created.'
+      redirect_to story_images_path(@story)
+      # redirect_to @story, notice: 'Story was successfully created.'
     else
       render :new
     end
