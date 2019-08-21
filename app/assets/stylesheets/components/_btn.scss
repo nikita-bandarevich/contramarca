@@ -1,10 +1,12 @@
 .btn-gold {
   color:  #1A1A1A;
-  padding: 8px 24px;
+  padding: 10px 24px 4px 24px;
   background: $main-gold-color;
-  transition: background 0.3s ease;
   border-radius: 3px;
+  display: block;
   width: 100%;
+  text-align: center;
+
 }
 
 .btn-gold:hover {
@@ -15,11 +17,12 @@
 
 .btn-dark-grey {
   color:  #8A8A8A;
-  padding: 8px 24px;
+  padding: 10px 24px 4px 24px;
   background: #2A2A2A;
-  transition: background 0.3s ease;
   border-radius: 3px;
+  display: block;
   width: 100%;
+  text-align: center;
 }
 
 .btn-dark-grey:hover {
@@ -30,11 +33,12 @@
 
 .btn-light-grey {
   color:  #8A8A8A;
-  padding: 8px 24px;
+  padding: 10px 24px 4px 24px;
   background: #4A4A4A;
-  transition: background 0.3s ease;
   border-radius: 3px;
+  display: block;
   width: 100%;
+  text-align: center;
 }
 
 .btn-light-grey:hover {
