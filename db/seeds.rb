@@ -16,7 +16,7 @@ Matthis = User.create!(
   author: "false",
   email: "matthisParisot@mail.com",
   password: "password",
-  username: "matthisParisot"
+  username: "matthisParisot",
   bio: "Co-Funder of Contramarca"
   )
 
