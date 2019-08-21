@@ -6,17 +6,20 @@
 <div class="container">
 
    <%= render 'shared/authorcard', user: @user %>
-                 
+
 
   <% @stories.each do |s| %>
-    <%#= link_to 'Stories Setting', functionality_path(s.id) %>
+
+  <%#= link_to 'Stories Setting', functionality_path(s.id) %>
+
     <br>
-    <%= s.title %>
+    <%= render 'shared/story', s: s %>
     <%= link_to 'Show', s %>
     <% if s.user == current_user %>
       <%= render "functionality", s: s %>
     <% end %>
   <% end %>
+
   <br>
   <br>
   <% if @user == current_user %>

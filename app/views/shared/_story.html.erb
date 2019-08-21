@@ -1,9 +1,7 @@
-<% image_tag @image.where(image.story == @story) %>
-<h1><% @story.title %></h1>
-<h4>By <% @story.user %></h4>
-<h4><% @story.created_at %></h4>
-<p><% @story.content %></p>
 
-
-
+<%# image_tag @image.where(image.story == story) %>
+<h1><%= s.title %></h1>
+<h4>by <%= s.user.username%></h4>
+<<h4> <%= s.created_at %></h4>
+<p><%= s.content %></p>
 
