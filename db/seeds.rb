@@ -17,25 +17,28 @@ Matthis = User.create!(
   email: "matthisParisot@mail.com",
   password: "password",
   username: "matthisParisot"
+  bio: "Co-Funder of Contramarca"
   )
 
 lorenGrush = User.create!(
-  first_name: "Loreb",
+  first_name: "Loren",
   last_name: "Grush",
   author: "true",
   email: "loren@mail.com",
   password: "password",
-  username: "lorenGrush"
+  username: "lorenGrush",
+  bio: "Science Journalist who is the daughter of two NASA engineers"
 
   )
 
   carlesIbanez = User.create!(
   first_name: "Carles",
-  last_name: "Ibañex",
+  last_name: "Ibanez",
   author: "true",
   email: "carlesIbanez@mail.com",
   password: "password",
-  username: "carlesIbanez"
+  username: "carlesIbanez",
+  bio: "militar y político chileno, presidente de la República en dos ocasiones: en los periodos 1927-1931 y 1952-1958."
   )
 
   josePons = User.create!(
@@ -44,7 +47,8 @@ lorenGrush = User.create!(
   author: "true",
   email: "josePons@mail.com",
   password: "password",
-  username: "josePons"
+  username: "josePons",
+  bio: "I don't know who he is."
   )
 
   meredithWadman = User.create!(
@@ -53,7 +57,8 @@ lorenGrush = User.create!(
   author: "true",
   email: "meredithWadman@mail.com",
   password: "password",
-  username: "meredithWadman"
+  username: "meredithWadman",
+  bio: "reporter at Science magazine in Washington, D.C.  Her gripping book, The Vaccine Race: Science, Politics and the Human Costs of Defeating Disease, tells the tale of WI-38, a fascinating cell line with a colorful and controversial history and a huge public health impact."
   )
 
   danielClery = User.create!(
@@ -62,7 +67,8 @@ lorenGrush = User.create!(
   author: "true",
   email: "danielClery@mail.com",
   password: "password",
-  username: "danielClery"
+  username: "danielClery",
+  bio: " Canadian former professional ice hockey player who played in the National Hockey League (NHL) for the Chicago Blackhawks, Edmonton Oilers, Phoenix Coyotes and Detroit Red Wings. He currently serves as the Director of Player Development for Detroit."
   )
 
 elizabethPennisi = User.create!(
@@ -71,7 +77,8 @@ elizabethPennisi = User.create!(
   author: "true",
   email: "elizabethPennisi@mail.com",
   password: "password",
-  username: "elizabethPennisi"
+  username: "elizabethPennisi",
+  bio: "writes about biology, focusing primarily on genomics, evolution, microbiology, and organismal biology, with a smattering of ecology and behavior thrown in."
   )
 
 kellyMayes = User.create!(
@@ -80,7 +87,8 @@ kellyMayes = User.create!(
   author: "true",
   email: "kellyMayes@mail.com",
   password: "password",
-  username: "kellyMayes"
+  username: "kellyMayes",
+  bio: "Diverse Voices in Science Journalism intern for the News section of Science in Washington, D.C."
   )
 Story.create!(
   title: "Moon delivery startup Astrobotic picks future Vulcan rocket to launch first lunar mission",
