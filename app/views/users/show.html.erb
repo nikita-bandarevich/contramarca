@@ -1,10 +1,11 @@
 <%= link_to 'Back', stories_path %>
-<br><br>
+<br>
+
+
 <div class="container">
-  <h1>
-    <%= @user.first_name %>
-    <%= @user.last_name %>
-  </h1>
+
+   <%= render 'shared/authorcard', user: @user %>
+
   <% @stories.each do |s| %>
     <%#= link_to 'Stories Setting', functionality_path(s.id) %>
     <br>
