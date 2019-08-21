@@ -1,15 +1,18 @@
 class UsersController < ApplicationController
   skip_before_action :authenticate_user!, only: :show
-  before_action :set_story, only: :show
+  before_action :set_user, only: :show
 
   def show
     @stories = Story.where(user: @user)
     authorize(@stories)
   end
 
+  def me
+  end
+
   private
   # Use callbacks to share common setup or constraints between actions.
-  def set_story
+  def set_user
     @user = User.find(params[:id])
   end
 

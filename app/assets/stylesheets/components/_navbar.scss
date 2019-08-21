@@ -5,7 +5,9 @@
   background: black;
   color: white;
   padding: 8px 16px;
+  margin: auto;
 }
+
 
 
 .navbar .logo {
@@ -14,7 +16,30 @@
   line-height: 0%;
   background: #C5B97E;
   border-radius: 1px;
+  flex-grow: 3;
+  text-align: center;
+  padding-left: 45px;
+  // position: absolute;
+   // left: 50%;
+   // transform: translateX(165%);
+
 }
+
+.navbar .searchicon {
+  width: 30px;
+  // align-self: flex-end;
+}
+
 .navbar .navbar-collapse {
   flex-grow: 0;
 }
+
+
+// flex-basis: 50%;
+
+// @media screen and (max-width: 600px) {
+//   .container
+
+//   ul.topnav li.right,
+//   ul.topnav li {float: none;}
+// }
