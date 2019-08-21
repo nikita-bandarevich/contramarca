@@ -1,12 +1,20 @@
-.navbar-lewagon {
+.navbar {
+  display: flex;
   justify-content: space-between;
-  background: white;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 8px 16px;
 }
 
-.navbar-lewagon .navbar-collapse {
+
+.navbar .logo {
+  font-family: Adobe Caslon Pro;
+  font-size: 33px;
+  line-height: 0%;
+  background: #C5B97E;
+  border-radius: 1px;
+}
+.navbar .navbar-collapse {
   flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
 }
