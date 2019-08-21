@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   # get 'stories/index'
-  get 'users/:id', to: "users#show", as: :user
+  get 'users/profile/:id', to: "users#show", as: 'user'
   # get 'stories/edit'
   # get 'stories/update'
   # get 'stories/new'
