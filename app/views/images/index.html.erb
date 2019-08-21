@@ -1,0 +1,10 @@
+
+<% @images.each do |img| %>
+  <%= cl_image_tag img.data %>
+<% end %>
+
+<%=  simple_form_for [@story, @image] do |f| %>
+  <%= f.input :data %>
+  <%= f.input :data_cache, as: :hidden %>
+  <%= f.submit 'Submit' %>
+<% end %>

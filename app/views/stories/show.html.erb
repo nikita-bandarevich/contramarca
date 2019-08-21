@@ -4,4 +4,8 @@
 <h1><%= @story.title %></h1>
 <%= @story.content %>
 <%= link_to 'Back', stories_path %>
+  <% @story.images.each do |img| %>
+  <%= cl_image_tag img.data %>
+<% end %>
 </div>
+
