@@ -1,0 +1,106 @@
+.trix-content {
+  border: none;
+  border-radius: 3px;
+  margin: 0;
+  padding: 0.4em 0.6em;
+  min-height: 5em;
+  outline: none;
+}
+
+.button_row {
+  display: none
+}
+
+.button_row > span {
+  border: none;
+}
+
+.button_row > span > button {
+  border: none;
+}
+
+.button_row > span > button:not(:first-child) {
+  border: none;
+}
+
+.form-control {
+  background-color: #2A2A2A;
+  border: none
+}
+
+
+
+input#story_title:focus {
+  background-color: #2A2A2A !important;
+  border: none
+}
+
+input#story_title:active {
+  background-color: #2A2A2A !important;
+  border: none
+}
+
+input#story_title::selection {
+  background-color: #2A2A2A !important;
+  border: none
+}
+input#story_title::before {
+  background-color: #2A2A2A !important;
+  border: none
+}
+input#story_title::after {
+  background-color: #2A2A2A !important;
+  border: none
+}
+input#story_title:visited {
+  background-color: #2A2A2A !important;
+  border: none
+}
+
+label {
+  display: none;
+}
+
+input#story_title::after {
+  background-color: #2A2A2A !important;
+  border: none
+}
+input#story_title::before {
+  background-color: #2A2A2A !important;
+  border: none
+}
+
+input#story_title:checked {
+  background-color: #2A2A2A !important;
+  border: none
+}
+
+input#story_title:disabled {
+  background-color: #2A2A2A !important;
+  border: none
+}
+
+input#story_title:empty {
+  background-color: #2A2A2A !important;
+  border: none
+}
+
+input#story_title:enabled {
+  background-color: #2A2A2A !important;
+  border: none
+}
+
+input#story_title:focus {
+  background-color: #2A2A2A !important;
+  border: none
+}
+
+input#story_title:invalid {
+  background-color: #2A2A2A !important;
+  border: none
+}
+
+input#story_title:root {
+  background-color: #2A2A2A !important;
+  border: none
+}
