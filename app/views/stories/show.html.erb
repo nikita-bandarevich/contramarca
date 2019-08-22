@@ -1,18 +1,7 @@
-
-<div class="container">
-  <h1>Stories#show</h1>
-  <div>
-  <%= @story.user_id %>
-  <h1><%= @story.title %></h1>
-  <%= @story.created_at.strftime("%B %e, %Y") %>
-  <%= @story.content %>
-  <%= link_to 'Back', stories_path %>
+<div class="wide-container">
+    <br>
+ <%= render 'shared/story', s: @story %>
     <% @story.images.each do |img| %>
-    <%= cl_image_tag img.data %>
-  <% end %>
-  </div>
-
-
-  <%= render 'shared/story_compact', story: @story  %>
+       <%= cl_image_tag img.data, width: "100%"%>
+    <% end %>
 </div>
-

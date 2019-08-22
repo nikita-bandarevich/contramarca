@@ -1,15 +1,14 @@
-
-
-  <% @stories.each do |story| %>
-
-<div><%= story.user_id %>
-  <%= story.id %>
-  <%= story.title %>
-  <% if story.images %>
-    <% story.images.each do |image| %>
-      <%= cl_image_tag image.data %>
+<div class="wide-container">
+  
+  <% @stories.each do |s| %>
+    <br>
+    <%= render 'shared/story', s: s %>
+    <%= link_to 'Show', s %>
+    <br>
+    <% if story.images %>
+      <% story.images.each do |image| %>
+        <%= cl_image_tag image.data, width: "100%"  %>
+      <% end %>
     <% end %>
   <% end %>
-  <%= link_to 'Show', story %></div>
-  <%= link_to story.user.first_name, user_path(story.user_id) %>
-  <% end %>
+</div>
