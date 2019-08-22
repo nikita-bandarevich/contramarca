@@ -1,15 +1,10 @@
+<div class="wide-container">
 
+  <% @stories.each do |s| %>
 
-  <% @stories.each do |story| %>
+    <br>
+    <%= render 'shared/story_compact', s: s %>
 
-<div><%= story.user_id %>
-  <%= story.id %>
-  <%= story.title %>
-  <% if story.images %>
-    <% story.images.each do |image| %>
-      <%= cl_image_tag image.data %>
-    <% end %>
+    <br>
   <% end %>
-  <%= link_to 'Show', story %></div>
-  <%= link_to story.user.first_name, user_path(story.user_id) %>
-  <% end %>
+</div>

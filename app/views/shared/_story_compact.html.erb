@@ -1,5 +1,4 @@
 
-<%# image_tag @image.where(image.story == story) %>
 <div class="mb-3">
   <% if s.images %>
     <% s.images.each do |image| %>
@@ -10,7 +9,7 @@
 
 <h1 class="mb-4"><%= s.title %></h1>
 <p class="small_text">by <%= link_to "#{s.user.username}", user_path(s.user)  %></p>
-<p class="small_text mb-4"><%= s.created_at %></p>
-<p class="mb-0"><%= s.content %></p>
-
+<p class="small_text mb-4"><%= s.created_at.strftime("%B %e, %Y") %></p>
+ <p class="mb-0"> <%= s.content.truncate(300) %></p>
+<%= link_to 'READ MORE', story_path(s), class: "btn-dark-grey" %>
 
