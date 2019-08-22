@@ -1,9 +1,8 @@
 
 
-<br>
-
-
 <div class="wide-container">
+
+  <br>
   <%= render 'shared/authorcard', user: @user %>
   <% @stories.each do |s| %>
 
@@ -23,6 +22,4 @@
   <% end %>
 </div>
 
-<%#= link_to 'Edit', edit_story_path(@story) %>
 
-<%#= link_to 'Delete', story_path(@story), method: :delete, data: {confirm: "you sure mec?"} %>
