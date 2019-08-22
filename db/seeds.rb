@@ -1,4 +1,4 @@
-# This file should contain all the record creation needed to seed the database with its default values.
+88# This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
 # Examples:
@@ -17,7 +17,7 @@ Matthis = User.create!(
   email: "matthisParisot@mail.com",
   password: "password",
   username: "matthisParisot",
-  bio: "Co-Funder of Contramarca"
+  bio: "Co-Founder of Contramarca"
   )
 
 lorenGrush = User.create!(
@@ -103,6 +103,7 @@ NASA recently tasked Astrobotic and two other companies with sending robotic lan
 )
 
 Story.create!(
+  remote
   title: "Environmental controls on carbon sequestration, sediment accretion, and elevation change in the Ebro River Delta: Implications for wetland restoration",
   #category: "Science" "Ecology",
   content: "Delta wetlands are increasingly recognized as important sinks for ‘blue carbon,’ although this and other ecosystem services that deltas provide are threatened by human activities. We investigated factors that affect sediment accretion using short term (3 years using marker horizons) and longer-term measures (∼50 year using ¹³⁷ Cs soil core distribution and ∼100 year using ²¹⁰ Pb distribution), the associated carbon accumulation rates, and resulting changes in surface elevation in the Ebro River Delta, Catalonia, Spain. Fifteen sites were selected, representing the geomorphological settings and range of salinities typical of the delta's wetlands. Sediment accretion rates as measured by ¹³⁷ Cs distribution in soil cores ranged from 0.13 to 0.93 cm yr ⁻¹ . Surface elevations increased at all sites, from 0.10 to 2.13 cm yr ⁻¹ with the greatest increases in natural impoundments with little connection to other surface waters. Carbon accumulation rates were highly spatially variable, ranging from 32 to 435 g C m ⁻¹ yr ⁻¹ with significantly higher rates at bay sites (p = 0.02) where hydrologic connectivity is high and sediment resuspension more intense. Sites with high connectivity had significantly higher rates of carbon accumulation (averaging 376 ± 50 g C m ⁻¹ yr ⁻¹ ) compared to sites with moderate or low connectivity. We also found high rates of carbon accumulation in brackish sites where connectivity was low and biomass production was characteristically higher than in saline sites. A stepwise regression model explained 81% of variability in carbon accumulation rates across all sites. Our data indicate deltaic wetlands can be important sinks for blue carbon, contributing to climate change mitigation.",
