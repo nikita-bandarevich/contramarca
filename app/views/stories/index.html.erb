@@ -7,7 +7,7 @@
   <%= story.title %>
   <% if story.images %>
     <% story.images.each do |image| %>
-      <%= cl_image_tag image.data %>
+      <%= cl_image_tag image.data, width: "100%"  %>
     <% end %>
   <% end %>
   <%= link_to 'Show', story %></div>
