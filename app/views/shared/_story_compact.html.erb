@@ -1,0 +1,10 @@
+<div>
+  <% @story.images.each do |img| %>
+    <%= cl_image_tag img.data %>
+  <% end %>
+  <%= @story.user_id %>
+  <h1><%= @story.title %></h1>
+  <%= @story.created_at.strftime("%B %e, %Y") %>
+  <%= @story.content.truncate(300) %>
+  <%= link_to 'READ MORE', story_path, class: "btn-dark-grey" %>
+</div>
