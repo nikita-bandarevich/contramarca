@@ -2,16 +2,13 @@
 
     <div class="searchicon">
       <%= link_to(stories_path) do %>
-       <i class="fas fa-angle-left"></i>
+       <i style="font-size: 15px" class="fas fa-arrow-left"></i>
        <% end %>
     </div>
 
-    <div class="searchicon">
-      <h5><%= @story.user.first_name %> <%= @story.user.last_name %></h5>
+    <div class="logo">
+      <h5 style="margin-top: 9px;"><%= @story.user.first_name %> <%= @story.user.last_name %></h5>
     </div>
 
-    <div class="searchicon">
-      <i class="fas fa-search"></i>
-    </div>
 
 </div>
