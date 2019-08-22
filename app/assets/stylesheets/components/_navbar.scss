@@ -24,8 +24,15 @@
 }
 
 .searchicon {
-  width: 30px;
-  fill: #bcbcbc;
+  font-size: 30px;
+  color: #bcbcbc;
+
+  // align-self: flex-end;
+}
+
+.searchicon a {
+  font-size: 30px;
+  color: #bcbcbc;
 
   // align-self: flex-end;
 }

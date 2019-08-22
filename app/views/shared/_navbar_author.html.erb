@@ -1,0 +1,17 @@
+<div class="navbar navbar-expand navbar-light ">
+
+    <div class="searchicon">
+      <%= link_to(stories_path) do %>
+       <i class="fas fa-angle-left"></i>
+       <% end %>
+    </div>
+
+    <div class="searchicon">
+      <%= @story.user.first_name %> <%= @story.user.last_name %>
+    </div>
+
+    <div class="searchicon">
+      <i class="fas fa-search"></i>
+    </div>
+
+</div>
