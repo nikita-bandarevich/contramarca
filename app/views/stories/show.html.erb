@@ -1,8 +1,7 @@
 
 <div class="wide-container">
-    <br>
+  <br>
+
  <%= render 'shared/story', s: @story %>
-    <% @story.images.each do |img| %>
-       <%= cl_image_tag img.data, width: "100%"%>
-    <% end %>
+
 </div>

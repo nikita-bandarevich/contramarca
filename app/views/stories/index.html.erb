@@ -1,14 +1,10 @@
 <div class="wide-container">
-  
+
   <% @stories.each do |s| %>
+
     <br>
     <%= render 'shared/story', s: s %>
     <%= link_to 'Show', s %>
     <br>
-    <% if story.images %>
-      <% story.images.each do |image| %>
-        <%= cl_image_tag image.data, width: "100%"  %>
-      <% end %>
-    <% end %>
   <% end %>
 </div>
