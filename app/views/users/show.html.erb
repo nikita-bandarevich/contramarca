@@ -9,8 +9,8 @@
 
   <%#= link_to 'Stories Setting', functionality_path(s.id) %>
     <br>
-<%= render 'shared/story', s: s %>
-  <%= link_to 'Show', s %>
+<%= render 'shared/story_compact', s: s %>
+
 
   <% if s.user == current_user %>
     <%= render "functionality", s: s %>
