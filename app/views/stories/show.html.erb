@@ -1,17 +1,8 @@
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12 col-lg-6">
-      <h1>Stories#show</h1>
-        <%= @story.user_id %>
-      <h1><%= @story.title %></h1>
-        <%= @story.content %>
-        <% @story.images.each do |img| %>
-          <%= cl_image_tag img.data, width: "100%"%>
-        <% end %>
-        <br>
-        <br>
-        <br>
-        <%= link_to 'Back', stories_path %>
-    </div>
-  </div>
+
+<div class="wide-container">
+    <br>
+ <%= render 'shared/story', s: @story %>
+    <% @story.images.each do |img| %>
+       <%= cl_image_tag img.data, width: "100%"%>
+    <% end %>
 </div>

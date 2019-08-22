@@ -1,15 +1,21 @@
-<div class="authorcard">
+<div class="narrow-container authorcard">
 
-    <div class="title">
-      <h1>
+    <div class="title mb-3">
+      <h5>
       <%= @user.first_name %>
       <%= @user.last_name %>
-      </h1>
+      </h5>
     </div>
-    <div class="bio">
+
+    <div class="bio mb-">
       <p>
         <%= @user.bio %>
       </p>
     </div>
-    <a class="btn btn-dark-grey" href="#">FOLLOW</a>
+
+    <div class="d-flex justify-content-center mb-3">
+      <a class="btn-light-grey" href="#">FOLLOW</a>
+    </div>
+    <%#= link_to "FOLLOW",  stories_path, class: "btn-light-grey" %>
+
 </div>
