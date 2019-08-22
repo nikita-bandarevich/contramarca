@@ -1,10 +1,18 @@
 <div class="navbar navbar-expand navbar-light ">
 
   <div class="searchicon">
-    <%= link_to(stories_path) do %>
-      <i style="font-size: 15px" class="fas fa-bars"></i>
+
+    <% if current_user.nil? %>
+      <%= link_to new_user_session_path do %>
+           <i class="fas fa-bars"></i>
+      <% end %>
+    <% else %>
+      <%= link_to user_path(current_user) do %>
+           <i class="fas fa-bars"></i>
+      <% end %>
+
     <% end %>
-    </div>
+  </div>
     <div class=logo>
       <h5 style="font-size: 33px" >contramarca</h5>
     </div>
@@ -14,3 +22,8 @@
     </div>
 
 </div>
+
+
+
+
+
