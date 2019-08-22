@@ -4,12 +4,19 @@ body {
 
 p {
   color: #dadada;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 130%;
+  // text-align: justify;
+}
+
+.small_text {
+  color: #dadada;
+  font-size: 15px;
+  line-height: 30%;
 }
 
 h1 {
-  color: #dadada;
+  color: #BCBCBC;
   font-weight: bold;
   font-size: 21px;
   line-height: 130%;
@@ -24,10 +31,11 @@ h4 {
 }
 
 h5 {
-  color: #bcbcbc;
+  color: $main-gold-color;
   font-family: Adobe Caslon Pro;
   font-style: normal;
-  font-weight: 600;
+  font-weight: semibold;
   font-size: 25px;
   line-height: 0%;
+
 }

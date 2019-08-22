@@ -1,11 +1,4 @@
-<h1>Stories#show</h1>
-<div>
-<%= @story.user_id %>
-<h1><%= @story.title %></h1>
-<%= @story.content %>
-<%= link_to 'Back', stories_path %>
-  <% @story.images.each do |img| %>
-  <%= cl_image_tag img.data %>
-<% end %>
+<div class="wide-container">
+    <br>
+    <%= render 'shared/story', s: @story %>
 </div>
-
