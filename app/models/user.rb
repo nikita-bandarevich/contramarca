@@ -4,7 +4,7 @@ class User < ApplicationRecord
   has_many :followables
   has_many :followers
   has_many :bookmarks
-  has_many :stories
+  has_many :stories, dependent: :destroy
   has_many :shares
   has_many :readings
   devise :database_authenticatable, :registerable,

@@ -90,7 +90,7 @@ kellyMayes = User.create!(
   username: "kellyMayes",
   bio: "Diverse Voices in Science Journalism intern for the News section of Science in Washington, D.C."
   )
-Story.create!(
+lorenGrush_1 = Story.create!(
   title: "Moon delivery startup Astrobotic picks future Vulcan rocket to launch first lunar mission",
   #category: "Science" "Space",
   content: "US aerospace startup Astrobotic — a company that wants to establish a delivery service to the Moon — says it will fly its very first lunar mission on top of the United Launch Alliance’s future rocket, named Vulcan. In fact, Astrobotic’s spacecraft, a lunar lander named Peregrine, will be Vulcan’s very first payload ever, scheduled for launch sometime in 2021. If everything stays on track, the mission could send the first private vehicle to the surface of the Moon.
@@ -102,8 +102,9 @@ NASA recently tasked Astrobotic and two other companies with sending robotic lan
   user: lorenGrush
 )
 
-Story.create!(
-  remote
+
+carlesIbanez_1 = Story.create!(
+
   title: "Environmental controls on carbon sequestration, sediment accretion, and elevation change in the Ebro River Delta: Implications for wetland restoration",
   #category: "Science" "Ecology",
   content: "Delta wetlands are increasingly recognized as important sinks for ‘blue carbon,’ although this and other ecosystem services that deltas provide are threatened by human activities. We investigated factors that affect sediment accretion using short term (3 years using marker horizons) and longer-term measures (∼50 year using ¹³⁷ Cs soil core distribution and ∼100 year using ²¹⁰ Pb distribution), the associated carbon accumulation rates, and resulting changes in surface elevation in the Ebro River Delta, Catalonia, Spain. Fifteen sites were selected, representing the geomorphological settings and range of salinities typical of the delta's wetlands. Sediment accretion rates as measured by ¹³⁷ Cs distribution in soil cores ranged from 0.13 to 0.93 cm yr ⁻¹ . Surface elevations increased at all sites, from 0.10 to 2.13 cm yr ⁻¹ with the greatest increases in natural impoundments with little connection to other surface waters. Carbon accumulation rates were highly spatially variable, ranging from 32 to 435 g C m ⁻¹ yr ⁻¹ with significantly higher rates at bay sites (p = 0.02) where hydrologic connectivity is high and sediment resuspension more intense. Sites with high connectivity had significantly higher rates of carbon accumulation (averaging 376 ± 50 g C m ⁻¹ yr ⁻¹ ) compared to sites with moderate or low connectivity. We also found high rates of carbon accumulation in brackish sites where connectivity was low and biomass production was characteristically higher than in saline sites. A stepwise regression model explained 81% of variability in carbon accumulation rates across all sites. Our data indicate deltaic wetlands can be important sinks for blue carbon, contributing to climate change mitigation.",
@@ -111,7 +112,7 @@ Story.create!(
   user: carlesIbanez
 )
 
-Story.create!(
+josePons_1 = Story.create!(
   title: "Witnessing a wearables transition",
   #category: "Science" "Ecology",
   content: "Wearable robots, such as exoskeletons and soft exosuits, can augment normal function or serve as prostheses for missing limbs. In both cases, they extend, complement, substitute, or enhance human functions and capability and can empower or replace human limbs. Cognitive and physical interactions between human and robot are key for these robots to seamlessly deliver assistance when required. The physical interaction between a robot and its wearer generates forces to overcome the wearer's physical limits, and cognitive interactions allow the wearer to guide and control the robot at all times. On page 668 of this issue, Kim et al. (1) report on a soft exosuit that switches assistance profiles for different physical interaction strategies—in this case, walking versus running—through a versatile cognitive interaction in which algorithms accurately determine and detect the wearer's gait.
@@ -125,7 +126,7 @@ In spite of these altered neuromechanics, the effect of wearing a wearable robot
   user: josePons
 )
 
-Story.create!(
+danielClery_1 = Story.create!(
   title: "This rocky ‘super-Earth’ may be a hard place for life to get a foothold",
   #category: "Science" "Space",
   content: "When scientists go looking for life on distant exoplanets, they generally focus on rocky worlds the size of Earth. But most of these so-called super-Earths orbit, not yellow dwarfs like our sun, but red dwarfs—which are less than 60% the sun’s size. Now, astronomers report that such exoplanets might not be the best places for harboring life for one key reason: They seem to lack habitable atmospheres.
@@ -141,7 +142,7 @@ This is just a single planet, but the results suggest finding a hospitable plane
   user: danielClery
 )
 
-Story.create!(
+meredithWadman_1 = Story.create!(
   title: "T‘The system is swamped.’ Canada can’t keep up with requests to study cannabis",
   #category: "Science" "Medicine",
   content: "The Canadian government is scrambling to respond to a glut of license applications for cannabis research prompted by the drug’s legalization in October 2018. The queue of applicants—there were 251 in line as of late July—and the attendant monthslong waiting times are frustrating scientists interested in the basic biology and therapeutic possibilities of cannabis. The delays are also prompting criticism of Health Canada, the agency charged with issuing the permits.
@@ -168,7 +169,7 @@ Some scientists counter that Health Canada is performing well, given the demands
   user: meredithWadman
   )
 
-Story.create!(
+elizabethPennisi_1 = Story.create!(
   title: "This rock-eating ‘worm’ could change the course of rivers",
   #category: "Science" "Nature",
   content: "Shipworms have long been a menace to humankind, sinking ships, undermining piers, and even eating their way through Dutch dikes in the mid-1700s. Now, researchers have found the first shipworm that eschews wood for a very different diet: rock. The new shipworm—a thick, white, wormlike creature that can grow to be more than a meter long—lives in freshwater. Researchers first spotted the species (Lithoredo abatanica) in 2006 in thumb-size burrows in the limestone banks of the Abatan River in the Philippines. But it wasn’t until 2018 that scientists were able to study the organism in detail.
@@ -183,7 +184,7 @@ The rock-eating shipworm does have one big thing in common with its wood-eating 
   user: elizabethPennisi
 )
 
-Story.create!(
+carlesIbanez_3 = Story.create!(
   title: "Changing nutrients, changing rivers",
   #category: "Science" "Nature",
   content: "Eutrophication—the excessive enrichment of a body of water with nutrients such as nitrogen (N) and phosphorus (P)—is Earth's most widespread problem for water quality (1, 2). Growing evidence suggests a global trend toward reversing eutrophication. However, in rivers and estuaries of developed countries and in lakes of emerging economies, the ongoing reduction in nutrient inputs—termed reoligotrophication—is much larger for P than for N (3, 4). Although the rapid emergence of this phenomenon has hindered detailed monitoring of the ecological effects, a few studies have documented an abrupt shift from green to clear waters and consequently from phytoplankton to macrophytes as dominant primary producers in response to reoligotrophication in rivers and estuaries (5–7). However, the improvement in water quality due to P decline does not imply a return to pristine ecological conditions, because high N:P ratios trigger undesirable changes in the ecosystem (8).
@@ -206,7 +207,7 @@ The ecological effects of P decline and N/P imbalances on the structure and func
   user: carlesIbanez
 )
 
-Story.create!(
+kellyMayes_1 = Story.create!(
   title: "Tropical storms are making these spiders more aggressive",
   #category: "Science" "Nature",
   content: "After Tropical Storm Florence inundated North and South Carolina in September 2018, Jonathan Pruitt drove up and down the East Coast of the United States, scouring for telltale signs of damage. But he wasn’t looking for destroyed homes; he was looking for spider nests—and the spiders that had survived the storm. What the behavioral ecologist and his colleagues at the University of California (UC), Santa Barbara, found was provocative: Aggressive spiders survived the storm—and others like it—better than their docile counterparts, leading to bolder future colonies.
@@ -226,9 +227,65 @@ The researchers don’t yet know why aggressive colonies outperform docile colon
 
 The study, Taylor says, “really documents the effect that these rare events are having on populations.” She hopes the work—though not easy—can inspire similar studies among other animals.
 ",
-
   status: true,
   user: kellyMayes
-
 )
+
+
+Image.create!(
+  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/spider_1280p.jpg?itok=Pa7J0OrK",
+  story: kellyMayes_1
+)
+
+Image.create!(
+  remote_data_url: "http://goosefflab.weebly.com/uploads/3/7/9/2/37926219/3851818.jpg?400",
+  story: carlesIbanez_3
+)
+
+Image.create!(
+  remote_data_url:
+   "https://schmidtocean.org/wp-content/uploads/FK160602-NetDeployment_15062016_Naranjo-1-1140x760.jpg",
+  story: carlesIbanez_3
+  )
+
+Image.create!(
+  remote_data_url: "https://truemedian.com/wp-content/uploads/2019/06/57853/this-rock-eating-worm-could-change-the-course-of-rivers-science-magazine-696x392.jpg",
+story: elizabethPennisi_1 )
+
+Image.create!(
+  remote_data_url:
+ "https://www.daily-sun.com/assets/news_images/2019/06/29/Ship_worms-ds.jpg",
+ story: elizabethPennisi_1
+  )
+
+Image.create!(
+  remote_data_url:"https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/LHS_3884b_700p.jpg?itok=5xY3fYNg",
+  story: danielClery_1
+  )
+
+Image.create!(
+  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/ca_0823Cannabis_Research_online.jpg?itok=E6cCoSmZ",
+  story: meredithWadman_1
+  )
+
+Image.create!(
+  remote_data_url: "https://spacenews.com/wp-content/uploads/2018/11/lm-mccandless.jpg",
+  story: lorenGrush_1
+  )
+
+Image.create!(
+  remote_data_url:"https://cdn.mos.cms.futurecdn.net/SpzGH5xKg2Pev8jFzww3Fo-650-80.jpg",
+  story: lorenGrush_1
+  )
+
+Image.create!(
+  remote_data_url: "http://www.irta.cat/wp-content/uploads/2018/05/jornada_life_admiclim-636x500.jpg",
+story: carlesIbanez_1
+  )
+
+Image.create!(
+  remote_data_url: "http://www.irta.cat/wp-content/uploads/2018/01/Delta_Ebre-2.jpg",
+  story: carlesIbanez_1
+  )
+
 puts "finished"
