@@ -11,11 +11,13 @@
     <br>
 <%= render 'shared/story', s: s %>
   <%= link_to 'Show', s %>
+
   <% if s.user == current_user %>
     <%= render "functionality", s: s %>
   <% end %>
-  <% end %>
   <br><br>
+  <% end %>
+
   <% if @user == current_user %>
     <%= link_to 'NEW STORY', new_story_path, class: "btn-gold" %>
   <% end %>
