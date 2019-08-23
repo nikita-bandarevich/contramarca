@@ -1,18 +1,15 @@
 
 
 <div class="wide-container">
-  <br>
-
 
  <%= render 'shared/story', s: @story %>
   <br>
-  <br>
-
-  <div class="d-flex">
-    <%= link_to stories_path, class: "btn-dark-grey" do %>
+  <div class="button-box">
+    <%= link_to stories_path, class: "btn-black" do %>
       <h3>share</h3>
     <% end %>
-    <%= link_to stories_path, class: "btn-dark-grey" do %>
+    <div class="middle-box"></div>
+    <%= link_to stories_path, class: "btn-black" do %>
       <h3>save</h3>
     <% end %>
   </div>

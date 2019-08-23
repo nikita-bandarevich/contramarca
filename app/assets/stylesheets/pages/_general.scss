@@ -28,7 +28,7 @@ h1 {
   color: #dadada;
   font-weight: 700;
   font-size: 25px;
-  line-height: 130%;
+  line-height: 115%;
 }
 
 h3 {
@@ -60,6 +60,16 @@ h5 {
   line-height: 100%;
   font-weight: 10;
   text-decoration: line-through;
+}
+
+
+.button-box {
+  display: flex;
+  justify-content: space-between;
+
+}
+.middle-box {
+  min-width: 15px;
 }
 
 .h5s {
