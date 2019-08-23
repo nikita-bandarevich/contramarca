@@ -1,11 +1,8 @@
 Rails.application.routes.draw do
-  # get 'stories/index'
+
   get 'users/profile/:id', to: "users#show", as: 'user'
-  # get 'stories/edit'
-  # get 'stories/update'
-  # get 'stories/new'
-  # get 'stories/create'
-  # get 'stories/destroy'
+  get 'stories/search', to: 'stories#search'
+
   resources :stories do
     resources :images, only: [:create, :index]
   end

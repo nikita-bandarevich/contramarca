@@ -1,0 +1,20 @@
+
+<div class="wide-container">
+  <%= form_tag stories_search_path, method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control p1",
+    placeholder: "search"
+  %>
+  <% end %>
+
+  <% unless @stories.nil? %>
+    <% if params[:query] %>
+      <% @stories.each do |s| %>
+        <br>
+        <%= render 'shared/story_compact', s: s %>
+        <br>
+      <% end %>
+    <% end %>
+  <% end %>
+</div>
