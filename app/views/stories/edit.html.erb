@@ -12,9 +12,10 @@
           <%= f.input :title, placeholder:@story.id%>
         </div>
         <input id="x" type="hidden" name="story[content]" value="<%= @story.content %>">
-            <trix-editor class="trix-content" input="x" ></trix-editor>
+            <trix-editor class="trix-content text-trix" input="x" ></trix-editor>
+
         <div class="form-actions">
-          <%= f.button :submit, class:"btn-dark-grey" %>
+          <h4><%= f.button :submit, class:"btn-dark-grey" %></h4>
         </div>
       <% end %>
     </div>
