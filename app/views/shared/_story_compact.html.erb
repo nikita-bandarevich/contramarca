@@ -1,21 +1,47 @@
-
+<!--
 <div class="mb-3">
   <% if s.images %>
     <% s.images.each do |image| %>
       <%= cl_image_tag image.data, width: "100%"  %>
     <% end %>
   <% end %>
-</div>
+</div> -->
 
-<h1 class="mb-4"><%= s.title %></h1>
-<h4 class="small_text">By <%= link_to "#{s.user.username}", user_path(s.user)  %><h4>
-<h4 class="small_text mb-4"><%= s.created_at.strftime("%B %e, %Y") %></h4>
-<p class="mb-0">
+
+
+
+
+<div class="mb-3">
+  <% if s.images %>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <% s.images.each do |image| %>
+          <div class="carousel-item <%= image == s.images.first ? 'active' : '' %>" >
+            <%= cl_image_tag image.data, class: "d-block, w-100" %>
+          </div>
+        <% end %>
+      </div>
+  <!--     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+    </div>
+  <% end %>
+  <h1 class="mb-4"><%= s.title %></h1>
+  <h4 class="small_text">By <%= link_to "#{s.user.username}", user_path(s.user)  %><h4>
+  <h4 class="small_text mb-4"><%= s.created_at.strftime("%B %e, %Y") %></h4>
+   <p class="mb-0">
     <% unless s.content.nil? %>
       <%= s.content.truncate(300).html_safe %>
     <% end %>
-</p>
-  <%= link_to story_path(s), class: "btn-dark-grey", style: "margin-top: 10px;" do %>
-  <h3 style="color: #7A7A7A;">READ MORE</h3>
+  </p>
+    <%= link_to story_path(s), class: "btn-dark-grey", style: "margin-top: 10px;" do %>
+    <h3 style="color: #7A7A7A;">READ MORE</h3>
   <% end %>
+
+</div>
 
