@@ -3,7 +3,8 @@
 <div class="wide-container">
 
   <br>
-  <%= render 'shared/authorcard', user: @user %>
+
+  <%= render 'shared/authorcard', u: @user %>
   <% @stories.each do |s| %>
 
   <%#= link_to 'Stories Setting', functionality_path(s.id) %>

@@ -26,8 +26,8 @@ p {
 
 h1 {
   color: #dadada;
-  font-weight: 600;
-  font-size: 21px;
+  font-weight: 700;
+  font-size: 25px;
   line-height: 130%;
 }
 
@@ -45,7 +45,7 @@ h4 {
 
 h5 {
   color: $main-gold-color;
-  font-family: Adobe Caslon Pro;
+  font-family: $body-font;
   font-style: normal;
   font-weight: semibold;
   font-size: 25px;
