@@ -1,12 +1,12 @@
-<div class="navbar_search">
+<div class=" navbar-expand-sm navbar_search">
 
-    <div class="searchicon">
+    <div class="searchicon ml-3">
       <%= link_to(stories_path) do %>
        <i style="font-size: 15px" class="fas fa-arrow-left"></i>
        <% end %>
     </div>
 
-    <div class="m-auto form">
+    <div class="form">
       <%= form_tag stories_search_path, method: :get do %>
       <%= text_field_tag :query,
         params[:query],
