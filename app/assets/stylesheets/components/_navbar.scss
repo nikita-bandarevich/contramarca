@@ -45,16 +45,26 @@
 }
 
 .navbar_search {
+  position: relative;
   display: flex;
-  flex-basis: 50%;
-  justify-content: flex-start;
+  justify-content: space-around;
 
   // @media screen and (max-width: 600px) {
   // .container
 
-  ul.topnav li.right,
-  ul.topnav li {float: none;}
+  // ul.topnav li.right,
+  // ul.topnav li {float: none;}
 
+}
+
+
+#search-icon-absolute {
+  position: absolute;
+  left: 10px;
+}
+
+.form {
+  max-width: 305px;
 }
 
 
