@@ -1,10 +1,27 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-6">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <% @images.each do |img| %>
+        <%= cl_image_tag img.data %>
+      <% end %>
 
-<% @images.each do |img| %>
-  <%= cl_image_tag img.data %>
-<% end %>
-
-<%=  simple_form_for [@story, @image] do |f| %>
-  <%= f.input :data %>
-  <%= f.input :data_cache, as: :hidden %>
-  <%= f.submit 'Submit' %>
-<% end %>
+      <%=  simple_form_for [@story, @image] do |f| %>
+        <%= f.input :data %>
+        <%= f.input :data_cache, as: :hidden %>
+        <%= f.submit 'Submit', class:"btn-dark-grey" %>
+      <% end %>
+      <br>
+      <br>
+      <br>
+      <%= link_to "Back", :back %>
+    </div>
+  </div>
+</div>
