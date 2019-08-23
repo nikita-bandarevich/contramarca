@@ -2,15 +2,6 @@ class StoriesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show, :search]
   before_action :set_story, only: [:show, :edit, :update, :destroy]
 
-  # def index
-  #   if params[:query].present?
-  #     sql_query = "title ILIKE :query"
-  #     @stories = policy_scope(Story).where(sql_query, query: "%#{params[:query]}%").order(created_at: :desc)
-  #   else
-  #     @stories = policy_scope(Story).order(created_at: :desc)
-  #   end
-  # end
-
   def index
     @stories = policy_scope(Story)
   end

@@ -44,12 +44,15 @@
   flex-grow: 0;
 }
 
+.navbar_search {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: flex-start;
+  // @media screen and (max-width: 600px) {
+  // .container
 
-// flex-basis: 50%;
+  ul.topnav li.right,
+  ul.topnav li {float: none;}
+}
 
-// @media screen and (max-width: 600px) {
-//   .container
 
-//   ul.topnav li.right,
-//   ul.topnav li {float: none;}
-// }
