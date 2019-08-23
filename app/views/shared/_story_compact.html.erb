@@ -36,7 +36,7 @@
   <h4 class="small_text mb-4"><%= s.created_at.strftime("%B %e, %Y") %></h4>
    <p class="mb-0">
     <% unless s.content.nil? %>
-      <%= s.content.truncate(300).html_safe %>
+    <div class="text-trix"><%= s.content.truncate(300).html_safe %></div>
     <% end %>
   </p>
     <%= link_to story_path(s), class: "btn-dark-grey", style: "margin-top: 10px;" do %>
