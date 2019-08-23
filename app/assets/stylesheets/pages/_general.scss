@@ -28,7 +28,7 @@ h1 {
   color: #dadada;
   font-weight: 700;
   font-size: 25px;
-  line-height: 130%;
+  line-height: 115%;
 }
 
 h3 {
@@ -66,5 +66,33 @@ h5 {
   color: #dadada;
   font-size: 19px;
   line-height: 130%;
+}
+
+
+
+.button-box {
+  display: flex;
+  justify-content: space-between;
+
+}
+.middle-box {
+  min-width: 15px;
+}
+
+.h5s {
+  color: white;
+  font-family: Adobe Caslon Pro;
+  font-style: normal;
+  font-weight: semibold;
+  font-size: 25px;
+  line-height: 0%;
+  text-align: center;
+
+}
+
+.form {
+  margin-left: 12px;
+
+  // margin-left: auto;
 }
 

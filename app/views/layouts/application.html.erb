@@ -17,6 +17,8 @@
       <%= render 'shared/navbar_author' %>
     <% elsif controller.controller_name == "stories" && controller.action_name == "index"%>
       <%= render 'shared/navbar_logo' %>
+    <% elsif controller.controller_name == "stories" && controller.action_name == "search"%>
+      <%= render 'shared/navbar_search' %>
     <% else %>
         <%= render 'shared/navbar_blank'  %>
     <% end %>

@@ -17,7 +17,7 @@
 }
 
 .btn-dark-grey-card {
-  color:  #8A8A8A;
+  color: #7A7A7A;
   padding: 10px 24px;;
   background: #2A2A2A;
   border-radius: 3px;
@@ -46,6 +46,7 @@
 .btn-dark-grey:hover {
   background: #4a4a4a;
   text-decoration: none;
+  border: transparent;
 }
 
 .btn-light-grey {
@@ -68,7 +69,22 @@
   text-decoration: none;
 }
 
-input.btn-dark-grey {
-  border: transparent;
+
+.btn-black {
+  color:  #8A8A8A;
+  padding: 5px 24px .5px 24px;
+  background: #1a1a1a;
+  border-radius: 3px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 21px;
+  font-variant: small-caps;
+
 }
 
+.btn-black:hover {
+  background: #3a3a3a;
+  text-decoration: none;
+}
