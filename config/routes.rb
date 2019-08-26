@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
 
+
   get 'users/profile/:id', to: "users#show", as: 'user'
   get 'stories/search', to: 'stories#search'
+
+  resources :followings, only: :create
 
   resources :stories do
     resources :images, only: [:create, :index]

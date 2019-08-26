@@ -5,6 +5,25 @@ class UsersController < ApplicationController
   def show
     @stories = Story.where(user: @user)
     authorize(@stories)
+
+    @following = Following.new
+    authorize(@following)
+
+    @my_followers = Following.where(followable_id: @user)
+    @my_users_followers = []
+    @my_followers.each do |f|
+      @my_users_followers << User.where(id: f.follower_id)
+    end
+
+    @my_followings = Following.where(follower_id: @user)
+    @my_users_followings = []
+    @my_followings.each do |f|
+      @my_users_followings << User.where(id: f.followable_id)
+    end
+
+    # @my_followers = Following.where(id: following_id)
+    # authorize(@my_followers)
+
   end
 
   def me
