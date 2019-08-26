@@ -2,6 +2,10 @@ Rails.application.routes.draw do
 
   get 'users/profile/:id', to: "users#show", as: 'user'
   get 'stories/search', to: 'stories#search'
+  post 'bookmarks/create', to: 'bookmarks#create', as: 'bookmark'
+
+  resources :bookmarks, only: [:index]
+  resources :followings, only: :create
 
   resources :stories do
     resources :images, only: [:create, :index]
