@@ -23,18 +23,14 @@
       <%= link_to 'follow', followings_path(followable_id: u.id), class: "btn-dark-grey", method: :post%>
      <% end %>
 
+     <% unless controller.controller_name == "stories" && controller.action_name == "show"%>
+        <h1>My followers</h1>
+        <%= @my_users_followers.count%>
 
-      <h1>My followers</h1>
-      <%= @my_users_followers.count%>
+        <h1>My followings</h1>
+        <%= @my_users_followings.count%>
+        </div>
+      <% end %>
 
-
-      <h1>My followings</h1>
-      <%= @my_users_followings.count%>
-
-
-    </div>
-
-
-
-
+      <%= link_to 'bookmarks', bookmarks_path, class: "btn-dark-grey"%>
 </div>
