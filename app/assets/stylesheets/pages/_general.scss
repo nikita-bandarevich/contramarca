@@ -54,10 +54,25 @@ h5 {
 
 }
 
-
 .p1 {
-  color: #dadada;
-  font-size: 17px;
+  color: #2a2a2a;
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 10;
+
+}
+
+// .p1:hover {
+//   font-size: 4vw;
+//   font-weight: 600;
+//   font-weight: 600;
+//   letter-spacing: -0.035em;
+//   cursor: cell;
+// }
+
+.p12 {
+  color: #2a2a2a;
+  font-size: 20px;
   line-height: 100%;
   font-weight: 10;
   text-decoration: line-through;
@@ -91,4 +106,19 @@ h5 {
 
 }
 
+
+.length {
+  background-size: cover;
+  background-position: center;
+  padding: 250px 0;
+  height: 97vh;
+}
+
+.home {
+  font-size: 7vw;
+  font-weight: 600;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  color: $main-gold-color;
+}
 
