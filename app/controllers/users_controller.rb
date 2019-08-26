@@ -23,7 +23,6 @@ class UsersController < ApplicationController
 
     # @my_followers = Following.where(id: following_id)
     # authorize(@my_followers)
-
   end
 
   def me

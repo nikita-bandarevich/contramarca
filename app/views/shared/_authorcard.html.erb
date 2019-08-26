@@ -19,8 +19,9 @@
         <!-- <h3>follow</h3> -->
       <%# end %>
 
+     <% unless current_user == u %>
       <%= link_to 'follow', followings_path(followable_id: u.id), class: "btn-dark-grey", method: :post%>
-
+     <% end %>
 
 
       <h1>My followers</h1>
