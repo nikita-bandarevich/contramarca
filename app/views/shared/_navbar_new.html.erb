@@ -1,0 +1,18 @@
+<div id="navbar_new" class="navbar navbar-expand navbar-light">
+
+  <div class="searchicon">
+    <%= link_to(stories_path) do %>
+      <i style="font-size: 15px" class="fas fa-arrow-left"></i>
+    <% end %>
+  </div>
+
+  <div class="searchicon">
+    <% if user_signed_in? && @user == current_user %>
+      <%= link_to destroy_user_session_path, method: :delete, data: {confirm: "Are you sure you want to log out?"} do %>
+        <i style="font-size: 15px" class="fas fa-sliders-h"></i>
+      <% end %>
+    <% end %>
+  </div>
+
+
+</div>
