@@ -8,7 +8,25 @@
 </div> -->
 
 
-<div class="mb-3">
+<div class="mb-3 text-left">
+
+  <div class="d-flex justify-content-between mb-0">
+
+    <% if s.bookmarks.exists? %>
+      <%= link_to bookmark_path(story: params[:id] || s.id  ), method: :post do %>
+        <i class="fas fa-bookmark"></i>
+      <% end %>
+    <% else %>
+      <%= link_to bookmark_path(story: params[:id] || s.id  ), method: :post do %>
+        <i class="far fa-bookmark"></i>
+      <% end %>
+    <% end %>
+
+    <%= link_to bookmarks_path do %>
+      <i class="fas fa-ellipsis-h"></i>
+    <% end %>
+  </div>
+
 
   <% if s.images %>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -29,7 +47,7 @@
     </div>
   <% end %>
   <br>
-  <h1 class="mb-4"><%= s.title %></h1>
+  <h1 class="mt-0 mb-4"><%= s.title %></h1>
   <h4 class="small_text">By <%= link_to "#{s.user.username}", user_path(s.user)  %><h4>
   <h4 class="small_text mb-4"><%= s.created_at.strftime("%B %e, %Y") %></h4>
    <p class="mb-0">

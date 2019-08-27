@@ -14,23 +14,24 @@
       </p>
     </div>
 
-    <div class="d-flex justify-content-center mb-3">
-      <%#= link_to stories_path, class: "btn-dark-grey", style: "margin-top: 10px;" do %>
-        <!-- <h3>follow</h3> -->
-      <%# end %>
-
-     <% unless current_user == u %>
-      <%= link_to 'follow', followings_path(followable_id: u.id), class: "btn-dark-grey", method: :post%>
+    <% unless current_user == u %>
+      <%= link_to 'follow', followings_path(followable_id: u.id), class: "btn-dark-grey mt-3", method: :post%>
      <% end %>
 
-     <% unless controller.controller_name == "stories" && controller.action_name == "show"%>
-        <h1>My followers</h1>
-        <%= @my_users_followers.count%>
-
-        <h1>My followings</h1>
-        <%= @my_users_followings.count%>
-        </div>
+    <div class="d-flex justify-content-center mt-2">
+      <%#= link_to stories_path, class: "btn-dark-grey", style: "margin-top: 10px;" do %>
+          <!-- <h3>follow</h3> -->
+        <%# end %>
+      <% unless controller.controller_name == "stories" && controller.action_name == "show"%>
+          <%= link_to 'FOLLOWERS', bookmarks_path, class: "special-btn mr-2" %>
+          <%#= @my_users_followers.count%>
       <% end %>
 
-      <%= link_to 'bookmarks', bookmarks_path, class: "btn-dark-grey"%>
+      <% unless controller.controller_name == "stories" && controller.action_name == "show"%>
+          <%= link_to 'FOLLOWING', bookmarks_path, class: "special-btn mr-2" %>
+          <%#= @my_users_followings.count%>
+      <% end %>
+
+      <%= link_to 'SAVED', bookmarks_path, class: "special-btn" %>
+    </div>
 </div>
