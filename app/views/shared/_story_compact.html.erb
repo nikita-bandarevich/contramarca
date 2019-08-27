@@ -1,0 +1,74 @@
+<!--
+<div class="mb-3">
+  <#% if s.images %>
+    <#% s.images.each do |image| %>
+      <#%= cl_image_tag image.data, width: "100%"  %>
+    <#% end %>
+  <#% end %>
+</div> -->
+
+
+<div class="mb-3 text-left">
+
+  <div class="d-flex justify-content-between mb-0">
+
+    <% if s.bookmarks.exists? %>
+      <%= link_to bookmark_path(story: params[:id] || s.id  ), method: :post do %>
+        <i class="fas fa-bookmark"></i>
+      <% end %>
+    <% else %>
+      <%= link_to bookmark_path(story: params[:id] || s.id  ), method: :post do %>
+        <i class="far fa-bookmark"></i>
+      <% end %>
+    <% end %>
+    <!-- Default dropleft button -->
+    <div class="btn-group dropleft">
+      <!-- <i class="fas fa-ellipsis-h dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i> -->
+      <button type="button" class="uri" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-ellipsis-h"></i>
+      </button>
+      <div class="dropdown-menu">
+        <%= link_to 'Edit', edit_story_path(s), class: "dropdown-item" if s.user == current_user %>
+        <%= link_to 'Delete', story_path(s), method: :delete, data: {confirm: "you sure mec?"}, class: "dropdown-item" if s.user == current_user %>
+      </div>
+    </div>
+
+    <%#= link_to '#' do %>
+      <!-- <i class="fas fa-ellipsis-h"></i> -->
+    <%# end %>
+  </div>
+
+
+  <% if s.images %>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <% s.images.each do |image| %>
+          <div class="carousel-item <%= image == s.images.first ? 'active' : '' %>" >
+            <%= cl_image_tag image.data, class: "d-block, w-100" %>
+          </div>
+        <% end %>
+  <!--     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+    </div>
+  <% end %>
+  <br>
+  <h1 class="mt-0 mb-4"><%= s.title %></h1>
+  <h4 class="small_text">By <%= link_to "#{s.user.username}", user_path(s.user)  %><h4>
+  <h4 class="small_text mb-4"><%= s.created_at.strftime("%B %e, %Y") %></h4>
+   <p class="mb-0">
+    <% unless s.content.nil? %>
+    <div class="text-trix"><%= s.content.truncate(300).html_safe %></div>
+    <% end %>
+  </p>
+    <%= link_to story_path(s), class: "btn-dark-grey", style: "margin-top: 10px;" do %>
+    <h3 style="color: #7A7A7A;">READ MORE</h3>
+  <% end %>
+
+</div>
+

@@ -1,0 +1,53 @@
+.container_white {
+  background-color: white;
+}
+
+trix-editor {
+  height: 45vh;
+}
+
+.trix-content {
+  border: none;
+  border-radius: 3px;
+  margin: 0;
+  padding: 0.4em 0.6em;
+  min-height: 5em;
+  outline: none;
+  font: adobe-caslon-pro;
+  &.text-trix {
+    color: black;
+    font-size: 30px;
+  }
+
+}
+
+.button_row {
+  display: none
+}
+
+.button_row > span {
+  border: none;
+}
+
+.button_row > span > button {
+  border: none;
+}
+
+.button_row > span > button:not(:first-child) {
+  border: none;
+}
+
+.form-control {
+  background-color: white;
+  border: none
+
+}
+
+label {
+  display: none;
+}
+
+#story_title {
+  font-size: 42px;
+  color: black;
+}

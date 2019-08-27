@@ -1,11 +1,38 @@
+<div class="container">
 
+  <div class="length">
+    <h1 class="home">independent stories for cautious readers</h1>
+    <br><br>
+    <div class="d-flex justify-content-between">
+      <!-- <div class="footer-links"> -->
+        <!-- <a href="#"><i class="fab fa-github"></i></a> -->
+ <!--        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a> -->
+      <!-- </div> -->
 
-  <% @stories.each do |story| %>
-  <h1>user id</h1>
-  <%= story.user_id %>
-  <h1>title</h1>
-  <%= story.title %>
-  <%= link_to 'Show', story %>
+      <div class="d-flex">
+        <%= link_to 'Reader', new_user_session_path, class: "btn-gold" %>
+
+        <%= link_to 'Author', new_user_session_path, class: "btn-light-grey" %>
+
+        </div>
+    </div>
+  </div>
+
+  <% if !user_signed_in? %>
+    <% @stories.each do |s| %>
+      <%= render 'shared/story_compact', s: s %>
+      <br>
+    <% end %>
+  <% else %>
+    <% current_user.followed_stories.each do |s| %>
+      <%= render 'shared/story_compact', s: s %>
+      <br>
+    <% end %>
   <% end %>
 
 
+
+</div>

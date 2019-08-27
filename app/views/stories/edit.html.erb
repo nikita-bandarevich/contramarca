@@ -1,14 +1,23 @@
-<h1>Stories#edit</h1>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-6">
+      <br>
+      <br>
+      <br>
+      <%= simple_form_for(@story) do |f| %>
+        <%= f.error_notification %>
+        <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-<%= simple_form_for(@story) do |f| %>
-  <%= f.error_notification %>
-  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+        <div class="form-inputs mb-5">
+          <%= f.input :title, placeholder:@story.id%>
+        </div>
+        <input id="x" type="hidden" name="story[content]" value="<%= @story.content %>">
+            <trix-editor class="trix-content text-trix" input="x" ></trix-editor>
 
-  <div class="form-inputs">
-    <%= f.input :title %>
+        <div class="form-actions">
+          <h4><%= f.button :submit, class:"btn-dark-grey" %></h4>
+        </div>
+      <% end %>
+    </div>
   </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
+</div>

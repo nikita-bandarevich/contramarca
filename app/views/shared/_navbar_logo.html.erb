@@ -1,0 +1,31 @@
+<div class="navbar navbar-expand navbar-light" style=" margin-bottom: 30px; ">
+
+  <div class="searchicon">
+
+    <% if current_user.nil? %>
+      <%= link_to new_user_session_path do %>
+           <i style="font-size: 13px; padding-left: 10px;" class="fas fa-bars"></i>
+      <% end %>
+    <% else %>
+      <%= link_to user_path(current_user) do %>
+           <i style="font-size: 13px; padding-left: 10px;" class="fas fa-bars"></i>
+      <% end %>
+
+    <% end %>
+  </div>
+    <div class=logo>
+      <h5 style="font-size: 33px; font-weight: 600; padding-top: 10px;">contramarca</h5>
+    </div>
+
+  <div class="searchicon">
+    <%= link_to stories_search_path do  %>
+      <i style="font-size: 13px; padding-right: 30px;" class="fas fa-search"></i>
+    <% end %>
+  </div>
+
+</div>
+
+
+
+
+

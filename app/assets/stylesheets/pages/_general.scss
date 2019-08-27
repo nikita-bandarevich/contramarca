@@ -1,0 +1,131 @@
+body {
+  background: #2a2a2a;
+}
+
+.text-trix {
+    font-size: 17px;
+    color: #dadada;
+    line-height: 150%;
+    font-weight: 300;
+}
+
+a {
+  color: $main-gold-color
+}
+
+a:hover {
+  color: $hover-gold-color;
+  text-decoration: none;
+}
+
+p {
+  color: #dadada;
+  font-size: 17px;
+  line-height: 150%;
+  // text-align: justify;
+}
+
+.small_text {
+  color: #dadada;
+  font-size: 15px;
+  line-height: 100%;
+}
+
+h1 {
+  color: #bcbcbc;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 115%;
+}
+
+h3 {
+  color: #bcbcbc;
+  line-height: 130%;
+  font-size: 17px;
+  font-variant: small-caps;
+}
+
+h4 {
+  font-family: $body-font;
+  font-size: 15px;
+  color: #bcbcbc;
+}
+
+h5 {
+  color: $main-gold-color;
+  font-style: normal;
+  font-weight: semibold;
+  font-size: 25px;
+  line-height: 0%;
+
+}
+
+.p1 {
+  color: #2a2a2a;
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 10;
+
+}
+
+// .p1:hover {
+//   font-size: 4vw;
+//   font-weight: 600;
+//   font-weight: 600;
+//   letter-spacing: -0.035em;
+//   cursor: cell;
+// }
+
+.p12 {
+  color: #2a2a2a;
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 10;
+  text-decoration: line-through;
+}
+
+
+
+.button-box {
+  display: flex;
+  justify-content: space-between;
+
+}
+.middle-box {
+  min-width: 15px;
+}
+
+.h5s {
+  color: white;
+  font-family: Adobe Caslon Pro;
+  font-style: normal;
+  font-weight: semibold;
+  font-size: 25px;
+  line-height: 0%;
+  text-align: center;
+
+}
+
+
+.length {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 85vh;
+}
+
+.home {
+  font-size: 7vw;
+  font-weight: 600;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  color: $main-gold-color;
+}
+
+.special-btn {
+  font-family: Source Sans Pro;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 105.2%;
+  color: #5A5A5A;
+}

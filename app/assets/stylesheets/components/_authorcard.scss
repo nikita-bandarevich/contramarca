@@ -1,0 +1,35 @@
+.authorcard {
+  text-align: center;
+  // position: absolute;
+
+  line-height: 130%;
+  margin: auto;
+  background-size: 50px;
+}
+
+.authorcard h1 {
+  color: $main-gold-color ;
+  font-size: 25px;
+}
+
+.authorcard .bio {
+
+  font-size: 15px;
+  line-height: 122%;
+  /* or 18px */
+  text-align: center;
+
+}
+
+.authorcard p {
+   color: $header-color;
+   font-size: 15px;
+   // text-align: justify;
+}
+
+.slot {
+  background-color: #1a1a1a;
+  padding: 35px 15px 5px 15px;
+  margin: 15px 0;
+  width: 100%;
+}

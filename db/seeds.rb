@@ -1,4 +1,4 @@
-# This file should contain all the record creation needed to seed the database with its default values.
+88# This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
 # Examples:
@@ -15,26 +15,32 @@ Matthis = User.create!(
   last_name: "Parisot",
   author: "false",
   email: "matthisParisot@mail.com",
-  password: "password"
+  password: "password",
+  username: "matthisParisot",
+  bio: "Co-Founder of Contramarca"
   )
 
 lorenGrush = User.create!(
-  first_name: "Loreb",
+  first_name: "Loren",
   last_name: "Grush",
   author: "true",
   email: "loren@mail.com",
   password: "password",
-  username: "lorenGrush"
+  username: "lorenGrush",
+  bio: "Science Journalist who is the daughter of two NASA engineers"
+
 
   )
 
   carlesIbanez = User.create!(
   first_name: "Carles",
-  last_name: "Ibañex",
+  last_name: "Ibanez",
   author: "true",
   email: "carlesIbanez@mail.com",
   password: "password",
-  username: "carlesIbanez"
+
+  username: "carlesIbanez",
+  bio: "militar y político chileno, presidente de la República en dos ocasiones: en los periodos 1927-1931 y 1952-1958."
   )
 
   josePons = User.create!(
@@ -43,7 +49,9 @@ lorenGrush = User.create!(
   author: "true",
   email: "josePons@mail.com",
   password: "password",
-  username: "josePons"
+  username: "josePons",
+  bio: "I don't know who he is."
+
   )
 
   meredithWadman = User.create!(
@@ -52,7 +60,9 @@ lorenGrush = User.create!(
   author: "true",
   email: "meredithWadman@mail.com",
   password: "password",
-  username: "meredithWadman"
+  username: "meredithWadman",
+  bio: "reporter at Science magazine in Washington, D.C.  Her gripping book, The Vaccine Race: Science, Politics and the Human Costs of Defeating Disease, tells the tale of WI-38, a fascinating cell line with a colorful and controversial history and a huge public health impact."
+
   )
 
   danielClery = User.create!(
@@ -61,7 +71,9 @@ lorenGrush = User.create!(
   author: "true",
   email: "danielClery@mail.com",
   password: "password",
-  username: "danielClery"
+  username: "danielClery",
+  bio: " Canadian former professional ice hockey player who played in the National Hockey League (NHL) for the Chicago Blackhawks, Edmonton Oilers, Phoenix Coyotes and Detroit Red Wings. He currently serves as the Director of Player Development for Detroit."
+
   )
 
 elizabethPennisi = User.create!(
@@ -70,7 +82,9 @@ elizabethPennisi = User.create!(
   author: "true",
   email: "elizabethPennisi@mail.com",
   password: "password",
-  username: "elizabethPennisi"
+  username: "elizabethPennisi",
+  bio: "writes about biology, focusing primarily on genomics, evolution, microbiology, and organismal biology, with a smattering of ecology and behavior thrown in."
+
   )
 
 kellyMayes = User.create!(
@@ -79,9 +93,10 @@ kellyMayes = User.create!(
   author: "true",
   email: "kellyMayes@mail.com",
   password: "password",
-  username: "kellyMayes"
+  username: "kellyMayes",
+  bio: "Diverse Voices in Science Journalism intern for the News section of Science in Washington, D.C."
   )
-Story.create!(
+lorenGrush_1 = Story.create!(
   title: "Moon delivery startup Astrobotic picks future Vulcan rocket to launch first lunar mission",
   #category: "Science" "Space",
   content: "US aerospace startup Astrobotic — a company that wants to establish a delivery service to the Moon — says it will fly its very first lunar mission on top of the United Launch Alliance’s future rocket, named Vulcan. In fact, Astrobotic’s spacecraft, a lunar lander named Peregrine, will be Vulcan’s very first payload ever, scheduled for launch sometime in 2021. If everything stays on track, the mission could send the first private vehicle to the surface of the Moon.
@@ -93,7 +108,9 @@ NASA recently tasked Astrobotic and two other companies with sending robotic lan
   user: lorenGrush
 )
 
-Story.create!(
+
+carlesIbanez_1 = Story.create!(
+
   title: "Environmental controls on carbon sequestration, sediment accretion, and elevation change in the Ebro River Delta: Implications for wetland restoration",
   #category: "Science" "Ecology",
   content: "Delta wetlands are increasingly recognized as important sinks for ‘blue carbon,’ although this and other ecosystem services that deltas provide are threatened by human activities. We investigated factors that affect sediment accretion using short term (3 years using marker horizons) and longer-term measures (∼50 year using ¹³⁷ Cs soil core distribution and ∼100 year using ²¹⁰ Pb distribution), the associated carbon accumulation rates, and resulting changes in surface elevation in the Ebro River Delta, Catalonia, Spain. Fifteen sites were selected, representing the geomorphological settings and range of salinities typical of the delta's wetlands. Sediment accretion rates as measured by ¹³⁷ Cs distribution in soil cores ranged from 0.13 to 0.93 cm yr ⁻¹ . Surface elevations increased at all sites, from 0.10 to 2.13 cm yr ⁻¹ with the greatest increases in natural impoundments with little connection to other surface waters. Carbon accumulation rates were highly spatially variable, ranging from 32 to 435 g C m ⁻¹ yr ⁻¹ with significantly higher rates at bay sites (p = 0.02) where hydrologic connectivity is high and sediment resuspension more intense. Sites with high connectivity had significantly higher rates of carbon accumulation (averaging 376 ± 50 g C m ⁻¹ yr ⁻¹ ) compared to sites with moderate or low connectivity. We also found high rates of carbon accumulation in brackish sites where connectivity was low and biomass production was characteristically higher than in saline sites. A stepwise regression model explained 81% of variability in carbon accumulation rates across all sites. Our data indicate deltaic wetlands can be important sinks for blue carbon, contributing to climate change mitigation.",
@@ -101,7 +118,7 @@ Story.create!(
   user: carlesIbanez
 )
 
-Story.create!(
+josePons_1 = Story.create!(
   title: "Witnessing a wearables transition",
   #category: "Science" "Ecology",
   content: "Wearable robots, such as exoskeletons and soft exosuits, can augment normal function or serve as prostheses for missing limbs. In both cases, they extend, complement, substitute, or enhance human functions and capability and can empower or replace human limbs. Cognitive and physical interactions between human and robot are key for these robots to seamlessly deliver assistance when required. The physical interaction between a robot and its wearer generates forces to overcome the wearer's physical limits, and cognitive interactions allow the wearer to guide and control the robot at all times. On page 668 of this issue, Kim et al. (1) report on a soft exosuit that switches assistance profiles for different physical interaction strategies—in this case, walking versus running—through a versatile cognitive interaction in which algorithms accurately determine and detect the wearer's gait.
@@ -115,7 +132,7 @@ In spite of these altered neuromechanics, the effect of wearing a wearable robot
   user: josePons
 )
 
-Story.create!(
+danielClery_1 = Story.create!(
   title: "This rocky ‘super-Earth’ may be a hard place for life to get a foothold",
   #category: "Science" "Space",
   content: "When scientists go looking for life on distant exoplanets, they generally focus on rocky worlds the size of Earth. But most of these so-called super-Earths orbit, not yellow dwarfs like our sun, but red dwarfs—which are less than 60% the sun’s size. Now, astronomers report that such exoplanets might not be the best places for harboring life for one key reason: They seem to lack habitable atmospheres.
@@ -126,13 +143,14 @@ Assessing whether such planets have atmospheres is difficult because they are li
 
 The team measured the brightness of the star-planet system as LHS 3844b moved around its orbit. From that, they could calculate the brightness of the planet—and hence its temperature. If LHS 3844b had an atmosphere, weather systems would transport heat around the planet and even out the distribution of temperature. But the team found that the planet is blisteringly hot directly under the noonday sun and close to absolute zero at midnight, suggesting little or no atmosphere spreading the heat, they report in Nature today.
 
-This is just a single planet, but the results suggest finding a hospitable planet around a red dwarf may not be as easy as astronomers had hoped.
-",
+
+This is just a single planet, but the results suggest finding a hospitable planet around a red dwarf may not be as easy as astronomers had hoped.",
+
   status: true,
   user: danielClery
 )
 
-Story.create!(
+meredithWadman_1 = Story.create!(
   title: "T‘The system is swamped.’ Canada can’t keep up with requests to study cannabis",
   #category: "Science" "Medicine",
   content: "The Canadian government is scrambling to respond to a glut of license applications for cannabis research prompted by the drug’s legalization in October 2018. The queue of applicants—there were 251 in line as of late July—and the attendant monthslong waiting times are frustrating scientists interested in the basic biology and therapeutic possibilities of cannabis. The delays are also prompting criticism of Health Canada, the agency charged with issuing the permits.
@@ -159,7 +177,7 @@ Some scientists counter that Health Canada is performing well, given the demands
   user: meredithWadman
   )
 
-Story.create!(
+elizabethPennisi_1 = Story.create!(
   title: "This rock-eating ‘worm’ could change the course of rivers",
   #category: "Science" "Nature",
   content: "Shipworms have long been a menace to humankind, sinking ships, undermining piers, and even eating their way through Dutch dikes in the mid-1700s. Now, researchers have found the first shipworm that eschews wood for a very different diet: rock. The new shipworm—a thick, white, wormlike creature that can grow to be more than a meter long—lives in freshwater. Researchers first spotted the species (Lithoredo abatanica) in 2006 in thumb-size burrows in the limestone banks of the Abatan River in the Philippines. But it wasn’t until 2018 that scientists were able to study the organism in detail.
@@ -174,7 +192,7 @@ The rock-eating shipworm does have one big thing in common with its wood-eating 
   user: elizabethPennisi
 )
 
-Story.create!(
+carlesIbanez_3 = Story.create!(
   title: "Changing nutrients, changing rivers",
   #category: "Science" "Nature",
   content: "Eutrophication—the excessive enrichment of a body of water with nutrients such as nitrogen (N) and phosphorus (P)—is Earth's most widespread problem for water quality (1, 2). Growing evidence suggests a global trend toward reversing eutrophication. However, in rivers and estuaries of developed countries and in lakes of emerging economies, the ongoing reduction in nutrient inputs—termed reoligotrophication—is much larger for P than for N (3, 4). Although the rapid emergence of this phenomenon has hindered detailed monitoring of the ecological effects, a few studies have documented an abrupt shift from green to clear waters and consequently from phytoplankton to macrophytes as dominant primary producers in response to reoligotrophication in rivers and estuaries (5–7). However, the improvement in water quality due to P decline does not imply a return to pristine ecological conditions, because high N:P ratios trigger undesirable changes in the ecosystem (8).
@@ -197,7 +215,7 @@ The ecological effects of P decline and N/P imbalances on the structure and func
   user: carlesIbanez
 )
 
-Story.create!(
+kellyMayes_1 = Story.create!(
   title: "Tropical storms are making these spiders more aggressive",
   #category: "Science" "Nature",
   content: "After Tropical Storm Florence inundated North and South Carolina in September 2018, Jonathan Pruitt drove up and down the East Coast of the United States, scouring for telltale signs of damage. But he wasn’t looking for destroyed homes; he was looking for spider nests—and the spiders that had survived the storm. What the behavioral ecologist and his colleagues at the University of California (UC), Santa Barbara, found was provocative: Aggressive spiders survived the storm—and others like it—better than their docile counterparts, leading to bolder future colonies.
@@ -217,9 +235,296 @@ The researchers don’t yet know why aggressive colonies outperform docile colon
 
 The study, Taylor says, “really documents the effect that these rare events are having on populations.” She hopes the work—though not easy—can inspire similar studies among other animals.
 ",
-
   status: true,
   user: kellyMayes
+)
 
+
+Image.create!(
+  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/spider_1280p.jpg?itok=Pa7J0OrK",
+  story: kellyMayes_1
+)
+
+Image.create!(
+  remote_data_url: "http://goosefflab.weebly.com/uploads/3/7/9/2/37926219/3851818.jpg?400",
+  story: carlesIbanez_3
+)
+
+Image.create!(
+  remote_data_url:
+   "https://schmidtocean.org/wp-content/uploads/FK160602-NetDeployment_15062016_Naranjo-1-1140x760.jpg",
+  story: carlesIbanez_3
+  )
+
+Image.create!(
+  remote_data_url: "https://truemedian.com/wp-content/uploads/2019/06/57853/this-rock-eating-worm-could-change-the-course-of-rivers-science-magazine-696x392.jpg",
+story: elizabethPennisi_1 )
+
+Image.create!(
+  remote_data_url:
+ "https://www.daily-sun.com/assets/news_images/2019/06/29/Ship_worms-ds.jpg",
+ story: elizabethPennisi_1
+  )
+
+Image.create!(
+  remote_data_url:"https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/LHS_3884b_700p.jpg?itok=5xY3fYNg",
+  story: danielClery_1
+  )
+
+Image.create!(
+  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/ca_0823Cannabis_Research_online.jpg?itok=E6cCoSmZ",
+  story: meredithWadman_1
+  )
+
+Image.create!(
+  remote_data_url: "https://spacenews.com/wp-content/uploads/2018/11/lm-mccandless.jpg",
+  story: lorenGrush_1
+  )
+
+Image.create!(
+  remote_data_url:"https://cdn.mos.cms.futurecdn.net/SpzGH5xKg2Pev8jFzww3Fo-650-80.jpg",
+  story: lorenGrush_1
+  )
+
+Image.create!(
+  remote_data_url: "http://www.irta.cat/wp-content/uploads/2018/05/jornada_life_admiclim-636x500.jpg",
+story: carlesIbanez_1
+  )
+
+Image.create!(
+  remote_data_url: "http://www.irta.cat/wp-content/uploads/2018/01/Delta_Ebre-2.jpg",
+  story: carlesIbanez_1
+  )
+
+lorenGrush_2 = Story.create!(
+  title: "India’s lunar mission enters the Moon’s orbit ahead of landing attempt",
+  #category: "Science" "Space",
+  content: "India’s mission to the Moon, known as Chandrayaan-2, successfully entered lunar orbit on August 20th, ahead of the country’s first attempt to land a vehicle on the lunar surface. The maneuver was a critical move for the mission that could enable India to become the fourth country to put a spacecraft intact on the Moon.
+
+The Chandrayaan-2 mission began with its launch on July 22nd on top of an Indian GSLV MK-III rocket. The payload consists of three spacecraft: a vehicle designed to orbit around the Moon, a lander called Vikram, and a rover called Pragyan. While the orbiter will stay in space, the lander is meant to carry the rover down to the lunar surface for an up-close look at the Moon.
+
+ONLY THE UNITED STATES, RUSSIA, AND CHINA HAVE EVER LANDED VEHICLES ON THE MOON
+Up until now, only the United States, Russia, and China have ever landed vehicles on the Moon, so Chandrayaan-2 could put India in a very elite group of space-faring nations. The mission is also enticing because of where Vikram is heading: the Moon’s south pole. This relatively unexplored part of the Moon is particularly tantalizing to scientists, as there is evidence that this region may harbor a significant amount of water ice. Experts have discussed in depth what could be done with this ice, such as using it to sustain a lunar base or breaking apart the water to make rocket fuel. By landing in the south pole, the Chandrayaan-2 spacecraft are tasked with getting a better idea of just how much ice is up there and if it can be mined at all.
+
+The Vikram lander is slated to land on the Moon’s south pole on September 7th. Until then, the lander, rover, and orbiter are all bundled together in orbit around the Moon. Over the next days and weeks, the spacecraft will slowly lower their altitude over the lunar surface by firing onboard thrusters. Once the vehicles are in the right position over the Moon’s poles, the lander and orbiter will separate, with Vikram making its historic descent to the surface.
+
+The Chandrayaan-2 landing will mark the third attempt to place a vehicle on the lunar surface this year. In January, China successfully landed a spacecraft on the far side of the Moon, and in April, an Israeli nonprofit attempted to touch down the first privately funded lander on the lunar surface. However, a glitch caused the private vehicle’s engine to cut out early, and the spacecraft slammed into the Moon instead. In a few weeks, we’ll find out which fate awaits India’s lander — either a smooth landing or a high-speed one.",
+  status: true,
+  user: lorenGrush
+)
+
+Image.create!(
+  remote_data_url: "https://cdn.vox-cdn.com/thumbor/r_eT7ab1iRkLwVhh69fpoRKlGec=/0x0:8256x5504/920x613/filters:focal(3468x2092:4788x3412):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65050303/03pragyanrovermountedontherampprojectingfromoutofthesidesofvikramlander__1_.0.jpg",
+  story: lorenGrush_2
+  )
+
+lorenGrush_3 = Story.create!(
+  title: "Sierra Nevada picks the future Vulcan rocket to fly its mini-spaceplane to orbit",
+  #category: "Science" "Space",
+  content: "Private space company Sierra Nevada Corporation announced today that its mini-spaceplane, the Dream Chaser, will launch into orbit on top of the United Launch Alliance’s future Vulcan Centaur rocket. The Dream Chaser has yet to see space, but once it’s operational, it will help ferry cargo and science experiments to the astronauts on board the International Space Station between 2021 and 2024.
+
+The Sierra Nevada Corporation (SNC) is one of three companies tasked by NASA to periodically launch to the ISS to make sure the station is fully stocked with supplies. The cargo missions are all part of NASA’s Commercial Resupply Services Program, one of a few initiatives at the space agency that’s meant to offload space transportation to the private aerospace industry. The other two companies in the program, SpaceX and Northrop Grumman, have already been launching cargo to the station since 2012, thanks to an initial round of contracts. But NASA awarded a second round of contracts in 2016, adding SNC to the supplier pool.
+
+In development since 2004, the Dream Chaser looks a lot like a miniature Space Shuttle. The plan is for the spaceplane to fly into orbit vertically on top of a rocket and then meet up with the ISS. The astronauts on board the station will then use the robotic arm to grab hold of the spaceplane and place it on an available docking port. Once all of the cargo it’s carrying has been offloaded and the mission is complete, the Dream Chaser will separate from the ISS and then reenter the Earth’s atmosphere. Unlike other space capsules that use parachutes to land, the Dream Chaser will land akin to an airplane, gliding down horizontally onto a runway.
+
+“It truly provides a very unique capability, different than anything else available in the world today and in the foreseeable future,” SNC CEO Fatih Ozmen said during a press conference announcing the selection of Vulcan.
+Originally, the company envisioned launching the Dream Chaser on ULA’s Atlas V to carry astronauts to and from the ISS for NASA, and the team even received initial development funding from the space agency to work on a crewed vehicle. But NASA ultimately awarded contracts to SpaceX and Boeing to send humans to the space station. So SNC decided to rework the Dream Chaser to just carry cargo, and the company is now tasked with launching a total of 12,000 pounds of cargo on a minimum of six supply missions for NASA. The company maintains there is still the possibility of flying people on Dream Chaser in the future.
+
+In fact, SNC maintains that the cargo Dream Chaser could carry people if absolutely necessary since it has some life support and temperature control systems. “You could actually, in an emergency even today, bring people down If you had to,” John Curry, the program director for Dream Chaser’s cargo missions, said at the press conference. “I’m not saying that NASA has asked us to do that. I’m just saying that the capability is there. So the bridge to a crewed vehicle is not that far.”
+
+SNC has other plans for its Dream Chaser, including launching international payloads to space for the United Nations as early as 2021. But there’s still quite a lot of work to be done before Dream Chaser is shooting upward on a Vulcan rocket. For one thing, the Vulcan has to start flying first. ULA has already started bending metal for the rocket, which is derived from the company’s already operational Atlas V rocket. But the first flight isn’t supposed to take place until 2021. The Dream Chaser will fly on the second flight of the Vulcan.
+
+“I have been a fan and a supporter and a cheerleader of this amazing vehicle from the first moment I saw it,” ULA CEO Tory Bruno said during today’s press conference. “And so to be able to make Vulcan’s sort of commercial debut with this block of missions underneath a Dream Chaser is just truly exciting.”
+
+In the meantime, SNC has been doing tests on the Dream Chaser, and it performed the vehicle’s second free flight in 2017, demonstrating that the spaceplane can land successfully from a super high altitude. The flight was much more successful than the first test in 2013 when the vehicle’s landing gear failed and caused the spaceplane to skid off the runway on touchdown. More tests are scheduled for the years ahead as SNC gets ready for the Dream Chaser’s first launch.",
+  status: true,
+  user: lorenGrush
+)
+
+Image.create!(
+  remote_data_url: "https://https://cdn.vox-cdn.com/thumbor/j3qvs7AYKm4s9LSG5KqlXvcWrEc=/0x0:2000x1143/920x613/filters:focal(840x412:1160x732):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65018575/Dream_Chaser_in_flight1.5.jpg",
+  story: lorenGrush_3
+  )
+
+lorenGrush_4 = Story.create!(
+  title: "The Perseid meteor shower peaks tonight, but the Moon is going to spoil the fun",
+  #category: "Science" "Space",
+  content: "US aerospace startup Astrobotic — a company that wants to establish a delivery service to the Moon — says it will fly its very first lunar mission on top of the United Launch Alliance’s future rocket, named Vulcan. In fact, Astrobotic’s spacecraft, a lunar lander named Peregrine, will be Vulcan’s very first payload ever, scheduled for launch sometime in 2021. If everything stays on track, the mission could send the first private vehicle to the surface of the Moon.
+
+Astrobotic is one of many companies with its sights set on the lunar surface. The company, based out of Pittsburgh, says its goal is to build vehicles that can ferry instruments and payloads to the Moon for research organizations, space agencies, companies, and more. “Our goal is to make the Moon accessible to the world,” John Thornton, CEO of Astrobotic, told The Verge in 2017. “It’s making it possible for every space agency and every corporation and even individuals to send payloads to the lunar surface.” Its inaugural vehicle, Peregrine, stands at around six feet tall and is capable of carrying nearly 200 pounds of cargo to the lunar surface.
+
+NASA recently tasked Astrobotic and two other companies with sending robotic landers to the lunar surface within the next couple of years as part of the agency’s Commercial Lunar Payload Services, or CLPS, program. The missions are meant to be the first in a series of NASA-sponsored lunar trips, leading up to the eventual return of humans to the Moon. Astrobotic received an award of $79.5 million as part of the deal, and the company hopes to fly up to 14 NASA payloads on the first flight of its Peregrine lander. Astrobotic says it has also signed up 16 other customers for the ride, who will provide additional payloads.",
+  status: true,
+  user: lorenGrush
+)
+
+Image.create!(
+  remote_data_url: "https://cdn.vox-cdn.com/thumbor/hVKMcXpiAxRULaSqEp_nyOtsPXI=/0x0:3000x1829/920x613/filters:focal(1260x675:1740x1155):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65003115/1165793744.jpg.0.jpg",
+  story: lorenGrush_4
+  )
+
+
+lorenGrush_5 = Story.create!(
+  title: "Watch as ULA launches the final flight of its Delta IV Medium rocket",
+  #category: "Science" "Space",
+  content: "This morning, August 22nd, the United Launch Alliance is set to fly the very last mission of its Delta IV Medium rocket, a single-core vehicle that’s been launching to space since 2002. This final flight will be the 29th mission of the Delta IV Medium. The vehicle is now being retired as ULA works to consolidate its technology and develop a new generation of rockets.
+
+The Delta IV is the last remaining descendant of the Delta family of rockets, a long line of vehicles that date back to the birth of the modern space era. The original Deltas, built by the Douglas Aircraft Company (now part of Boeing), were derived from an old Air Force ballistic missile called Thor. The first successful Delta launch occurred in 1960, lofting a communications satellite into orbit for NASA. Since then, the vehicles have been modified and updated dozens of times, resulting in the Delta IV that’s flying today.
+
+ULA, a joint partnership between Boeing and Lockheed Martin, has been flying two primary versions of the rocket for the last two decades: the Delta IV Heavy, the company’s most powerful vehicle, which consists of three rocket cores strapped together, and the Delta IV Medium, which is defined by a single core vehicle. While it relies on a single core, the Medium does boast numerous configurations that include smaller strap-on boosters for an extra push. In fact, this final mission will include two of these boosters on either side of the rocket.
+The Delta IV Medium has had a flawless track record, and it has been tasked with launching numerous national security payloads for the military as well as critical satellites for the National Oceanic and Atmospheric Administration. So it’s only fitting that the rocket’s last mission is to launch a satellite for the US Air Force called GPS III Magellan. The satellite will join the first GPS III satellite already in space, launched on a SpaceX Falcon 9 rocket in December. These new GPS satellites are aimed at modernizing the entire GPS constellation and improving its location accuracy here on Earth.
+
+After this flight, the Delta IV Medium will hang up its hat as ULA focuses on readying its next rocket, the Vulcan Centaur. The new vehicle is meant to build on the capabilities of both the Delta IV and ULA’s premier rocket, the Atlas V. Vulcan already has a few payloads lined up to launch, but it’s not slated to fly until 2021 at the earliest. So in the meantime, ULA will continue to fly the Atlas V and the larger Delta IV Heavy to maintain access to space.
+
+The Delta IV Medium’s final flight is scheduled for takeoff sometime within a 27-minute launch window, between 9AM ET and 9:27AM ET on August 22nd. The vehicle will be flying out of ULA’s launchpad at Cape Canaveral Air Force Station in Florida. Live coverage should begin around 8:30AM ET, so check back then to see this rocket take to the skies one last time.",
+  status: true,
+  user: lorenGrush
+)
+
+Image.create!(
+  remote_data_url: "https://cdn.vox-cdn.com/thumbor/nCVajgYGbcsTdRoJbUVyscD-O20=/0x0:3840x2560/920x613/filters:focal(1613x973:2227x1587):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65052238/48478269312_58dd3dc446_o.0.jpg",
+  story: lorenGrush_5
+  )
+
+kellyMayes_2 = Story.create!(
+  title: "Vanishing Arctic ice will open the way for more science voyages, analysis suggests",
+  #category: "Science" "Space",
+  content: "Early this month, the U.S. Coast Guard icebreaker Healy embarked on a journey through the Arctic seas off of the coast of Alaska, helping researchers conduct studies of Arctic algae blooms, atmospheric chemistry, birds, and marine mammals. And more research vessels could soon be plying the same frigid sea lanes, according to a new report. It suggests that science voyages into the Arctic will become more common—along with other types of shipping—as sea ice in the region decreases because of climate change, and nations such as China launch new ice-capable ships.
+
+But obtaining funding and ship time to conduct studies of one of Earth’s fastest-changing regions could still be a challenge, researchers say.
+
+The draft study, prepared by the Committee on the Maritime Transportation Systems (CMTS) in Washington, D.C., examines possible scenarios for maritime activity, out to 2030, in the Arctic waters controlled by the United States. It concludes that vessel activity in U.S. Arctic waters increased by 128% between 2008 and 2018, rising from just 120 vessels in 2008 to a peak of 300 vessels in 2015. (There has been a decline in vessel traffic in more recent years because Royal Dutch Shell, an oil and gas company headquartered in the Netherlands, pulled out of efforts to drill in the area.)”
+Cargo ships accounted for the most traffic, making 31% of total trips from 2015 to 2017. Tow and tug boats accounted for about one-fifth of traffic over the same period. Trips by research vessels have been gradually rising since 2008, the report concludes and accounted for 4.8% of total traffic from 2015 to 2017.
+
+The report examines four scenarios for vessel activity growth through 2030. The “most plausible” scenario, the authors say, is that vessel activity in the region will rise at an annual rate of 2.3%, with 377 ships sailing into U.S. Arctic waters by 2030.
+
+One trend that will boost ship traffic, the report says, is the expansion of the summer shipping season, when sea ice is at its lowest extent. That season, which the report defines as the period when more than 10 vessels are in Arctic waters, has been lengthening by about 10 days per year in recent years. It lasted 180 days in 2018, up from 159 days in 2016.
+
+Arctic shipping could also get a boost from new additions to the world’s fleet of ships capable of handling icy Arctic seas. The U.S. Coast Guard now maintains two icebreakers, the aging Polar Star, which mostly operates in the Antarctic, and the Healy, which mostly operates in the Arctic. But the Coast Guard is now seeking funding to add as many as six “polar security cutters” in coming years, with the design and construction of one already underway.
+
+Other nations, meanwhile, are also expanding polar fleets. China launched one icebreaker, the Xue Long 2, last year, and Russia has said it wants to launch three new nuclear-powered icebreakers in the early 2020s.
+
+The expected opening of the Arctic to greater ship traffic is also turning the heads of scientists, who are increasingly interested in the region’s role in global marine and atmospheric systems. “The more research we get up there, the more we’ll understand and the more rapidly we’ll understand,” says Larry Mayer, a marine geophysicist at the University of New Hampshire in Durham. At the same time, he says, it’s ironic that planetary warming is clearing the path for new seaborne expeditions. “The ultimate disadvantage is the circumstances, that have created [a] situation which I don’t think is healthy for the earth or healthy for the Arctic.”
+
+“The overall picture is mixed,” says Julie Brigham-Grette, a geologist at the University of Massachusetts in Amherst. “We’re opening up an entire environment that has otherwise been cut off from human influence.”
+
+Doing science in the Arctic, however, is notoriously expensive. It costs about eight times more to do studies in the Arctic than at lower latitudes, according to an analysis published in Arctic Science in 2018. And Brigham-Grette notes that global funding for Arctic research is relatively limited. The field receives less than less than 3% of the funds spent on science by nations with an interest in the Arctic, according to an article published in Polar Research in 2018.
+
+CMTS expects to post its final report on Arctic shipping on its website in late September.",
+  status: true,
+  user: kellyMayes
+)
+
+Image.create!(
+  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/healy_1280p.jpg?itok=ufVOG7r_",
+  story: kellyMayes_2
+  )
+
+Image.create!(
+  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/Heracles4_%26_Kuiornis_V3_p1280.jpg?itok=EP3U70UZ",
+  story: kellyMayes_3
+  )
+
+kellyMayes_3 = Story.create!(
+  title: "This may be the largest parrot that ever lived",
+   #category: "Science" "Animals"
+  content: "Researchers have discovered the biggest parrot ever known—twice the size of its largest modern relative—along a river in southern New Zealand.
+
+The find is based on two fossilized legs of the bird. Neither is complete, but there was enough preserved to identify the bird as belonging to the Psittaciformes order, the group that encompasses all species of parrots, researchers report today in Biology Letters.
+
+The scientists estimate the animal (illustrated above) lived about 20 million years ago and weighed about 7 kilograms. That’s double the mass of the heaviest known parrot, the kakapo, and about the size of the extinct dodo. They have christened it Heracles inexpectatus—Heracles, after the Greek demigod, and inexpectatus because it was an unexpected find.
+",
+  status: true,
+  user: kellyMayes
+)
+
+Image.create!(
+  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/dragon_16x9_0.jpg?itok=6RdUSxat",
+  story: kellyMayes_4
+  )
+
+kellyMayes_4 = Story.create!(
+  title: "How Komodo dragons survive deadly bites from other Komodos",
+  #category: "Science" "Animals"
+  content: "Komodo dragons (Varanus komodoensis) have always been oddballs in the reptile world. Their unusual cardiovascular system and their uniquely powerful sense of smell help them hunt—and find mates—more easily than other lizard species. Now, scientists know why, thanks to the first-ever sequencing of the Komodo dragon’s genome.
+
+To understand why Komodo dragons are so unique, scientists spent 8 years gathering data and sequencing the genomes of four lizards from four zoos (including Slasher, above, from Zoo Atlanta). They then mapped the evolutionary history of Komodos by comparing their genomes with three birds, four mammals, and 15 reptiles in the Varanidae family, including the Chinese crocodile lizard and the Carolina anole.
+
+Nearly 201 genes stood out, including those that coded for some of the Komodo dragon’s most unusual traits, like their ability to use pheromones to target and ambush prey. Several genes seem to enhance their metabolism, allowing them to process carbohydrates faster for more energy during extended periods of hunting and fighting. The researchers also found genes coding for proteins used in haemostasis, a blood-clotting process that allows the lizards to survive bites from other Komodo dragons, whose saliva contains blood-thinning chemicals, researchers report today in Nature Ecology & Evolution.
+",
+  status: true,
+  user: kellyMayes
+)
+
+Image.create!(
+  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/SS2178957-1280x720.jpg?itok=mc11kQiX",
+  story: kellyMayes_5
+  )
+
+kellyMayes_5 = Story.create!(
+  title: "Cockroaches may soon be unstoppable—thanks to fast-evolving insecticide resistance",
+ #category: "Science" "Animals"
+  content: "The day that squeamish humans—and exterminators—have long feared may have come at last: Cockroaches are becoming invincible. Or at least German cockroaches (Blattella germanica) are, according to a new study. Researchers have found that these creatures, which have long been a prevalent urban pest, are becoming increasingly resistant to almost every kind of chemical insecticide.
+
+Not all insecticides are created equal. Some degrade the nervous system, whereas others attack the exoskeleton; they also have to be left out for varying amounts of time. But many insects, including cockroaches, have evolved resistance to at least one of the most commonly-used insecticides. And because cockroaches live only for about 100 days, that resistance can evolve quickly, with genes from the most resistant cockroaches being passed to the next generation.
+
+To test resistance in German cockroaches, researchers treated three different colonies in multiple apartment buildings in Indiana and Illinois over the course of 6 months. The populations were tested for their level of resistance to three different insecticides: abamectin, boric acid, and thiamethoxam. One treatment used all three pesticides, one after another, for 3 months before repeating the cycle. In another treatment, researchers used a mixture of insecticides over the full 6 months. A final treatment scenario used just one chemical that the selected roach population had a low resistance to for the entire time.
+",
+  status: true,
+  user: kellyMayes
+)
+
+Image.create!(
+  remote_data_url: "https://ocr.org/ocr/wp-content/uploads/snapping-shrimp.jpg",
+  story: kellyMayes_6
+  )
+
+kellyMayes_6 = Story.create!(
+  title: "Snapping Shrimp",
+  #category: "Science" "Animals",
+  content: "Probably the most ubiquitous sound in shallow temperate waters and thus the curse of all marine life sound recordists is the sound of the snapping or “pistol” shrimp (Cragnon Synalpheus, C. Alpheus). They produce an extremely loud pop (source level 220dB re 1 uPa or 80 kPa at 4 cm). This pop stuns their prey which they can then dismember and eat without further ado.
+
+They live in burrows and can be easily heard as a popcorn or crackling sound anywhere in the coastal ocean where you might submerge your head. Bioacoustician John Potter used this sound as an ‘acoustical illumination’ to resolve shapes underwater. Just as our eyes see light reflecting off of objects allowing us to see them, Dr. Potter speculated that the sound of the shrimp would reflect off of submerged objects allowing sea animals to “see” them in a form of “passive sonar.”
+
+If he is correct, it would explain how nocturnal animals might perceive their surroundings when there is little or no light available. If he is correct it would also indicate that there is something about fish hearing that we don’t have quite right yet, as most fish audiograms indicate that they can’t hear in frequency bands that would allow for this type of ‘acoustical illumination’ perception.
+",
+  status: true,
+  user: kellyMayes
+)
+
+
+
+kellyMayes_7 = Story.create!(
+  title: "Watch a tiny worm make one of the loudest sounds in the ocean",
+  #category: "Science" "Animals",
+  content: "In an ocean filled with whales, sharks, and giant schools of fish, one of the loudest sounds comes from a 29-millimeter-long marine worm, new research reveals.
+
+The worms (Leocratides kimuraorum) were first discovered in 2017. They spend their lives in the crevices of hexactinellid sponges, often called glass sponges, off the coast of Japan. But it wasn’t until researchers brought them to the lab that they noticed how noisy they were.
+
+When the creatures fight, they wriggle toward each other, contract their bodies, and launch themselves headfirst at their opponent, the team found. They also make a loud popping noise that sounds like a champagne cork, underwater microphones revealed. Researchers say the popping sounds emitted by the worms are almost as loud as those of snapping shrimp, which produce sounds so powerful they can break small glass jars.
+The worms are otherwise silent, even when the researchers tried to aggravate them. Normally, creatures making a noise like this use a hard structure at some point on their anatomy, like the snapping shrimp, which produces a loud noise by closing its claws rapidly. L. kimuraorum is different in that it is able to generate enough pressure in its body to emit the sound through a simple muscle contraction, the team reports this week in Current Biology.
+
+This is the first recorded instance of a soft-bodied organism or mollusk making a loud underwater noise, the team says. The researchers say that although the popping sound could just be due to rapid movements in the attack, it could also be a call to other worms of the same species to let them know they are under attack. Regardless, their roar makes these soft-bodied creatures seem awfully tough.
+",
+  status: true,
+  user: kellyMayes
+)
+
+Image.create!(
+  remote_data_url: "https://ocr.org/ocr/wp-content/uploads/snapping-shrimp.jpg",
+  story: kellyMayes_6
+  )
+
+kellyMayes_6 = Story.create!(
+  title: "Snapping Shrimp",
+  #category: "Science" "Animals",
+  content: "Probably the most ubiquitous sound in shallow temperate waters and thus the curse of all marine life sound recordists is the sound of the snapping or “pistol” shrimp (Cragnon Synalpheus, C. Alpheus). They produce an extremely loud pop (source level 220dB re 1 uPa or 80 kPa at 4 cm). This pop stuns their prey which they can then dismember and eat without further ado.
+
+They live in burrows and can be easily heard as a popcorn or crackling sound anywhere in the coastal ocean where you might submerge your head. Bioacoustician John Potter used this sound as an ‘acoustical illumination’ to resolve shapes underwater. Just as our eyes see light reflecting off of objects allowing us to see them, Dr. Potter speculated that the sound of the shrimp would reflect off of submerged objects allowing sea animals to “see” them in a form of “passive sonar.”
+
+If he is correct, it would explain how nocturnal animals might perceive their surroundings when there is little or no light available. If he is correct it would also indicate that there is something about fish hearing that we don’t have quite right yet, as most fish audiograms indicate that they can’t hear in frequency bands that would allow for this type of ‘acoustical illumination’ perception.
+",
+  status: true,
+  user: kellyMayes
 )
 puts "finished"

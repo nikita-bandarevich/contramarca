@@ -1,12 +1,19 @@
 class StoriesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:index, :show]
+  skip_before_action :authenticate_user!, only: [:index, :show, :search]
   before_action :set_story, only: [:show, :edit, :update, :destroy]
 
   def index
-    # @storys = story.all
-    @stories = policy_scope(Story).order(created_at: :desc)
-  # returns a colleciton of objects(storys)
-    # collection of objects -> policy scope -> resolve inside the storysPolicy
+    @stories = policy_scope(Story)
+  end
+
+  def search
+    @stories = policy_scope(Story)
+      if params[:query].present?
+        sql_query = "title ILIKE :query"
+        @stories = @stories.where(sql_query, query: "%#{params[:query]}%").order(created_at: :desc)
+        # render 'index'
+      end
+    authorize(@stories)
   end
 
   def show
@@ -25,7 +32,8 @@ class StoriesController < ApplicationController
     authorize(@story)
     @story.user = current_user
     if @story.save
-      redirect_to @story, notice: 'Story was successfully created.'
+      redirect_to story_images_path(@story)
+      # redirect_to @story, notice: 'Story was successfully created.'
     else
       render :new
     end
@@ -49,6 +57,7 @@ class StoriesController < ApplicationController
   end
 
   private
+
   # Use callbacks to share common setup or constraints between actions.
   def set_story
     @story = Story.find(params[:id])
@@ -57,6 +66,6 @@ class StoriesController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def story_params
-    params.require(:story).permit(:title)
+    params.require(:story).permit(:title, :content, :status, :user)
   end
 end
