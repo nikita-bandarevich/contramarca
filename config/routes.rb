@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'stories/search', to: 'stories#search'
   post 'bookmarks/create', to: 'bookmarks#create', as: 'bookmark'
 
+
   resources :bookmarks, only: [:index]
   resources :followings, only: :create
 
