@@ -18,5 +18,6 @@ class BookmarksController < ApplicationController
     @bookmark.save
     authorize(@bookmark)
     redirect_to stories_path
+
   end
 end
