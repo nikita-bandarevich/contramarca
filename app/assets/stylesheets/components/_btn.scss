@@ -18,7 +18,7 @@
 
 .btn-dark-grey-card {
   color: #7A7A7A;
-  padding: 10px 24px;;
+  padding: 10px 24px;
   background: #2A2A2A;
   border-radius: 3px;
   display: block;
@@ -30,17 +30,16 @@
 }
 
 .btn-dark-grey {
+  display: block;
   color:  #8A8A8A;
-  padding: 5px 24px .5px 24px;
+  padding: 10px 24px 4px 24px;
   background: #3a3a3a;
   border-radius: 3px;
-  display: block;
   width: 100%;
   text-align: center;
   font-weight: 600;
   font-size: 21px;
   font-variant: small-caps;
-
 }
 
 .btn-dark-grey:hover {
