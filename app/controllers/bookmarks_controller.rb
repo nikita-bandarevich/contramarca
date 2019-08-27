@@ -17,7 +17,6 @@ class BookmarksController < ApplicationController
     @bookmark.story_id = params[:story]
     @bookmark.save
     authorize(@bookmark)
-    redirect_to stories_path
-
+    redirect_to bookmarks_path
   end
 end

@@ -11,8 +11,15 @@
 <div class="mb-3 text-left">
 
   <div class="d-flex justify-content-between mb-0">
-    <%= link_to bookmark_path(story: params[:story_id] || s.id ), method: :post do %>
-      <i class="far fa-bookmark"></i>
+
+    <% if s.bookmarks.exists? %>
+      <%= link_to bookmark_path(story: params[:id] || s.id  ), method: :post do %>
+        <i class="fas fa-bookmark"></i>
+      <% end %>
+    <% else %>
+      <%= link_to bookmark_path(story: params[:id] || s.id  ), method: :post do %>
+        <i class="far fa-bookmark"></i>
+      <% end %>
     <% end %>
 
     <%= link_to bookmarks_path do %>
