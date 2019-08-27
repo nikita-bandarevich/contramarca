@@ -29,6 +29,7 @@ lorenGrush = User.create!(
   username: "lorenGrush",
   bio: "Science Journalist who is the daughter of two NASA engineers"
 
+
   )
 
   carlesIbanez = User.create!(
@@ -37,6 +38,7 @@ lorenGrush = User.create!(
   author: "true",
   email: "carlesIbanez@mail.com",
   password: "password",
+
   username: "carlesIbanez",
   bio: "militar y político chileno, presidente de la República en dos ocasiones: en los periodos 1927-1931 y 1952-1958."
   )
@@ -49,6 +51,7 @@ lorenGrush = User.create!(
   password: "password",
   username: "josePons",
   bio: "I don't know who he is."
+
   )
 
   meredithWadman = User.create!(
@@ -59,6 +62,7 @@ lorenGrush = User.create!(
   password: "password",
   username: "meredithWadman",
   bio: "reporter at Science magazine in Washington, D.C.  Her gripping book, The Vaccine Race: Science, Politics and the Human Costs of Defeating Disease, tells the tale of WI-38, a fascinating cell line with a colorful and controversial history and a huge public health impact."
+
   )
 
   danielClery = User.create!(
@@ -69,6 +73,7 @@ lorenGrush = User.create!(
   password: "password",
   username: "danielClery",
   bio: " Canadian former professional ice hockey player who played in the National Hockey League (NHL) for the Chicago Blackhawks, Edmonton Oilers, Phoenix Coyotes and Detroit Red Wings. He currently serves as the Director of Player Development for Detroit."
+
   )
 
 elizabethPennisi = User.create!(
@@ -79,6 +84,7 @@ elizabethPennisi = User.create!(
   password: "password",
   username: "elizabethPennisi",
   bio: "writes about biology, focusing primarily on genomics, evolution, microbiology, and organismal biology, with a smattering of ecology and behavior thrown in."
+
   )
 
 kellyMayes = User.create!(
@@ -137,7 +143,9 @@ Assessing whether such planets have atmospheres is difficult because they are li
 
 The team measured the brightness of the star-planet system as LHS 3844b moved around its orbit. From that, they could calculate the brightness of the planet—and hence its temperature. If LHS 3844b had an atmosphere, weather systems would transport heat around the planet and even out the distribution of temperature. But the team found that the planet is blisteringly hot directly under the noonday sun and close to absolute zero at midnight, suggesting little or no atmosphere spreading the heat, they report in Nature today.
 
+
 This is just a single planet, but the results suggest finding a hospitable planet around a red dwarf may not be as easy as astronomers had hoped.",
+
   status: true,
   user: danielClery
 )
