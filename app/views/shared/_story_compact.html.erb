@@ -12,6 +12,11 @@
 
   <div class="d-flex justify-content-between mb-0">
 
+  <!--   <i onClick="far fa-bookmark" class="fas fa-bookmark"></i>
+    $("toggler").toggleClass("fa-bookmark fa-bookmark-o"); -->
+
+
+
     <% if s.bookmarks.exists? %>
       <%= link_to bookmark_path(story: params[:id] || s.id  ), method: :post do %>
         <i class="fas fa-bookmark"></i>

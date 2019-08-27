@@ -3,9 +3,9 @@
 
   <%= render 'shared/authorcard', u: @user %>
 
-    <% @stories.each do |s| %>
+  <% @stories.each do |s| %>
 
-    <%#= link_to 'Stories Setting', functionality_path(s.id) %>
+    <%= link_to 'Stories Setting', functionality_path(s.id) %>
       <br>
       <%= render 'shared/story_compact', s: s %>
 
@@ -18,7 +18,7 @@
 
     <% if @user == current_user %>
       <%= link_to 'NEW STORY', new_story_path, class: "btn-gold" %>
-    <% end %>
+  <% end %>
 
 </div>
 
