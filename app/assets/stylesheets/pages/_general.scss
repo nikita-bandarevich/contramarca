@@ -2,6 +2,13 @@ body {
   background: #2a2a2a;
 }
 
+.text-trix {
+    font-size: 17px;
+    color: #dadada;
+    line-height: 150%;
+    font-weight: 300;
+}
+
 a {
   color: $main-gold-color
 }
@@ -13,8 +20,8 @@ a:hover {
 
 p {
   color: #dadada;
-  font-size: 19px;
-  line-height: 130%;
+  font-size: 17px;
+  line-height: 150%;
   // text-align: justify;
 }
 
@@ -25,9 +32,9 @@ p {
 }
 
 h1 {
-  color: #dadada;
-  font-weight: 700;
-  font-size: 25px;
+  color: #bcbcbc;
+  font-weight: 600;
+  font-size: 22px;
   line-height: 115%;
 }
 
@@ -39,14 +46,13 @@ h3 {
 }
 
 h4 {
-  font-family: $headers-font !important;
+  font-family: $body-font;
   font-size: 15px;
   color: #bcbcbc;
 }
 
 h5 {
   color: $main-gold-color;
-  font-family: $body-font;
   font-style: normal;
   font-weight: semibold;
   font-size: 25px;
@@ -78,12 +84,6 @@ h5 {
   text-decoration: line-through;
 }
 
-.text-trix {
-  color: #dadada;
-  font-size: 19px;
-  line-height: 130%;
-}
-
 
 
 .button-box {
@@ -110,8 +110,8 @@ h5 {
 .length {
   background-size: cover;
   background-position: center;
-  padding: 250px 0;
-  height: 97vh;
+  padding: 150px 0;
+  height: 85vh;
 }
 
 .home {
@@ -122,3 +122,10 @@ h5 {
   color: $main-gold-color;
 }
 
+.special-btn {
+  font-family: Source Sans Pro;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 105.2%;
+  color: #5A5A5A;
+}

@@ -1,17 +1,43 @@
 <!--
 <div class="mb-3">
-  <% if s.images %>
-    <% s.images.each do |image| %>
-      <%= cl_image_tag image.data, width: "100%"  %>
-    <% end %>
-  <% end %>
+  <#% if s.images %>
+    <#% s.images.each do |image| %>
+      <#%= cl_image_tag image.data, width: "100%"  %>
+    <#% end %>
+  <#% end %>
 </div> -->
 
 
+<div class="mb-3 text-left">
 
+  <div class="d-flex justify-content-between mb-0">
 
+    <% if s.bookmarks.exists? %>
+      <%= link_to bookmark_path(story: params[:id] || s.id  ), method: :post do %>
+        <i class="fas fa-bookmark"></i>
+      <% end %>
+    <% else %>
+      <%= link_to bookmark_path(story: params[:id] || s.id  ), method: :post do %>
+        <i class="far fa-bookmark"></i>
+      <% end %>
+    <% end %>
+    <!-- Default dropleft button -->
+    <div class="btn-group dropleft">
+      <!-- <i class="fas fa-ellipsis-h dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i> -->
+      <button type="button" class="uri" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-ellipsis-h"></i>
+      </button>
+      <div class="dropdown-menu">
+        <%= link_to 'Edit', edit_story_path(s), class: "dropdown-item" if s.user == current_user %>
+        <%= link_to 'Delete', story_path(s), method: :delete, data: {confirm: "you sure mec?"}, class: "dropdown-item" if s.user == current_user %>
+      </div>
+    </div>
 
-<div class="mb-3">
+    <%#= link_to '#' do %>
+      <!-- <i class="fas fa-ellipsis-h"></i> -->
+    <%# end %>
+  </div>
+
 
   <% if s.images %>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -32,7 +58,7 @@
     </div>
   <% end %>
   <br>
-  <h1 class="mb-4"><%= s.title %></h1>
+  <h1 class="mt-0 mb-4"><%= s.title %></h1>
   <h4 class="small_text">By <%= link_to "#{s.user.username}", user_path(s.user)  %><h4>
   <h4 class="small_text mb-4"><%= s.created_at.strftime("%B %e, %Y") %></h4>
    <p class="mb-0">
