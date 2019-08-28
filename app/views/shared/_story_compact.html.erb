@@ -58,7 +58,13 @@
     </div>
   <% end %>
   <br>
+  <div class="d-flex">
+    <% s.categories.each do |e| %>
+    <h3 class="mt-0 mb-4"><%= link_to "#{e.name}", '#' %>&nbsp</h3>
+    <% end %>
+  </div>
   <h1 class="mt-0 mb-4"><%= s.title %></h1>
+
   <h4 class="small_text">By <%= link_to "#{s.user.username}", user_path(s.user)  %><h4>
   <h4 class="small_text mb-4"><%= s.created_at.strftime("%B %e, %Y") %></h4>
    <p class="mb-0">

@@ -1,4 +1,4 @@
-88# This file should contain all the record creation needed to seed the database with its default values.
+# This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
 # Examples:
@@ -7,8 +7,56 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "starting seed file"
 
-User.destroy_all
+StoryCategory.destroy_all
+Category.destroy_all
 Story.destroy_all
+User.destroy_all
+
+
+
+
+Science = Category.create!(
+  name: "Science",
+  image: "brain_w.png",
+  description: "a body of facts or truths systematically arranged"
+  )
+
+Health = Category.create!(
+  name: "Health",
+  image: "brain_w.png",
+  description: "a body of facts or truths systematically arranged"
+  )
+
+Terrorism = Category.create!(
+  name: "Terrorism",
+  image: "brain_w.png",
+  description: "a body of facts or truths systematically arranged"
+  )
+
+Politics = Category.create!(
+  name: "Politics",
+  image: "brain_w.png",
+  description: "a body of facts or truths systematically arranged"
+  )
+
+Investigation = Category.create!(
+  name: "Investigation",
+  image: "brain_w.png",
+  description: "a body of facts or truths systematically arranged"
+  )
+
+Environment = Category.create!(
+  name: "Environment",
+  image: "brain_w.png",
+  description: "a body of facts or truths systematically arranged"
+  )
+
+Terraform = Category.create!(
+  name: "Terraform",
+  image: "brain_w.png",
+  description: "a body of facts or truths systematically arranged"
+  )
+
 
 Matthis = User.create!(
   first_name: "Matthis",
