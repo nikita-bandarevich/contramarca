@@ -4,7 +4,7 @@
     <% if params[:query] %>
       <% @stories.each do |s| %>
         <br>
-       <%=render 'shared/smallcards', s: @story %>
+       <%=render 'shared/smallcards', s: s %>
       <% end %>
     <% end %>
   <% end %>

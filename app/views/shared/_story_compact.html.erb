@@ -40,7 +40,7 @@
 
 
   <% if s.images %>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators"  class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <% s.images.each do |image| %>
           <div class="carousel-item <%= image == s.images.first ? 'active' : '' %>" >
