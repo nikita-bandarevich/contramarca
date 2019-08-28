@@ -1,4 +1,4 @@
-88# This file should contain all the record creation needed to seed the database with its default values.
+# This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
 # Examples:
@@ -9,6 +9,14 @@ puts "starting seed file"
 
 User.destroy_all
 Story.destroy_all
+Category.destroy_all
+
+categories = %w(Science Health Terrorism Politics Investigation)
+categories.each do |category|
+ Category.create!(name: category)
+end
+
+
 
 Matthis = User.create!(
   first_name: "Matthis",
