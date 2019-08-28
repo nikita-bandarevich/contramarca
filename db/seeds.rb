@@ -7,15 +7,55 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "starting seed file"
 
-User.destroy_all
-Story.destroy_all
+StoryCategory.destroy_all
 Category.destroy_all
+Story.destroy_all
+User.destroy_all
 
-categories = %w(Science Health Terrorism Politics Investigation)
-categories.each do |category|
- Category.create!(name: category)
-end
 
+
+
+Science = Category.create!(
+  name: "Science",
+  image: "brain_w.png",
+  description: "a body of facts or truths systematically arranged"
+  )
+
+Health = Category.create!(
+  name: "Health",
+  image: "brain_w.png",
+  description: "a body of facts or truths systematically arranged"
+  )
+
+Terrorism = Category.create!(
+  name: "Terrorism",
+  image: "brain_w.png",
+  description: "a body of facts or truths systematically arranged"
+  )
+
+Politics = Category.create!(
+  name: "Politics",
+  image: "brain_w.png",
+  description: "a body of facts or truths systematically arranged"
+  )
+
+Investigation = Category.create!(
+  name: "Investigation",
+  image: "brain_w.png",
+  description: "a body of facts or truths systematically arranged"
+  )
+
+Environment = Category.create!(
+  name: "Environment",
+  image: "brain_w.png",
+  description: "a body of facts or truths systematically arranged"
+  )
+
+Terraform = Category.create!(
+  name: "Terraform",
+  image: "brain_w.png",
+  description: "a body of facts or truths systematically arranged"
+  )
 
 
 Matthis = User.create!(
