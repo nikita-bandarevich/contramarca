@@ -39,6 +39,7 @@ h1 {
 }
 
 h3 {
+  font-family: $body-font;
   color: #bcbcbc;
   line-height: 130%;
   font-size: 17px;
@@ -117,15 +118,15 @@ h5 {
 .home {
   font-size: 7vw;
   font-weight: 600;
-  font-weight: 600;
   letter-spacing: -0.035em;
   color: $main-gold-color;
 }
 
 .special-btn {
-  font-family: Source Sans Pro;
+  font-family: $body-font;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 105.2%;
   color: #5A5A5A;
+  padding: 0 5px;
 }

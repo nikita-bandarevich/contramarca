@@ -4,11 +4,11 @@
 
     <% if current_user.nil? %>
       <%= link_to new_user_session_path do %>
-           <i style="font-size: 13px; padding-left: 10px;" class="fas fa-bars"></i>
+           <i style="font-size: 17px; padding-left: 10px;" class="far fa-user-circle"></i>
       <% end %>
     <% else %>
       <%= link_to user_path(current_user) do %>
-           <i style="font-size: 13px; padding-left: 10px;" class="fas fa-bars"></i>
+           <i style="font-size: 17px; padding-left: 10px;" class="far fa-user-circle"></i>
       <% end %>
 
     <% end %>
@@ -19,13 +19,9 @@
 
   <div class="searchicon">
     <%= link_to stories_search_path do  %>
-      <i style="font-size: 13px; padding-right: 30px;" class="fas fa-search"></i>
+      <i style="font-size: 13px; padding-right: 10px;" class="fas fa-search"></i>
     <% end %>
   </div>
 
 </div>
-
-
-
-
 
