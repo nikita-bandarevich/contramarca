@@ -20,6 +20,17 @@ Matthis = User.create!(
   bio: "Co-Founder of Contramarca"
   )
 
+
+gloriaDickie = User.create!(
+  first_name: "Gloria",
+  last_name: "gloriaDickie1",
+  author: "false",
+  email: "gloriaDickiet@mail.com",
+  password: "password",
+  username: "gloriaDickie",
+  bio: "Freelance environmental journalist. Her work has appeared in National Geographic News, High Country News, OnEarth, Discover, Outside, ..."
+  )
+
 lorenGrush = User.create!(
   first_name: "Loren",
   last_name: "Grush",
@@ -40,7 +51,7 @@ lorenGrush = User.create!(
   password: "password",
 
   username: "carlesIbanez",
-  bio: "militar y político chileno, presidente de la República en dos ocasiones: en los periodos 1927-1931 y 1952-1958."
+  bio: "Morphologic development, relative sea level rise and sustainable management of water and sediment in the Ebre Delta, Spain."
   )
 
   josePons = User.create!(
@@ -50,7 +61,7 @@ lorenGrush = User.create!(
   email: "josePons@mail.com",
   password: "password",
   username: "josePons",
-  bio: "I don't know who he is."
+  bio: "Associate Dean, School of Behavioral and Brain Sciences."
 
   )
 
@@ -61,7 +72,7 @@ lorenGrush = User.create!(
   email: "meredithWadman@mail.com",
   password: "password",
   username: "meredithWadman",
-  bio: "reporter at Science magazine in Washington, D.C.  Her gripping book, The Vaccine Race: Science, Politics and the Human Costs of Defeating Disease, tells the tale of WI-38, a fascinating cell line with a colorful and controversial history and a huge public health impact."
+  bio: "Reporter at Science magazine in Washington, D.C.  Her gripping book, The Vaccine Race: Science, Politics and the Human Costs of Defeating Disease, tells the tale of WI-38, a fascinating cell line with a colorful and controversial history and a huge public health impact."
 
   )
 
@@ -83,7 +94,7 @@ elizabethPennisi = User.create!(
   email: "elizabethPennisi@mail.com",
   password: "password",
   username: "elizabethPennisi",
-  bio: "writes about biology, focusing primarily on genomics, evolution, microbiology, and organismal biology, with a smattering of ecology and behavior thrown in."
+  bio: "Writes about biology, focusing primarily on genomics, evolution, microbiology, and organismal biology, with a smattering of ecology and behavior thrown in."
 
   )
 
@@ -96,6 +107,7 @@ kellyMayes = User.create!(
   username: "kellyMayes",
   bio: "Diverse Voices in Science Journalism intern for the News section of Science in Washington, D.C."
   )
+
 lorenGrush_1 = Story.create!(
   title: "Moon delivery startup Astrobotic picks future Vulcan rocket to launch first lunar mission",
   #category: "Science" "Space",
@@ -257,7 +269,7 @@ Image.create!(
   )
 
 Image.create!(
-  remote_data_url: "https://truemedian.com/wp-content/uploads/2019/06/57853/this-rock-eating-worm-could-change-the-course-of-rivers-science-magazine-696x392.jpg",
+  remote_data_url: "https://48857a70-a-62cb3a1a-s-sites.googlegroups.com/site/fokhighschoolcurriculum/whats-water/nutrients/DSCN1324.jpg?attachauth=ANoY7cp8auYDvOEi0C49WSKr8SWXW6fKESTP9Toh7C9QaMRnsjYbzVm6di7DUMxSkc_gQVw1PpJpwCce_b-IQ33flRol73tTw467ruylq1vaGS5KvBCNKCIn-DpXKVnznW6yaqDlUdTQK3AQVSbuqheU0W0yT_JLELXI1hG8xmpLuPR9sqzECXVkcX0P3kaNi2dYVTluyv_gZCNgG6fh36aHm_V_40KrAdbu87-2-D7BmtXWGeDMzBaQfjsNehcmnKcWwz5o-k0Y&attredirects=0",
 story: elizabethPennisi_1 )
 
 Image.create!(
@@ -342,7 +354,7 @@ In the meantime, SNC has been doing tests on the Dream Chaser, and it performed 
 )
 
 Image.create!(
-  remote_data_url: "https://https://cdn.vox-cdn.com/thumbor/j3qvs7AYKm4s9LSG5KqlXvcWrEc=/0x0:2000x1143/920x613/filters:focal(840x412:1160x732):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65018575/Dream_Chaser_in_flight1.5.jpg",
+  remote_data_url: "https://cdn.vox-cdn.com/thumbor/j3qvs7AYKm4s9LSG5KqlXvcWrEc=/0x0:2000x1143/920x613/filters:focal(840x412:1160x732):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65018575/Dream_Chaser_in_flight1.5.jpg",
   story: lorenGrush_3
   )
 
@@ -415,15 +427,7 @@ CMTS expects to post its final report on Arctic shipping on its website in late 
   user: kellyMayes
 )
 
-Image.create!(
-  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/healy_1280p.jpg?itok=ufVOG7r_",
-  story: kellyMayes_2
-  )
 
-Image.create!(
-  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/Heracles4_%26_Kuiornis_V3_p1280.jpg?itok=EP3U70UZ",
-  story: kellyMayes_3
-  )
 
 kellyMayes_3 = Story.create!(
   title: "This may be the largest parrot that ever lived",
@@ -439,9 +443,16 @@ The scientists estimate the animal (illustrated above) lived about 20 million ye
 )
 
 Image.create!(
-  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/dragon_16x9_0.jpg?itok=6RdUSxat",
-  story: kellyMayes_4
+  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/healy_1280p.jpg?itok=ufVOG7r_",
+  story: kellyMayes_2
   )
+
+Image.create!(
+  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/Heracles4_%26_Kuiornis_V3_p1280.jpg?itok=EP3U70UZ",
+  story: kellyMayes_3
+  )
+
+
 
 kellyMayes_4 = Story.create!(
   title: "How Komodo dragons survive deadly bites from other Komodos",
@@ -457,9 +468,10 @@ Nearly 201 genes stood out, including those that coded for some of the Komodo dr
 )
 
 Image.create!(
-  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/SS2178957-1280x720.jpg?itok=mc11kQiX",
-  story: kellyMayes_5
+  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/dragon_16x9_0.jpg?itok=6RdUSxat",
+  story: kellyMayes_4
   )
+
 
 kellyMayes_5 = Story.create!(
   title: "Cockroaches may soon be unstoppable—thanks to fast-evolving insecticide resistance",
@@ -474,10 +486,12 @@ To test resistance in German cockroaches, researchers treated three different co
   user: kellyMayes
 )
 
+
 Image.create!(
-  remote_data_url: "https://ocr.org/ocr/wp-content/uploads/snapping-shrimp.jpg",
-  story: kellyMayes_6
+  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/SS2178957-1280x720.jpg?itok=mc11kQiX",
+  story: kellyMayes_5
   )
+
 
 kellyMayes_6 = Story.create!(
   title: "Snapping Shrimp",
@@ -492,6 +506,10 @@ If he is correct, it would explain how nocturnal animals might perceive their su
   user: kellyMayes
 )
 
+Image.create!(
+  remote_data_url: "https://ocr.org/ocr/wp-content/uploads/snapping-shrimp.jpg",
+  story: kellyMayes_6
+  )
 
 
 kellyMayes_7 = Story.create!(
@@ -512,10 +530,10 @@ This is the first recorded instance of a soft-bodied organism or mollusk making 
 
 Image.create!(
   remote_data_url: "https://ocr.org/ocr/wp-content/uploads/snapping-shrimp.jpg",
-  story: kellyMayes_6
+  story: kellyMayes_7
   )
 
-kellyMayes_6 = Story.create!(
+kellyMayes_8 = Story.create!(
   title: "Snapping Shrimp",
   #category: "Science" "Animals",
   content: "Probably the most ubiquitous sound in shallow temperate waters and thus the curse of all marine life sound recordists is the sound of the snapping or “pistol” shrimp (Cragnon Synalpheus, C. Alpheus). They produce an extremely loud pop (source level 220dB re 1 uPa or 80 kPa at 4 cm). This pop stuns their prey which they can then dismember and eat without further ado.
@@ -527,4 +545,39 @@ If he is correct, it would explain how nocturnal animals might perceive their su
   status: true,
   user: kellyMayes
 )
+
+elizabethPennisi_3 = Story.create!(
+  title: "Amazon rainforest fires: an environmental catastrophe – in pictures",
+  #category: "Science" "Nature",
+  content: "Fires are raging across the world’s largest tropical rainforest as farmers, land-grabbers and loggers torch trees and clear land for crops or grazing. According to Brazil’s National Institute of Space Research, the number of fires detected by satellite in the Amazon region this month is the highest since 2010. Bowing to international pressure and a global outcry over the destruction of a vital resource in the fight against climate change, president Jair Bolsonaro authorised the deployment of Brazil’s armed forces to help combat blazes, with warplane dumping water on burning tracts of Amazon. Critics say the large number of fires this year has been stoked by Bolsonaro’s encouragement of farmers, loggers and ranchers to speed up efforts to strip away forest.
+",
+  status: true,
+  user: elizabethPennisi
+)
+
+Image.create!(
+  remote_data_url: "https://i.guim.co.uk/img/media/a19c7492238cb1ea573b9e9958a5bf56044fb66f/15_167_2446_1468/master/2446.jpg?width=1900&quality=85&auto=format&fit=max&s=3f8132277095fea6880b4a701ee85ecb",
+  story: elizabethPennisi_3
+  )
+
+gloriaDickie1 = Story.create!(
+  title: "Brazil’s Amazon has burned this badly before. This year’s fires are still bad",
+  #category: "Science" "Nature",
+  content: "The Amazon rainforest in Brazil is being ravaged by fire. More than 74,000 fires have burned in the country since January, according to the country’s National Institute for Space Research — with 9,500 new forest fires igniting since just last week, the result of the natural dry season and fires intentionally ignited to clear forest. Black smoke billows from treetops, spreading across parts of South America and even shrouding the coastal city of São Paulo in near darkness.
+
+The fires, along with concerns about biodiversity and climate change, have triggered global alarm. French President Emmanuel Macron and Canadian Prime Minister Justin Trudeau on August 23 urged other leaders in the Group of Seven major industrialized nations to discuss what Macron called an “international crisis” at their summit beginning August 24 in France. “Our house is burning. Literally. The Amazon rainforest — the lungs which produces 20% of our planet’s oxygen — is on fire,” Macron tweeted.
+
+Brazil’s government complained in response that it was being targeted in a smear campaign against the country’s president, Jair Bolsonaro, who was elected last year amid controversy over what many see as anti-environment policies that support slash-and-burn deforestation practices in the Amazon.
+
+To learn more about the fires and what’s at stake, Science News spoke with environmental scientist Jonathan Foley, who is based in San Francisco and leads Project Drawdown, a worldwide network of scientists, advocates and others proposing solutions to global warming. The following conversation has been edited for length and clarity.
+",
+  status: true,
+
+  user: gloriaDickie
+)
+
+Image.create!(
+  remote_data_url: "https://www.sciencenews.org/wp-content/uploads/2019/08/082319_GD_amazon-fire_feat-1028x579.jpg",
+  story: gloriaDickie1
+  )
 puts "finished"
