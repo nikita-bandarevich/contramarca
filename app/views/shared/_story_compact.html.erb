@@ -24,14 +24,16 @@
     <!-- Default dropleft button -->
     <div class="btn-group dropleft">
       <!-- <i class="fas fa-ellipsis-h dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i> -->
-      <button type="button" class="uri" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i class="fas fa-ellipsis-h"></i>
-      </button>
-      <div class="dropdown-menu">
-        <%= link_to 'Edit', edit_story_path(s), class: "dropdown-item" if s.user == current_user %>
-        <%= link_to 'Delete', story_path(s), method: :delete, data: {confirm: "you sure mec?"}, class: "dropdown-item" if s.user == current_user %>
+      <% unless current_page root_path %>
+        <button type="button" class="uri" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-ellipsis-h"></i>
+        </button>
+        <div class="dropdown-menu">
+          <%= link_to 'Edit', edit_story_path(s), class: "dropdown-item" if s.user == current_user %>
+          <%= link_to 'Delete', story_path(s), method: :delete, data: {confirm: "you sure mec?"}, class: "dropdown-item" if s.user == current_user %>
+        </div>
+      <% end %>
       </div>
-    </div>
 
     <%#= link_to '#' do %>
       <!-- <i class="fas fa-ellipsis-h"></i> -->
@@ -58,6 +60,8 @@
     </div>
   <% end %>
   <br>
+
+
   <div class="d-flex">
     <% s.categories.each do |e| %>
     <h3 class="mt-0 mb-4"><%= link_to "#{e.name}", '#' %>&nbsp</h3>
