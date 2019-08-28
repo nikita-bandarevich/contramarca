@@ -15,7 +15,10 @@ class ImagesController < ApplicationController
     authorize @image
     @image.save
 
-    redirect_to @story, notice: 'Story was successfully created.'
+    redirect_back(fallback_location: story_path(@story))
+
+
+    #redirect_to @story, notice: 'Story was successfully created.'
   end
 
   def destroy

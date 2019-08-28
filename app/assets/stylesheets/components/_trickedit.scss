@@ -3,10 +3,14 @@
 }
 
 trix-editor {
-  height: 45vh;
+  max-height: 20vh;
+  content: hidden;
 }
 
+
 .trix-content {
+  max-height: 20vh !important;
+ overflow-y: auto;
   border: none;
   border-radius: 3px;
   margin: 0;
