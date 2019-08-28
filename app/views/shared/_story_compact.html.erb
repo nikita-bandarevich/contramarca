@@ -24,14 +24,16 @@
     <!-- Default dropleft button -->
     <div class="btn-group dropleft">
       <!-- <i class="fas fa-ellipsis-h dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i> -->
-      <button type="button" class="uri" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i class="fas fa-ellipsis-h"></i>
-      </button>
-      <div class="dropdown-menu">
-        <%= link_to 'Edit', edit_story_path(s), class: "dropdown-item" if s.user == current_user %>
-        <%= link_to 'Delete', story_path(s), method: :delete, data: {confirm: "you sure mec?"}, class: "dropdown-item" if s.user == current_user %>
+      <% unless current_page root_path %>
+        <button type="button" class="uri" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-ellipsis-h"></i>
+        </button>
+        <div class="dropdown-menu">
+          <%= link_to 'Edit', edit_story_path(s), class: "dropdown-item" if s.user == current_user %>
+          <%= link_to 'Delete', story_path(s), method: :delete, data: {confirm: "you sure mec?"}, class: "dropdown-item" if s.user == current_user %>
+        </div>
+      <% end %>
       </div>
-    </div>
 
     <%#= link_to '#' do %>
       <!-- <i class="fas fa-ellipsis-h"></i> -->
@@ -58,14 +60,16 @@
     </div>
   <% end %>
   <br>
-  <h1 class="mt-0 mb-4"><%= s.title %></h1>
-  <h4 class="small_text">By <%= link_to "#{s.user.username}", user_path(s.user)  %><h4>
-  <h4 class="small_text mb-4"><%= s.created_at.strftime("%B %e, %Y") %></h4>
-   <p class="mb-0">
-    <% unless s.content.nil? %>
-    <div class="text-trix"><%= s.content.truncate(300).html_safe %></div>
-    <% end %>
-  </p>
+  <div class="content">
+    <h1 class="mt-0 mb-4"><%= s.title %></h1>
+    <h4 class="small_text">By <%= link_to "#{s.user.username}", user_path(s.user)  %><h4>
+    <h4 class="small_text mb-4"><%= s.created_at.strftime("%B %e, %Y") %></h4>
+     <p class="mb-0">
+      <% unless s.content.nil? %>
+      <div class="text-trix"><%= s.content.truncate(300).html_safe %></div>
+      <% end %>
+    </p>
+  </div>
     <%= link_to story_path(s), class: "btn-dark-grey", style: "margin-top: 10px;" do %>
     <h3 style="color: #7A7A7A; font: $body-font;">READ MORE</h3>
   <% end %>
