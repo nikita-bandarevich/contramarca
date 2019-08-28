@@ -1,4 +1,4 @@
-  <div class="container_white">
+    <div class="container_white">
 
 
     <div class="container">
@@ -16,7 +16,9 @@
               <%= f.input :title, placeholder:"HEADLINE", class: "headline-font" %>
             </div>
               <input id="x" type="hidden" name="story[content]">
-              <trix-editor class="trix-content text-trix" input="x" placeholder="CONTENT" rows="10"></trix-editor>
+              <trix-editor class="trix-content text-trix" input="x" placeholder="CONTENT" rows="7">
+              </trix-editor>
+
           <div class="form-actions">
             <%= f.button :submit, class:"btn-dark-grey" %>
           </div>

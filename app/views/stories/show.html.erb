@@ -4,19 +4,23 @@
 
  <%= render 'shared/story', s: @story %>
   <br>
-  <div class="button-box">
-    <%= link_to stories_path, class: "btn-black" do %>
-      <h3>share</h3>
-    <% end %>
+    <div class="button-box">
+      <%= link_to stories_path, class: "btn-black" do %>
+        <h3>share</h3>
+      <% end %>
 
-    <div class="middle-box"></div>
-    <%= link_to 'save', bookmark_path(story: params[:id]), class: "btn-black", method: :post %>
-  </div>
+      <div class="middle-box">
 
-  <div class="slot">
-    <%= render 'shared/authorcard', u: @story.user %>
-  </div>
+      <%= link_to 'save', bookmark_path(story: params[:id]), class: "btn-black", method: :post %>
+      </div>
+    </div>
 
-    <!-- <%= #render 'shared/smallcards', s: @story %> -->
+    <div class="slot">
+      <%= render 'shared/authorcard', u: @story.user %>
+    </div>
 
 </div>
+
+
+
+
