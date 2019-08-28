@@ -1,9 +1,10 @@
 
 
 <div class="container">
-
+  <br>
  <%= render 'shared/story', s: @story %>
   <br>
+
     <div class="button-box">
       <%= link_to stories_path, class: "btn-black" do %>
         <h3>share</h3>
@@ -18,7 +19,6 @@
     <div class="slot">
       <%= render 'shared/authorcard', u: @story.user %>
     </div>
-
 </div>
 
 

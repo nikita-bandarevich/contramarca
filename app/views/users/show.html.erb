@@ -1,8 +1,23 @@
 <div class="container">
-  <br>
-
   <%= render 'shared/authorcard', u: @user %>
 
+     <div class="d-flex justify-content-center mt-2">
+      <%#= link_to stories_path, class: "btn-dark-grey", style: "margin-top: 10px;" do %>
+          <!-- <h3>follow</h3> -->
+        <%# end %>
+      <% unless controller.controller_name == "stories" && controller.action_name == "show"%>
+          <%= link_to 'FOLLOWERS', bookmarks_path, class: "special-btn mr-2" %>
+          <%#= @my_users_followers.count%>
+      <% end %>
+
+      <% unless controller.controller_name == "stories" && controller.action_name == "show"%>
+          <%= link_to 'FOLLOWING', bookmarks_path, class: "special-btn mr-2" %>
+          <%#= @my_users_followings.count%>
+      <% end %>
+
+      <%= link_to 'SAVED', bookmarks_path, class: "special-btn" %>
+    </div>
+    <br>
     <% @stories.each do |s| %>
 
     <%#= link_to 'Stories Setting', functionality_path(s.id) %>
