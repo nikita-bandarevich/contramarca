@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_21_131426) do
+ActiveRecord::Schema.define(version: 2019_08_28_135320) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,14 @@ ActiveRecord::Schema.define(version: 2019_08_21_131426) do
     t.datetime "updated_at", null: false
     t.index ["story_id"], name: "index_bookmarks_on_story_id"
     t.index ["user_id"], name: "index_bookmarks_on_user_id"
+  end
+
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "image"
+    t.string "description"
   end
 
   create_table "followings", force: :cascade do |t|
@@ -69,6 +77,15 @@ ActiveRecord::Schema.define(version: 2019_08_21_131426) do
     t.index ["user_id"], name: "index_stories_on_user_id"
   end
 
+  create_table "story_categories", force: :cascade do |t|
+    t.bigint "category_id"
+    t.bigint "story_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["category_id"], name: "index_story_categories_on_category_id"
+    t.index ["story_id"], name: "index_story_categories_on_story_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -94,4 +111,6 @@ ActiveRecord::Schema.define(version: 2019_08_21_131426) do
   add_foreign_key "shares", "stories"
   add_foreign_key "shares", "users"
   add_foreign_key "stories", "users"
+  add_foreign_key "story_categories", "categories"
+  add_foreign_key "story_categories", "stories"
 end

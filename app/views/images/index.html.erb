@@ -16,12 +16,14 @@
       <%=  simple_form_for [@story, @image] do |f| %>
         <%= f.input :data %>
         <%= f.input :data_cache, as: :hidden %>
-        <%= f.submit 'Submit', class:"btn-dark-grey" %>
+        <%= f.submit 'Add photo', class:"btn-dark-grey" %>
       <% end %>
       <br>
       <br>
       <br>
-      <%= link_to "Back", :back %>
+
+      <%= link_to "Save", story_path(@story) %>
+
     </div>
   </div>
 </div>

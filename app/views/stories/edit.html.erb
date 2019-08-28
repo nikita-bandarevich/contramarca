@@ -1,23 +1,29 @@
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12 col-lg-6">
-      <br>
-      <br>
-      <br>
-      <%= simple_form_for(@story) do |f| %>
-        <%= f.error_notification %>
-        <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+<div class="container_white">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-6">
+        <br>
+        <br>
+        <br>
+        <%= simple_form_for(@story) do |f| %>
+          <%= f.error_notification %>
+          <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-        <div class="form-inputs mb-5">
-          <%= f.input :title, placeholder:@story.id%>
-        </div>
-        <input id="x" type="hidden" name="story[content]" value="<%= @story.content %>">
-            <trix-editor class="trix-content text-trix" input="x" ></trix-editor>
+          <div class="form-inputs mb-5">
+            <%= f.input :title, placeholder:@story.id%>
+          </div>
+          <input id="x" type="hidden" name="story[content]" value="<%= @story.content %>">
+              <trix-editor class="trix-content text-trix" input="x" ></trix-editor>
 
-        <div class="form-actions">
-          <h4><%= f.button :submit, class:"btn-dark-grey" %></h4>
-        </div>
-      <% end %>
+          <div class="form-actions">
+            <h4><%= f.button :submit, class:"btn-dark-grey" %></h4>
+          </div>
+
+        <% end %>
+         <br>
+        <br>
+        <br>
+      </div>
     </div>
   </div>
 </div>

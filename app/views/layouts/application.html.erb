@@ -28,6 +28,9 @@
     <% elsif controller.controller_name == "stories" && controller.action_name == "new"%>
       <%= render 'shared/navbar_new' %>
       <%= yield %>
+     <% elsif controller.controller_name == "stories" && controller.action_name == "edit"%>
+      <%= render 'shared/navbar_new' %>
+      <%= yield %>
     <% else %>
         <%= render 'shared/navbar_blank'  %>
         <%= yield %>

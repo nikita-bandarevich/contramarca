@@ -31,8 +31,15 @@ class StoriesController < ApplicationController
     @story = Story.new(story_params)
     authorize(@story)
     @story.user = current_user
+
     if @story.save
+      params[:story][:category_ids].each do |catid|
+      unless catid == ""
+          StoryCategory.create!(story_id: @story.id, category_id: catid.to_i)
+        end
+      end
       redirect_to story_images_path(@story)
+
       # redirect_to @story, notice: 'Story was successfully created.'
     else
       render :new
@@ -66,6 +73,6 @@ class StoriesController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def story_params
-    params.require(:story).permit(:title, :content, :status, :user)
+    params.require(:story).permit(:title, :content, :status, :user, :category_ids)
   end
 end
