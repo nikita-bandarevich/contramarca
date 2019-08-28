@@ -1,13 +1,10 @@
 
   <div class="card-product">
      <%= cl_image_tag s.images.first.data %>
-
-
     <div class="card-product-infos">
-      <h3><%= s.title.truncate(40) %></h3>
+      <h3> <%= link_to "#{s.title.truncate(40)}", story_path(s) %></h3>
       <p> <%= s.user.username %> </p>
     </div>
-
   </div>
 
 
