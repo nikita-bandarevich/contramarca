@@ -25,10 +25,14 @@
     <% @stories.each do |s| %>
       <%= render 'shared/story_compact', s: s %>
       <br>
+      <br>
+      <br>
     <% end %>
   <% else %>
     <% current_user.followed_stories.each do |s| %>
       <%= render 'shared/story_compact', s: s %>
+      <br>
+      <br>
       <br>
     <% end %>
   <% end %>
