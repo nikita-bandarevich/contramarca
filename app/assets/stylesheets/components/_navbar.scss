@@ -48,6 +48,8 @@
   position: relative;
   display: flex;
   justify-content: space-around;
+  margin-top: 12px;
+
 
   // @media screen and (max-width: 600px) {
   // .container
@@ -61,13 +63,20 @@
 #search-icon-absolute {
   position: absolute;
   left: 10px;
+
 }
 
-.form {
+.md-form{
   max-width: 305px;
+  border-color: #bcbcbc;
+  background: #bcbcbc;
+  border-radius: 2px;
+  text-align: center;
 }
+
 
 
 #navbar_new {
   background-color: white;
 }
+
