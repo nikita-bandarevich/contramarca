@@ -5,14 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
 puts "starting seed file"
 
 StoryCategory.destroy_all
 Category.destroy_all
 Story.destroy_all
 User.destroy_all
-
-
 
 
 Science = Category.create!(
@@ -57,22 +56,32 @@ Interplanetary = Category.create!(
   description: "the space between the planets of the Solar System"
   )
 
+Education = Category.create!(
+  name: "Education",
+  image: "interplanetary_w.png",
+  description: "the space between the planets of the Solar System"
+  )
+
+Anthropology = Category.create!(
+  name: "Anthropology",
+  image: "interplanetary_w.png",
+  description: "the space between the planets of the Solar System"
+  )
 
 Matthis = User.create!(
   first_name: "Matthis",
   last_name: "Parisot",
-  author: "false",
+  author: "true",
   email: "matthisParisot@mail.com",
   password: "password",
   username: "matthisParisot",
   bio: "Co-Founder of Contramarca"
   )
 
-
 gloriaDickie = User.create!(
   first_name: "Gloria",
   last_name: "Dickie",
-  author: "false",
+  author: "true",
   email: "gloriaDickiet@mail.com",
   password: "password",
   username: "gloriaDickie",
@@ -87,11 +96,9 @@ lorenGrush = User.create!(
   password: "password",
   username: "lorenGrush",
   bio: "Science Journalist who is the daughter of two NASA engineers"
-
-
   )
 
-  carlesIbanez = User.create!(
+carlesIbanez = User.create!(
   first_name: "Carles",
   last_name: "Ibanez",
   author: "true",
@@ -102,7 +109,7 @@ lorenGrush = User.create!(
   bio: "Morphologic development, relative sea level rise and sustainable management of water and sediment in the Ebre Delta, Spain."
   )
 
-  josePons = User.create!(
+josePons = User.create!(
   first_name: "Jose",
   last_name: "Pons",
   author: "true",
@@ -110,10 +117,9 @@ lorenGrush = User.create!(
   password: "password",
   username: "josePons",
   bio: "Associate Dean, School of Behavioral and Brain Sciences."
-
   )
 
-  meredithWadman = User.create!(
+meredithWadman = User.create!(
   first_name: "Meredith",
   last_name: "Wadman",
   author: "true",
@@ -121,10 +127,9 @@ lorenGrush = User.create!(
   password: "password",
   username: "meredithWadman",
   bio: "Reporter at Science magazine in Washington, D.C.  Her gripping book, The Vaccine Race: Science, Politics and the Human Costs of Defeating Disease, tells the tale of WI-38, a fascinating cell line with a colorful and controversial history and a huge public health impact."
-
   )
 
-  danielClery = User.create!(
+danielClery = User.create!(
   first_name: "Daniel",
   last_name: "Clery",
   author: "true",
@@ -132,7 +137,6 @@ lorenGrush = User.create!(
   password: "password",
   username: "danielClery",
   bio: " Canadian former professional ice hockey player who played in the National Hockey League (NHL) for the Chicago Blackhawks, Edmonton Oilers, Phoenix Coyotes and Detroit Red Wings. He currently serves as the Director of Player Development for Detroit."
-
   )
 
 elizabethPennisi = User.create!(
@@ -155,6 +159,652 @@ kellyMayes = User.create!(
   username: "kellyMayes",
   bio: "Diverse Voices in Science Journalism intern for the News section of Science in Washington, D.C."
   )
+
+marcMayo = User.create!(
+  first_name: "marc",
+  last_name: "Mayo",
+  author: "true",
+  email: "marcMayo@mail.com",
+  password: "password",
+  username: "marcMayo",
+  bio: "---"
+  )
+
+maxLaterreur = User.create!(
+  first_name: "max",
+  last_name: "Laterreur",
+  author: "true",
+  email: "maxlaterreur@mail.com",
+  password: "password",
+  username: "maxlaterreur",
+  bio: "---"
+  )
+
+jamesyes = User.create!(
+  first_name: "James",
+  last_name: "Yes",
+  author: "true",
+  email: "jamesyes@mail.com",
+  password: "password",
+  username: "jamesyes",
+  bio: "---"
+  )
+
+alextexmex = User.create!(
+  first_name: "alex",
+  last_name: "Texmex",
+  author: "true",
+  email: "alextexmex@mail.com",
+  password: "password",
+  username: "alextexmex",
+  bio: "---"
+  )
+
+jeannegaspard = User.create!(
+  first_name: "jeanne",
+  last_name: "gaspard",
+  author: "true",
+  email: "jeannegaspard@mail.com",
+  password: "password",
+  username: "jeannegaspard",
+  bio: "---"
+  )
+
+
+rockboa = User.create!(
+  first_name: "rock",
+  last_name: "boa",
+  author: "true",
+  email: "rockboa@mail.com",
+  password: "password",
+  username: "rockboa",
+  bio: "---"
+  )
+
+
+thaisrose = User.create!(
+  first_name: "thais",
+  last_name: "rose",
+  author: "true",
+  email: "thaisrose@mail.com",
+  password: "password",
+  username: "thaisrose",
+  bio: "---"
+  )
+
+florencevysk = User.create!(
+  first_name: "florence",
+  last_name: "vysk",
+  author: "true",
+  email: "florencevysk@mail.com",
+  password: "password",
+  username: "florencevysk",
+  bio: "---"
+  )
+
+maevadujardin = User.create!(
+  first_name: "maeva",
+  last_name: "dujardin",
+  author: "true",
+  email: "maevadujardin@mail.com",
+  password: "password",
+  username: "maevadujardin",
+  bio: "---"
+  )
+
+mariebocard = User.create!(
+  first_name: "marie",
+  last_name: "bocard",
+  author: "true",
+  email: "mariebocard@mail.com",
+  password: "password",
+  username: "mariebocard",
+  bio: "---"
+  )
+
+ericfurst = User.create!(
+  first_name: "eric",
+  last_name: "furst",
+  author: "true",
+  email: "ericfurts@mail.com",
+  password: "password",
+  username: "ericfurst",
+  bio: "---"
+  )
+
+clairclerc = User.create!(
+  first_name: "clair",
+  last_name: "clerc",
+  author: "true",
+  email: "clairclerc@mail.com",
+  password: "password",
+  username: "clairclerc",
+  bio: "---"
+  )
+
+capucinedeschamps = User.create!(
+  first_name: "capucine",
+  last_name: "deschamps",
+  author: "true",
+  email: "capucinesdeschamps@mail.com",
+  password: "password",
+  username: "capucinesdeschamps",
+  bio: "---"
+  )
+
+ulrichweiss = User.create!(
+  first_name: "ulrich",
+  last_name: "weiss",
+  author: "true",
+  email: "ulrichweiss@mail.com",
+  password: "password",
+  username: "ulrichweiss",
+  bio: "---"
+  )
+
+pablosanto = User.create!(
+  first_name: "pablo",
+  last_name: "santo",
+  author: "true",
+  email: "pablosanto@mail.com",
+  password: "password",
+  username: "pablosanto",
+  bio: "---"
+  )
+
+ricardopepito = User.create!(
+  first_name: "ricardo",
+  last_name: "pepito",
+  author: "true",
+  email: "ricardopepito@mail.com",
+  password: "password",
+  username: "ricardopepito",
+  bio: "---"
+  )
+
+thiagocruz = User.create!(
+  first_name: "thiago",
+  last_name: "cruz",
+  author: "true",
+  email: "thiagocruz@mail.com",
+  password: "password",
+  username: "thiagocruz",
+  bio: "---"
+  )
+
+jamedelsol = User.create!(
+  first_name: "jame",
+  last_name: "delsol",
+  author: "true",
+  email: "jamedelsol@mail.com",
+  password: "password",
+  username: "jamedelsol",
+  bio: "---"
+  )
+
+dankofelippe = User.create!(
+  first_name: "danko",
+  last_name: "felippe",
+  author: "true",
+  email: "dankofelippe@mail.com",
+  password: "password",
+  username: "dankofelippe",
+  bio: "---"
+  )
+
+josephineholms = User.create!(
+  first_name: "josephine",
+  last_name: "holms",
+  author: "true",
+  email: "josephineholms@mail.com",
+  password: "password",
+  username: "josephineholms",
+  bio: "---"
+  )
+
+lorenzorapido = User.create!(
+  first_name: "lorenzo",
+  last_name: "rapido",
+  author: "true",
+  email: "lorenzorapido@mail.com",
+  password: "password",
+  username: "lorenzorapido",
+  bio: "---"
+  )
+
+francoisdupont = User.create!(
+  first_name: "francois",
+  last_name: "dupont",
+  author: "true",
+  email: "francoisdupontr@mail.com",
+  password: "password",
+  username: "francoisdupont",
+  bio: "---"
+  )
+
+Following.create!(follower_id: Matthis.id, followable_id: gloriaDickie.id)
+puts "starting seed 2 file"
+Following.create!(follower_id: Matthis.id, followable_id: lorenGrush.id)
+Following.create!(follower_id: Matthis.id, followable_id: carlesIbanez.id)
+Following.create!(follower_id: Matthis.id, followable_id: josePons.id)
+Following.create!(follower_id: Matthis.id, followable_id: meredithWadman.id)
+Following.create!(follower_id: Matthis.id, followable_id: danielClery.id)
+Following.create!(follower_id: Matthis.id, followable_id: elizabethPennisi.id)
+Following.create!(follower_id: Matthis.id, followable_id: kellyMayes.id)
+Following.create!(follower_id: Matthis.id, followable_id: marcMayo.id)
+Following.create!(follower_id: Matthis.id, followable_id: maxLaterreur.id)
+Following.create!(follower_id: Matthis.id, followable_id: jamesyes.id)
+Following.create!(follower_id: Matthis.id, followable_id: alextexmex.id)
+Following.create!(follower_id: Matthis.id, followable_id: jeannegaspard.id)
+Following.create!(follower_id: Matthis.id, followable_id: rockboa.id)
+Following.create!(follower_id: Matthis.id, followable_id: thaisrose.id)
+Following.create!(follower_id: Matthis.id, followable_id: florencevysk.id)
+Following.create!(follower_id: Matthis.id, followable_id: maevadujardin.id)
+Following.create!(follower_id: Matthis.id, followable_id: mariebocard.id)
+Following.create!(follower_id: Matthis.id, followable_id: ericfurst.id)
+Following.create!(follower_id: Matthis.id, followable_id: clairclerc.id)
+Following.create!(follower_id: Matthis.id, followable_id: capucinedeschamps.id)
+Following.create!(follower_id: Matthis.id, followable_id: ulrichweiss.id)
+Following.create!(follower_id: Matthis.id, followable_id: pablosanto.id)
+Following.create!(follower_id: Matthis.id, followable_id: ricardopepito.id)
+Following.create!(follower_id: Matthis.id, followable_id: thiagocruz.id)
+Following.create!(follower_id: Matthis.id, followable_id: jamedelsol.id)
+Following.create!(follower_id: Matthis.id, followable_id: dankofelippe.id)
+Following.create!(follower_id: Matthis.id, followable_id: josephineholms.id)
+Following.create!(follower_id: Matthis.id, followable_id: lorenzorapido.id)
+Following.create!(follower_id: Matthis.id, followable_id: francoisdupont.id)
+puts "starting seed 3 file"
+
+Following.create!(follower_id: gloriaDickie.id, followable_id: Matthis.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: carlesIbanez.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: josePons.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: meredithWadman.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: danielClery.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: elizabethPennisi.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: kellyMayes.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: marcMayo.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: maxLaterreur.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: jamesyes.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: alextexmex.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: capucinedeschamps.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: ulrichweiss.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: pablosanto.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: ricardopepito.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: thiagocruz.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: jamedelsol.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: dankofelippe.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: josephineholms.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: lorenzorapido.id)
+Following.create!(follower_id: gloriaDickie.id, followable_id: francoisdupont.id)
+
+Following.create!(follower_id: clairclerc.id, followable_id: Matthis.id)
+Following.create!(follower_id: clairclerc.id, followable_id: carlesIbanez.id)
+Following.create!(follower_id: clairclerc.id, followable_id: josePons.id)
+Following.create!(follower_id: clairclerc.id, followable_id: meredithWadman.id)
+Following.create!(follower_id: clairclerc.id, followable_id: alextexmex.id)
+Following.create!(follower_id: clairclerc.id, followable_id: jeannegaspard.id)
+Following.create!(follower_id: clairclerc.id, followable_id: rockboa.id)
+Following.create!(follower_id: clairclerc.id, followable_id: thaisrose.id)
+Following.create!(follower_id: clairclerc.id, followable_id: florencevysk.id)
+Following.create!(follower_id: clairclerc.id, followable_id: maevadujardin.id)
+Following.create!(follower_id: clairclerc.id, followable_id: mariebocard.id)
+Following.create!(follower_id: clairclerc.id, followable_id: ericfurst.id)
+Following.create!(follower_id: clairclerc.id, followable_id: capucinedeschamps.id)
+Following.create!(follower_id: clairclerc.id, followable_id: ulrichweiss.id)
+Following.create!(follower_id: clairclerc.id, followable_id: pablosanto.id)
+Following.create!(follower_id: clairclerc.id, followable_id: ricardopepito.id)
+Following.create!(follower_id: clairclerc.id, followable_id: thiagocruz.id)
+Following.create!(follower_id: clairclerc.id, followable_id: jamedelsol.id)
+Following.create!(follower_id: clairclerc.id, followable_id: dankofelippe.id)
+Following.create!(follower_id: clairclerc.id, followable_id: josephineholms.id)
+Following.create!(follower_id: clairclerc.id, followable_id: lorenzorapido.id)
+Following.create!(follower_id: clairclerc.id, followable_id: francoisdupont.id)
+
+Following.create!(follower_id: lorenzorapido.id, followable_id: lorenGrush.id)
+Following.create!(follower_id: lorenzorapido.id, followable_id: carlesIbanez.id)
+Following.create!(follower_id: lorenzorapido.id, followable_id: josePons.id)
+Following.create!(follower_id: lorenzorapido.id, followable_id: meredithWadman.id)
+Following.create!(follower_id: lorenzorapido.id, followable_id: danielClery.id)
+Following.create!(follower_id: lorenzorapido.id, followable_id: elizabethPennisi.id)
+Following.create!(follower_id: lorenzorapido.id, followable_id: kellyMayes.id)
+Following.create!(follower_id: lorenzorapido.id, followable_id: marcMayo.id)
+Following.create!(follower_id: lorenzorapido.id, followable_id: maxLaterreur.id)
+Following.create!(follower_id: lorenzorapido.id, followable_id: jamesyes.id)
+Following.create!(follower_id: lorenzorapido.id, followable_id: alextexmex.id)
+Following.create!(follower_id: lorenzorapido.id, followable_id: jeannegaspard.id)
+Following.create!(follower_id: lorenzorapido.id, followable_id: rockboa.id)
+Following.create!(follower_id: lorenzorapido.id, followable_id: thaisrose.id)
+Following.create!(follower_id: lorenzorapido.id, followable_id: florencevysk.id)
+Following.create!(follower_id: lorenzorapido.id, followable_id: maevadujardin.id)
+Following.create!(follower_id: lorenzorapido.id, followable_id: mariebocard.id)
+Following.create!(follower_id: lorenzorapido.id, followable_id: ericfurst.id)
+Following.create!(follower_id: lorenzorapido.id, followable_id: francoisdupont.id)
+
+Following.create!(follower_id: rockboa.id, followable_id: lorenGrush.id)
+Following.create!(follower_id: rockboa.id, followable_id: carlesIbanez.id)
+Following.create!(follower_id: rockboa.id, followable_id: josePons.id)
+Following.create!(follower_id: rockboa.id, followable_id: meredithWadman.id)
+Following.create!(follower_id: rockboa.id, followable_id: danielClery.id)
+Following.create!(follower_id: rockboa.id, followable_id: elizabethPennisi.id)
+Following.create!(follower_id: rockboa.id, followable_id: kellyMayes.id)
+Following.create!(follower_id: rockboa.id, followable_id: marcMayo.id)
+Following.create!(follower_id: rockboa.id, followable_id: maxLaterreur.id)
+Following.create!(follower_id: rockboa.id, followable_id: jamesyes.id)
+Following.create!(follower_id: rockboa.id, followable_id: alextexmex.id)
+Following.create!(follower_id: rockboa.id, followable_id: jeannegaspard.id)
+Following.create!(follower_id: rockboa.id, followable_id: Matthis.id)
+Following.create!(follower_id: rockboa.id, followable_id: thaisrose.id)
+Following.create!(follower_id: rockboa.id, followable_id: florencevysk.id)
+Following.create!(follower_id: rockboa.id, followable_id: maevadujardin.id)
+Following.create!(follower_id: rockboa.id, followable_id: mariebocard.id)
+Following.create!(follower_id: rockboa.id, followable_id: ericfurst.id)
+Following.create!(follower_id: rockboa.id, followable_id: clairclerc.id)
+Following.create!(follower_id: rockboa.id, followable_id: capucinedeschamps.id)
+Following.create!(follower_id: rockboa.id, followable_id: ulrichweiss.id)
+Following.create!(follower_id: rockboa.id, followable_id: pablosanto.id)
+Following.create!(follower_id: rockboa.id, followable_id: ricardopepito.id)
+Following.create!(follower_id: rockboa.id, followable_id: thiagocruz.id)
+Following.create!(follower_id: rockboa.id, followable_id: jamedelsol.id)
+Following.create!(follower_id: rockboa.id, followable_id: dankofelippe.id)
+Following.create!(follower_id: rockboa.id, followable_id: josephineholms.id)
+Following.create!(follower_id: rockboa.id, followable_id: lorenzorapido.id)
+Following.create!(follower_id: rockboa.id, followable_id: francoisdupont.id)
+
+Following.create!(follower_id: marcMayo.id, followable_id: lorenGrush.id)
+Following.create!(follower_id: marcMayo.id, followable_id: carlesIbanez.id)
+Following.create!(follower_id: marcMayo.id, followable_id: josePons.id)
+Following.create!(follower_id: marcMayo.id, followable_id: meredithWadman.id)
+Following.create!(follower_id: marcMayo.id, followable_id: maxLaterreur.id)
+Following.create!(follower_id: marcMayo.id, followable_id: jamesyes.id)
+Following.create!(follower_id: marcMayo.id, followable_id: alextexmex.id)
+Following.create!(follower_id: marcMayo.id, followable_id: jeannegaspard.id)
+Following.create!(follower_id: marcMayo.id, followable_id: rockboa.id)
+Following.create!(follower_id: marcMayo.id, followable_id: thaisrose.id)
+Following.create!(follower_id: marcMayo.id, followable_id: florencevysk.id)
+Following.create!(follower_id: marcMayo.id, followable_id: maevadujardin.id)
+Following.create!(follower_id: marcMayo.id, followable_id: mariebocard.id)
+Following.create!(follower_id: marcMayo.id, followable_id: ericfurst.id)
+Following.create!(follower_id: marcMayo.id, followable_id: clairclerc.id)
+Following.create!(follower_id: marcMayo.id, followable_id: capucinedeschamps.id)
+Following.create!(follower_id: marcMayo.id, followable_id: ulrichweiss.id)
+Following.create!(follower_id: marcMayo.id, followable_id: pablosanto.id)
+Following.create!(follower_id: marcMayo.id, followable_id: ricardopepito.id)
+Following.create!(follower_id: marcMayo.id, followable_id: thiagocruz.id)
+Following.create!(follower_id: marcMayo.id, followable_id: jamedelsol.id)
+Following.create!(follower_id: marcMayo.id, followable_id: dankofelippe.id)
+Following.create!(follower_id: marcMayo.id, followable_id: josephineholms.id)
+Following.create!(follower_id: marcMayo.id, followable_id: lorenzorapido.id)
+Following.create!(follower_id: marcMayo.id, followable_id: francoisdupont.id)
+
+Following.create!(follower_id: thaisrose.id, followable_id: lorenGrush.id)
+Following.create!(follower_id: thaisrose.id, followable_id: carlesIbanez.id)
+Following.create!(follower_id: thaisrose.id, followable_id: josePons.id)
+Following.create!(follower_id: thaisrose.id, followable_id: meredithWadman.id)
+Following.create!(follower_id: thaisrose.id, followable_id: danielClery.id)
+Following.create!(follower_id: thaisrose.id, followable_id: elizabethPennisi.id)
+Following.create!(follower_id: thaisrose.id, followable_id: kellyMayes.id)
+Following.create!(follower_id: thaisrose.id, followable_id: marcMayo.id)
+Following.create!(follower_id: thaisrose.id, followable_id: maxLaterreur.id)
+Following.create!(follower_id: thaisrose.id, followable_id: jamesyes.id)
+Following.create!(follower_id: thaisrose.id, followable_id: alextexmex.id)
+Following.create!(follower_id: thaisrose.id, followable_id: jeannegaspard.id)
+Following.create!(follower_id: thaisrose.id, followable_id: rockboa.id)
+Following.create!(follower_id: thaisrose.id, followable_id: Matthis.id)
+Following.create!(follower_id: thaisrose.id, followable_id: florencevysk.id)
+Following.create!(follower_id: thaisrose.id, followable_id: maevadujardin.id)
+Following.create!(follower_id: thaisrose.id, followable_id: mariebocard.id)
+Following.create!(follower_id: thaisrose.id, followable_id: ericfurst.id)
+Following.create!(follower_id: thaisrose.id, followable_id: clairclerc.id)
+Following.create!(follower_id: thaisrose.id, followable_id: capucinedeschamps.id)
+Following.create!(follower_id: thaisrose.id, followable_id: ulrichweiss.id)
+Following.create!(follower_id: thaisrose.id, followable_id: pablosanto.id)
+Following.create!(follower_id: thaisrose.id, followable_id: ricardopepito.id)
+Following.create!(follower_id: thaisrose.id, followable_id: thiagocruz.id)
+Following.create!(follower_id: thaisrose.id, followable_id: jamedelsol.id)
+Following.create!(follower_id: thaisrose.id, followable_id: dankofelippe.id)
+Following.create!(follower_id: thaisrose.id, followable_id: josephineholms.id)
+Following.create!(follower_id: thaisrose.id, followable_id: lorenzorapido.id)
+Following.create!(follower_id: thaisrose.id, followable_id: francoisdupont.id)
+
+Following.create!(follower_id: ericfurst.id, followable_id: lorenGrush.id)
+Following.create!(follower_id: ericfurst.id, followable_id: carlesIbanez.id)
+Following.create!(follower_id: ericfurst.id, followable_id: josePons.id)
+Following.create!(follower_id: ericfurst.id, followable_id: meredithWadman.id)
+Following.create!(follower_id: ericfurst.id, followable_id: danielClery.id)
+Following.create!(follower_id: ericfurst.id, followable_id: elizabethPennisi.id)
+Following.create!(follower_id: ericfurst.id, followable_id: kellyMayes.id)
+Following.create!(follower_id: ericfurst.id, followable_id: marcMayo.id)
+Following.create!(follower_id: ericfurst.id, followable_id: maxLaterreur.id)
+Following.create!(follower_id: ericfurst.id, followable_id: jamesyes.id)
+Following.create!(follower_id: ericfurst.id, followable_id: alextexmex.id)
+Following.create!(follower_id: ericfurst.id, followable_id: jeannegaspard.id)
+Following.create!(follower_id: ericfurst.id, followable_id: rockboa.id)
+Following.create!(follower_id: ericfurst.id, followable_id: thaisrose.id)
+Following.create!(follower_id: ericfurst.id, followable_id: florencevysk.id)
+Following.create!(follower_id: ericfurst.id, followable_id: maevadujardin.id)
+Following.create!(follower_id: ericfurst.id, followable_id: mariebocard.id)
+Following.create!(follower_id: ericfurst.id, followable_id: Matthis.id)
+Following.create!(follower_id: ericfurst.id, followable_id: clairclerc.id)
+Following.create!(follower_id: ericfurst.id, followable_id: capucinedeschamps.id)
+Following.create!(follower_id: ericfurst.id, followable_id: ulrichweiss.id)
+Following.create!(follower_id: ericfurst.id, followable_id: pablosanto.id)
+Following.create!(follower_id: ericfurst.id, followable_id: ricardopepito.id)
+Following.create!(follower_id: ericfurst.id, followable_id: thiagocruz.id)
+Following.create!(follower_id: ericfurst.id, followable_id: jamedelsol.id)
+Following.create!(follower_id: ericfurst.id, followable_id: dankofelippe.id)
+Following.create!(follower_id: ericfurst.id, followable_id: josephineholms.id)
+Following.create!(follower_id: ericfurst.id, followable_id: lorenzorapido.id)
+Following.create!(follower_id: ericfurst.id, followable_id: francoisdupont.id)
+
+Following.create!(follower_id: thiagocruz.id, followable_id: lorenGrush.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: carlesIbanez.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: josePons.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: meredithWadman.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: danielClery.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: elizabethPennisi.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: kellyMayes.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: marcMayo.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: maxLaterreur.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: jamesyes.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: alextexmex.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: jeannegaspard.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: rockboa.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: thaisrose.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: florencevysk.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: maevadujardin.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: mariebocard.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: ericfurst.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: clairclerc.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: capucinedeschamps.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: ulrichweiss.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: pablosanto.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: ricardopepito.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: Matthis.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: jamedelsol.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: dankofelippe.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: josephineholms.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: lorenzorapido.id)
+Following.create!(follower_id: thiagocruz.id, followable_id: francoisdupont.id)
+
+Following.create!(follower_id: francoisdupont.id, followable_id: lorenGrush.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: carlesIbanez.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: josePons.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: meredithWadman.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: danielClery.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: elizabethPennisi.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: kellyMayes.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: marcMayo.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: maxLaterreur.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: jamesyes.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: alextexmex.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: jeannegaspard.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: rockboa.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: thaisrose.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: florencevysk.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: maevadujardin.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: mariebocard.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: ericfurst.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: clairclerc.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: capucinedeschamps.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: ulrichweiss.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: pablosanto.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: ricardopepito.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: thiagocruz.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: jamedelsol.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: dankofelippe.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: josephineholms.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: lorenzorapido.id)
+Following.create!(follower_id: francoisdupont.id, followable_id: Matthis.id)
+
+Following.create!(follower_id: kellyMayes.id, followable_id: lorenGrush.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: carlesIbanez.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: josePons.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: meredithWadman.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: danielClery.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: elizabethPennisi.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: Matthis.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: marcMayo.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: maxLaterreur.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: jamesyes.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: alextexmex.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: jeannegaspard.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: rockboa.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: thaisrose.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: florencevysk.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: maevadujardin.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: mariebocard.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: ericfurst.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: clairclerc.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: capucinedeschamps.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: ulrichweiss.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: pablosanto.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: ricardopepito.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: thiagocruz.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: jamedelsol.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: dankofelippe.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: josephineholms.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: lorenzorapido.id)
+Following.create!(follower_id: kellyMayes.id, followable_id: francoisdupont.id)
+
+Following.create!(follower_id: jamesyes.id, followable_id: lorenGrush.id)
+Following.create!(follower_id: jamesyes.id, followable_id: carlesIbanez.id)
+Following.create!(follower_id: jamesyes.id, followable_id: josePons.id)
+Following.create!(follower_id: jamesyes.id, followable_id: meredithWadman.id)
+Following.create!(follower_id: jamesyes.id, followable_id: danielClery.id)
+Following.create!(follower_id: jamesyes.id, followable_id: elizabethPennisi.id)
+Following.create!(follower_id: jamesyes.id, followable_id: kellyMayes.id)
+Following.create!(follower_id: jamesyes.id, followable_id: marcMayo.id)
+Following.create!(follower_id: jamesyes.id, followable_id: maxLaterreur.id)
+Following.create!(follower_id: jamesyes.id, followable_id: Matthis.id)
+Following.create!(follower_id: jamesyes.id, followable_id: alextexmex.id)
+Following.create!(follower_id: jamesyes.id, followable_id: jeannegaspard.id)
+Following.create!(follower_id: jamesyes.id, followable_id: rockboa.id)
+Following.create!(follower_id: jamesyes.id, followable_id: thaisrose.id)
+Following.create!(follower_id: jamesyes.id, followable_id: florencevysk.id)
+Following.create!(follower_id: jamesyes.id, followable_id: maevadujardin.id)
+Following.create!(follower_id: jamesyes.id, followable_id: mariebocard.id)
+Following.create!(follower_id: jamesyes.id, followable_id: ericfurst.id)
+Following.create!(follower_id: jamesyes.id, followable_id: clairclerc.id)
+Following.create!(follower_id: jamesyes.id, followable_id: capucinedeschamps.id)
+Following.create!(follower_id: jamesyes.id, followable_id: ulrichweiss.id)
+Following.create!(follower_id: jamesyes.id, followable_id: pablosanto.id)
+Following.create!(follower_id: jamesyes.id, followable_id: ricardopepito.id)
+Following.create!(follower_id: jamesyes.id, followable_id: thiagocruz.id)
+Following.create!(follower_id: jamesyes.id, followable_id: jamedelsol.id)
+Following.create!(follower_id: jamesyes.id, followable_id: dankofelippe.id)
+Following.create!(follower_id: jamesyes.id, followable_id: josephineholms.id)
+Following.create!(follower_id: jamesyes.id, followable_id: lorenzorapido.id)
+Following.create!(follower_id: jamesyes.id, followable_id: francoisdupont.id)
+
+Following.create!(follower_id: josephineholms.id, followable_id: lorenGrush.id)
+Following.create!(follower_id: josephineholms.id, followable_id: carlesIbanez.id)
+Following.create!(follower_id: josephineholms.id, followable_id: josePons.id)
+Following.create!(follower_id: josephineholms.id, followable_id: meredithWadman.id)
+Following.create!(follower_id: josephineholms.id, followable_id: danielClery.id)
+Following.create!(follower_id: josephineholms.id, followable_id: elizabethPennisi.id)
+Following.create!(follower_id: josephineholms.id, followable_id: kellyMayes.id)
+Following.create!(follower_id: josephineholms.id, followable_id: marcMayo.id)
+Following.create!(follower_id: josephineholms.id, followable_id: maxLaterreur.id)
+Following.create!(follower_id: josephineholms.id, followable_id: jamesyes.id)
+Following.create!(follower_id: josephineholms.id, followable_id: alextexmex.id)
+Following.create!(follower_id: josephineholms.id, followable_id: jeannegaspard.id)
+Following.create!(follower_id: josephineholms.id, followable_id: rockboa.id)
+Following.create!(follower_id: josephineholms.id, followable_id: thaisrose.id)
+Following.create!(follower_id: josephineholms.id, followable_id: florencevysk.id)
+Following.create!(follower_id: josephineholms.id, followable_id: maevadujardin.id)
+Following.create!(follower_id: josephineholms.id, followable_id: mariebocard.id)
+Following.create!(follower_id: josephineholms.id, followable_id: ericfurst.id)
+Following.create!(follower_id: josephineholms.id, followable_id: clairclerc.id)
+Following.create!(follower_id: josephineholms.id, followable_id: capucinedeschamps.id)
+Following.create!(follower_id: josephineholms.id, followable_id: ulrichweiss.id)
+Following.create!(follower_id: josephineholms.id, followable_id: pablosanto.id)
+Following.create!(follower_id: josephineholms.id, followable_id: ricardopepito.id)
+Following.create!(follower_id: josephineholms.id, followable_id: thiagocruz.id)
+Following.create!(follower_id: josephineholms.id, followable_id: jamedelsol.id)
+Following.create!(follower_id: josephineholms.id, followable_id: dankofelippe.id)
+Following.create!(follower_id: josephineholms.id, followable_id: Matthis.id)
+Following.create!(follower_id: josephineholms.id, followable_id: lorenzorapido.id)
+Following.create!(follower_id: josephineholms.id, followable_id: francoisdupont.id)
+
+Following.create!(follower_id: ulrichweiss.id, followable_id: lorenGrush.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: carlesIbanez.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: josePons.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: meredithWadman.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: danielClery.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: elizabethPennisi.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: kellyMayes.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: marcMayo.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: maxLaterreur.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: jamesyes.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: alextexmex.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: jeannegaspard.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: rockboa.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: thaisrose.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: florencevysk.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: maevadujardin.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: mariebocard.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: ericfurst.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: clairclerc.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: capucinedeschamps.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: Matthis.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: pablosanto.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: ricardopepito.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: thiagocruz.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: jamedelsol.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: dankofelippe.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: josephineholms.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: lorenzorapido.id)
+Following.create!(follower_id: ulrichweiss.id, followable_id: francoisdupont.id)
+
+Following.create!(follower_id: alextexmex.id, followable_id: lorenGrush.id)
+Following.create!(follower_id: alextexmex.id, followable_id: carlesIbanez.id)
+Following.create!(follower_id: alextexmex.id, followable_id: josePons.id)
+Following.create!(follower_id: alextexmex.id, followable_id: meredithWadman.id)
+Following.create!(follower_id: alextexmex.id, followable_id: danielClery.id)
+Following.create!(follower_id: alextexmex.id, followable_id: elizabethPennisi.id)
+Following.create!(follower_id: alextexmex.id, followable_id: kellyMayes.id)
+Following.create!(follower_id: alextexmex.id, followable_id: marcMayo.id)
+Following.create!(follower_id: alextexmex.id, followable_id: maxLaterreur.id)
+Following.create!(follower_id: alextexmex.id, followable_id: jamesyes.id)
+Following.create!(follower_id: alextexmex.id, followable_id: Matthis.id)
+Following.create!(follower_id: alextexmex.id, followable_id: jeannegaspard.id)
+Following.create!(follower_id: alextexmex.id, followable_id: rockboa.id)
+Following.create!(follower_id: alextexmex.id, followable_id: thaisrose.id)
+Following.create!(follower_id: alextexmex.id, followable_id: florencevysk.id)
+Following.create!(follower_id: alextexmex.id, followable_id: maevadujardin.id)
+Following.create!(follower_id: alextexmex.id, followable_id: mariebocard.id)
+Following.create!(follower_id: alextexmex.id, followable_id: ericfurst.id)
+Following.create!(follower_id: alextexmex.id, followable_id: clairclerc.id)
+Following.create!(follower_id: alextexmex.id, followable_id: capucinedeschamps.id)
+Following.create!(follower_id: alextexmex.id, followable_id: ulrichweiss.id)
+Following.create!(follower_id: alextexmex.id, followable_id: pablosanto.id)
+Following.create!(follower_id: alextexmex.id, followable_id: ricardopepito.id)
+Following.create!(follower_id: alextexmex.id, followable_id: thiagocruz.id)
+Following.create!(follower_id: alextexmex.id, followable_id: jamedelsol.id)
+Following.create!(follower_id: alextexmex.id, followable_id: dankofelippe.id)
+Following.create!(follower_id: alextexmex.id, followable_id: josephineholms.id)
+Following.create!(follower_id: alextexmex.id, followable_id: lorenzorapido.id)
+Following.create!(follower_id: alextexmex.id, followable_id: francoisdupont.id)
 
 lorenGrush_1 = Story.create!(
   title: "Moon delivery startup Astrobotic picks future Vulcan rocket to launch first lunar mission",
