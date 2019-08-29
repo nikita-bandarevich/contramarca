@@ -1,0 +1,17 @@
+
+<div class="card-author">
+
+    <div class="icon">
+      <%= link_to('#') do %>
+      <%= image_tag "author_w.png" , alt: "alttext", :class => "icon2" %>
+      <% end %>
+    </div>
+
+  <div class="card-author-infos">
+    <div>
+      <h2><%= link_to "#{c.last_name}", user_path(c) %></h2>
+      <p><%= c.bio.truncate(40) %></p>
+      <br>
+    </div>
+  </div>
+</div>

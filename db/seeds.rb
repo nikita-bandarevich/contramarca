@@ -23,38 +23,38 @@ Science = Category.create!(
 
 Health = Category.create!(
   name: "Health",
-  image: "brain_w.png",
-  description: "a body of facts or truths systematically arranged"
+  image: "health_w.png",
+  description: "a state of physical, mental and social well-being "
   )
 
 Terrorism = Category.create!(
   name: "Terrorism",
-  image: "brain_w.png",
-  description: "a body of facts or truths systematically arranged"
+  image: "terrorism_w.png",
+  description: "the unlawful use of violence and intimidation"
   )
 
 Politics = Category.create!(
   name: "Politics",
-  image: "brain_w.png",
-  description: "a body of facts or truths systematically arranged"
+  image: "politics_w.png",
+  description: "activities involved in running government"
   )
 
 Investigation = Category.create!(
   name: "Investigation",
-  image: "brain_w.png",
+  image: "science_w.png",
   description: "a body of facts or truths systematically arranged"
   )
 
 Environment = Category.create!(
   name: "Environment",
-  image: "brain_w.png",
-  description: "a body of facts or truths systematically arranged"
+  image: "environment_w.png",
+  description: "everything that is around us"
   )
 
-Terraform = Category.create!(
-  name: "Terraform",
-  image: "brain_w.png",
-  description: "a body of facts or truths systematically arranged"
+Interplanetary = Category.create!(
+  name: "Interplanetary",
+  image: "interplanetary_w.png",
+  description: "the space between the planets of the Solar System"
   )
 
 
@@ -71,7 +71,7 @@ Matthis = User.create!(
 
 gloriaDickie = User.create!(
   first_name: "Gloria",
-  last_name: "gloriaDickie1",
+  last_name: "Dickie",
   author: "false",
   email: "gloriaDickiet@mail.com",
   password: "password",
@@ -168,6 +168,15 @@ NASA recently tasked Astrobotic and two other companies with sending robotic lan
   user: lorenGrush
 )
 
+Image.create!(
+  remote_data_url: "https://spacenews.com/wp-content/uploads/2018/11/lm-mccandless.jpg",
+  story: lorenGrush_1
+  )
+
+StoryCategory.create!(
+  category: Interplanetary,
+  story: lorenGrush_1
+)
 
 carlesIbanez_1 = Story.create!(
 
@@ -176,6 +185,17 @@ carlesIbanez_1 = Story.create!(
   content: "Delta wetlands are increasingly recognized as important sinks for ‘blue carbon,’ although this and other ecosystem services that deltas provide are threatened by human activities. We investigated factors that affect sediment accretion using short term (3 years using marker horizons) and longer-term measures (∼50 year using ¹³⁷ Cs soil core distribution and ∼100 year using ²¹⁰ Pb distribution), the associated carbon accumulation rates, and resulting changes in surface elevation in the Ebro River Delta, Catalonia, Spain. Fifteen sites were selected, representing the geomorphological settings and range of salinities typical of the delta's wetlands. Sediment accretion rates as measured by ¹³⁷ Cs distribution in soil cores ranged from 0.13 to 0.93 cm yr ⁻¹ . Surface elevations increased at all sites, from 0.10 to 2.13 cm yr ⁻¹ with the greatest increases in natural impoundments with little connection to other surface waters. Carbon accumulation rates were highly spatially variable, ranging from 32 to 435 g C m ⁻¹ yr ⁻¹ with significantly higher rates at bay sites (p = 0.02) where hydrologic connectivity is high and sediment resuspension more intense. Sites with high connectivity had significantly higher rates of carbon accumulation (averaging 376 ± 50 g C m ⁻¹ yr ⁻¹ ) compared to sites with moderate or low connectivity. We also found high rates of carbon accumulation in brackish sites where connectivity was low and biomass production was characteristically higher than in saline sites. A stepwise regression model explained 81% of variability in carbon accumulation rates across all sites. Our data indicate deltaic wetlands can be important sinks for blue carbon, contributing to climate change mitigation.",
   status: true,
   user: carlesIbanez
+)
+
+Image.create!(
+  remote_data_url:
+   "https://schmidtocean.org/wp-content/uploads/FK160602-NetDeployment_15062016_Naranjo-1-1140x760.jpg",
+  story: carlesIbanez_1
+  )
+
+StoryCategory.create!(
+  category: Environment,
+  story: carlesIbanez_1
 )
 
 josePons_1 = Story.create!(
@@ -190,6 +210,16 @@ Previous studies have highlighted the impact of neuromechanics and dynamic prope
 In spite of these altered neuromechanics, the effect of wearing a wearable robot on human motor coordination is small (3), which supports the use of these technologies to assist human movement. Moreno et al. (3) observed that the dimensionality of motor control when using a wearable robot—how many independent components in the muscle space of wearers are required to explain how muscles are activated—did not change for different walking speeds or amount of assistive force. They also showed that the timing impulsive motor structure—that is, the gait cycle phase and timing at which muscle groups are recruited during locomotion—was maintained along a broad range of walking conditions (flat surfaces as well as uneven terrain). These findings support the value of robotic-based strategies, both with rigid wearable robots and with exosuits, aimed at assisting locomotion in healthy wearers and at healing or assisting neurological patients.",
   status: true,
   user: josePons
+)
+
+Image.create!(
+  remote_data_url: "https://home.bt.com/images/a-parents-guide-to-virtual-reality-gaming-how-much-does-it-cost-and-is-it-safe-136419311547902601-170704114555.jpg",
+  story: josePons_1
+)
+
+StoryCategory.create!(
+  category: Science,
+  story: josePons_1
 )
 
 danielClery_1 = Story.create!(
@@ -208,6 +238,16 @@ This is just a single planet, but the results suggest finding a hospitable plane
 
   status: true,
   user: danielClery
+)
+
+Image.create!(
+  remote_data_url:"https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/LHS_3884b_700p.jpg?itok=5xY3fYNg",
+  story: danielClery_1
+  )
+
+StoryCategory.create!(
+  category: Interplanetary,
+  story: danielClery_1
 )
 
 meredithWadman_1 = Story.create!(
@@ -237,6 +277,16 @@ Some scientists counter that Health Canada is performing well, given the demands
   user: meredithWadman
   )
 
+Image.create!(
+  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/ca_0823Cannabis_Research_online.jpg?itok=E6cCoSmZ",
+  story: meredithWadman_1
+  )
+
+StoryCategory.create!(
+  category: Politics,
+  story: meredithWadman_1
+)
+
 elizabethPennisi_1 = Story.create!(
   title: "This rock-eating ‘worm’ could change the course of rivers",
   #category: "Science" "Nature",
@@ -252,7 +302,17 @@ The rock-eating shipworm does have one big thing in common with its wood-eating 
   user: elizabethPennisi
 )
 
-carlesIbanez_3 = Story.create!(
+Image.create!(
+  remote_data_url: "https://48857a70-a-62cb3a1a-s-sites.googlegroups.com/site/fokhighschoolcurriculum/whats-water/nutrients/DSCN1324.jpg?attachauth=ANoY7cp8auYDvOEi0C49WSKr8SWXW6fKESTP9Toh7C9QaMRnsjYbzVm6di7DUMxSkc_gQVw1PpJpwCce_b-IQ33flRol73tTw467ruylq1vaGS5KvBCNKCIn-DpXKVnznW6yaqDlUdTQK3AQVSbuqheU0W0yT_JLELXI1hG8xmpLuPR9sqzECXVkcX0P3kaNi2dYVTluyv_gZCNgG6fh36aHm_V_40KrAdbu87-2-D7BmtXWGeDMzBaQfjsNehcmnKcWwz5o-k0Y&attredirects=0",
+story: elizabethPennisi_1
+)
+
+StoryCategory.create!(
+  category: Environment,
+  story: elizabethPennisi_1
+)
+
+carlesIbanez_2 = Story.create!(
   title: "Changing nutrients, changing rivers",
   #category: "Science" "Nature",
   content: "Eutrophication—the excessive enrichment of a body of water with nutrients such as nitrogen (N) and phosphorus (P)—is Earth's most widespread problem for water quality (1, 2). Growing evidence suggests a global trend toward reversing eutrophication. However, in rivers and estuaries of developed countries and in lakes of emerging economies, the ongoing reduction in nutrient inputs—termed reoligotrophication—is much larger for P than for N (3, 4). Although the rapid emergence of this phenomenon has hindered detailed monitoring of the ecological effects, a few studies have documented an abrupt shift from green to clear waters and consequently from phytoplankton to macrophytes as dominant primary producers in response to reoligotrophication in rivers and estuaries (5–7). However, the improvement in water quality due to P decline does not imply a return to pristine ecological conditions, because high N:P ratios trigger undesirable changes in the ecosystem (8).
@@ -273,6 +333,16 @@ The ecological effects of P decline and N/P imbalances on the structure and func
 ",
   status: true,
   user: carlesIbanez
+)
+
+Image.create!(
+  remote_data_url: "http://goosefflab.weebly.com/uploads/3/7/9/2/37926219/3851818.jpg?400",
+  story: carlesIbanez_2
+)
+
+StoryCategory.create!(
+  category: Environment,
+  story: carlesIbanez_2
 )
 
 kellyMayes_1 = Story.create!(
@@ -305,56 +375,10 @@ Image.create!(
   story: kellyMayes_1
 )
 
-Image.create!(
-  remote_data_url: "http://goosefflab.weebly.com/uploads/3/7/9/2/37926219/3851818.jpg?400",
-  story: carlesIbanez_3
+StoryCategory.create!(
+  category: Environment,
+  story: kellyMayes_1
 )
-
-Image.create!(
-  remote_data_url:
-   "https://schmidtocean.org/wp-content/uploads/FK160602-NetDeployment_15062016_Naranjo-1-1140x760.jpg",
-  story: carlesIbanez_3
-  )
-
-Image.create!(
-  remote_data_url: "https://48857a70-a-62cb3a1a-s-sites.googlegroups.com/site/fokhighschoolcurriculum/whats-water/nutrients/DSCN1324.jpg?attachauth=ANoY7cp8auYDvOEi0C49WSKr8SWXW6fKESTP9Toh7C9QaMRnsjYbzVm6di7DUMxSkc_gQVw1PpJpwCce_b-IQ33flRol73tTw467ruylq1vaGS5KvBCNKCIn-DpXKVnznW6yaqDlUdTQK3AQVSbuqheU0W0yT_JLELXI1hG8xmpLuPR9sqzECXVkcX0P3kaNi2dYVTluyv_gZCNgG6fh36aHm_V_40KrAdbu87-2-D7BmtXWGeDMzBaQfjsNehcmnKcWwz5o-k0Y&attredirects=0",
-story: elizabethPennisi_1 )
-
-Image.create!(
-  remote_data_url:
- "https://www.daily-sun.com/assets/news_images/2019/06/29/Ship_worms-ds.jpg",
- story: elizabethPennisi_1
-  )
-
-Image.create!(
-  remote_data_url:"https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/LHS_3884b_700p.jpg?itok=5xY3fYNg",
-  story: danielClery_1
-  )
-
-Image.create!(
-  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/ca_0823Cannabis_Research_online.jpg?itok=E6cCoSmZ",
-  story: meredithWadman_1
-  )
-
-Image.create!(
-  remote_data_url: "https://spacenews.com/wp-content/uploads/2018/11/lm-mccandless.jpg",
-  story: lorenGrush_1
-  )
-
-Image.create!(
-  remote_data_url:"https://cdn.mos.cms.futurecdn.net/SpzGH5xKg2Pev8jFzww3Fo-650-80.jpg",
-  story: lorenGrush_1
-  )
-
-Image.create!(
-  remote_data_url: "http://www.irta.cat/wp-content/uploads/2018/05/jornada_life_admiclim-636x500.jpg",
-story: carlesIbanez_1
-  )
-
-Image.create!(
-  remote_data_url: "http://www.irta.cat/wp-content/uploads/2018/01/Delta_Ebre-2.jpg",
-  story: carlesIbanez_1
-  )
 
 lorenGrush_2 = Story.create!(
   title: "India’s lunar mission enters the Moon’s orbit ahead of landing attempt",
@@ -377,6 +401,11 @@ Image.create!(
   remote_data_url: "https://cdn.vox-cdn.com/thumbor/r_eT7ab1iRkLwVhh69fpoRKlGec=/0x0:8256x5504/920x613/filters:focal(3468x2092:4788x3412):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65050303/03pragyanrovermountedontherampprojectingfromoutofthesidesofvikramlander__1_.0.jpg",
   story: lorenGrush_2
   )
+
+StoryCategory.create!(
+  category: Interplanetary,
+  story: lorenGrush_2
+)
 
 lorenGrush_3 = Story.create!(
   title: "Sierra Nevada picks the future Vulcan rocket to fly its mini-spaceplane to orbit",
@@ -406,6 +435,11 @@ Image.create!(
   story: lorenGrush_3
   )
 
+StoryCategory.create!(
+  category: Environment,
+  story: lorenGrush_3
+)
+
 lorenGrush_4 = Story.create!(
   title: "The Perseid meteor shower peaks tonight, but the Moon is going to spoil the fun",
   #category: "Science" "Space",
@@ -423,6 +457,10 @@ Image.create!(
   story: lorenGrush_4
   )
 
+StoryCategory.create!(
+  category: Interplanetary,
+  story: lorenGrush_4
+)
 
 lorenGrush_5 = Story.create!(
   title: "Watch as ULA launches the final flight of its Delta IV Medium rocket",
@@ -445,6 +483,11 @@ Image.create!(
   remote_data_url: "https://cdn.vox-cdn.com/thumbor/nCVajgYGbcsTdRoJbUVyscD-O20=/0x0:3840x2560/920x613/filters:focal(1613x973:2227x1587):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65052238/48478269312_58dd3dc446_o.0.jpg",
   story: lorenGrush_5
   )
+
+StoryCategory.create!(
+  category: Interplanetary,
+  story: lorenGrush_5
+)
 
 kellyMayes_2 = Story.create!(
   title: "Vanishing Arctic ice will open the way for more science voyages, analysis suggests",
@@ -475,7 +518,15 @@ CMTS expects to post its final report on Arctic shipping on its website in late 
   user: kellyMayes
 )
 
+Image.create!(
+  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/healy_1280p.jpg?itok=ufVOG7r_",
+  story: kellyMayes_2
+  )
 
+StoryCategory.create!(
+  category: Environment,
+  story: kellyMayes_2
+)
 
 kellyMayes_3 = Story.create!(
   title: "This may be the largest parrot that ever lived",
@@ -490,15 +541,16 @@ The scientists estimate the animal (illustrated above) lived about 20 million ye
   user: kellyMayes
 )
 
-Image.create!(
-  remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/healy_1280p.jpg?itok=ufVOG7r_",
-  story: kellyMayes_2
-  )
 
 Image.create!(
   remote_data_url: "https://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/Heracles4_%26_Kuiornis_V3_p1280.jpg?itok=EP3U70UZ",
   story: kellyMayes_3
   )
+
+StoryCategory.create!(
+  category: Environment,
+  story: kellyMayes_3
+)
 
 
 
@@ -520,6 +572,10 @@ Image.create!(
   story: kellyMayes_4
   )
 
+StoryCategory.create!(
+  category: Environment,
+  story: kellyMayes_4
+)
 
 kellyMayes_5 = Story.create!(
   title: "Cockroaches may soon be unstoppable—thanks to fast-evolving insecticide resistance",
@@ -540,6 +596,10 @@ Image.create!(
   story: kellyMayes_5
   )
 
+StoryCategory.create!(
+  category: Environment,
+  story: kellyMayes_5
+)
 
 kellyMayes_6 = Story.create!(
   title: "Snapping Shrimp",
@@ -558,6 +618,11 @@ Image.create!(
   remote_data_url: "https://ocr.org/ocr/wp-content/uploads/snapping-shrimp.jpg",
   story: kellyMayes_6
   )
+
+StoryCategory.create!(
+  category: Environment,
+  story: kellyMayes_6
+)
 
 
 kellyMayes_7 = Story.create!(
@@ -581,6 +646,11 @@ Image.create!(
   story: kellyMayes_7
   )
 
+StoryCategory.create!(
+  category: Environment,
+  story: kellyMayes_7
+)
+
 kellyMayes_8 = Story.create!(
   title: "Snapping Shrimp",
   #category: "Science" "Animals",
@@ -594,7 +664,17 @@ If he is correct, it would explain how nocturnal animals might perceive their su
   user: kellyMayes
 )
 
-elizabethPennisi_3 = Story.create!(
+Image.create!(
+  remote_data_url: "https://content.presspage.com/uploads/1979/1920_180103-snapping-shrimp-banner.jpg?10000",
+  story: kellyMayes_8
+  )
+
+StoryCategory.create!(
+  category: Environment,
+  story: kellyMayes_8
+)
+
+elizabethPennisi_2 = Story.create!(
   title: "Amazon rainforest fires: an environmental catastrophe – in pictures",
   #category: "Science" "Nature",
   content: "Fires are raging across the world’s largest tropical rainforest as farmers, land-grabbers and loggers torch trees and clear land for crops or grazing. According to Brazil’s National Institute of Space Research, the number of fires detected by satellite in the Amazon region this month is the highest since 2010. Bowing to international pressure and a global outcry over the destruction of a vital resource in the fight against climate change, president Jair Bolsonaro authorised the deployment of Brazil’s armed forces to help combat blazes, with warplane dumping water on burning tracts of Amazon. Critics say the large number of fires this year has been stoked by Bolsonaro’s encouragement of farmers, loggers and ranchers to speed up efforts to strip away forest.
@@ -605,10 +685,15 @@ elizabethPennisi_3 = Story.create!(
 
 Image.create!(
   remote_data_url: "https://i.guim.co.uk/img/media/a19c7492238cb1ea573b9e9958a5bf56044fb66f/15_167_2446_1468/master/2446.jpg?width=1900&quality=85&auto=format&fit=max&s=3f8132277095fea6880b4a701ee85ecb",
-  story: elizabethPennisi_3
+  story: elizabethPennisi_2
   )
 
-gloriaDickie1 = Story.create!(
+StoryCategory.create!(
+  category: Environment,
+  story: elizabethPennisi_2
+)
+
+gloriaDickie_1 = Story.create!(
   title: "Brazil’s Amazon has burned this badly before. This year’s fires are still bad",
   #category: "Science" "Nature",
   content: "The Amazon rainforest in Brazil is being ravaged by fire. More than 74,000 fires have burned in the country since January, according to the country’s National Institute for Space Research — with 9,500 new forest fires igniting since just last week, the result of the natural dry season and fires intentionally ignited to clear forest. Black smoke billows from treetops, spreading across parts of South America and even shrouding the coastal city of São Paulo in near darkness.
@@ -626,6 +711,12 @@ To learn more about the fires and what’s at stake, Science News spoke with env
 
 Image.create!(
   remote_data_url: "https://www.sciencenews.org/wp-content/uploads/2019/08/082319_GD_amazon-fire_feat-1028x579.jpg",
-  story: gloriaDickie1
+  story: gloriaDickie_1
   )
+
+StoryCategory.create!(
+  category: Environment,
+  story: gloriaDickie_1
+)
+
 puts "finished"
