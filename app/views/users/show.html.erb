@@ -5,17 +5,31 @@
       <%#= link_to stories_path, class: "btn-dark-grey", style: "margin-top: 10px;" do %>
           <!-- <h3>follow</h3> -->
         <%# end %>
-      <% unless controller.controller_name == "stories" && controller.action_name == "show"%>
-          <%= link_to 'FOLLOWERS', bookmarks_path, class: "special-btn mr-2" %>
-          <%#= @my_users_followers.count%>
-      <% end %>
+      <div>
+        <div class="text-center">
+          <h5><%= current_user.followings.where(followable_id: current_user).count %></h5>
+        </div>
+          <br>
+        <%= link_to 'FOLLOWERS', bookmarks_path, class: "special-btn m-1" %>
+      </div>
+      <div>
+        <div class="text-center">
+          <h5><%= current_user.followings.where(follower_id: current_user).count %></h5>
 
-      <% unless controller.controller_name == "stories" && controller.action_name == "show"%>
-          <%= link_to 'FOLLOWING', bookmarks_path, class: "special-btn mr-2" %>
-          <%#= @my_users_followings.count%>
-      <% end %>
+        </div>
+        <br>
+        <%= link_to 'FOLLOWING', bookmarks_path, class: "special-btn m-1" %>
+      </div>
+      <div>
+        <div class="text-center">
+          <h5><%= current_user.bookmarks.count %></h5>
 
-      <%= link_to 'SAVED', bookmarks_path, class: "special-btn" %>
+        </div>
+        <br>
+        <%= link_to 'BOOKMARKS', bookmarks_path, class: "special-btn m-1" %>
+      </div>
+
+
     </div>
     <br>
     <% @stories.each do |s| %>
