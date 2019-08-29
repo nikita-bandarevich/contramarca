@@ -7,10 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "starting seed file"
 
+
 StoryCategory.destroy_all
-Category.destroy_all
 Story.destroy_all
+Category.destroy_all
 User.destroy_all
+
 
 
 
