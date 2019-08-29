@@ -7,7 +7,7 @@
 
     <div class="card-author-infos">
         <h2><%= c.last_name %></h2>
-        <p><%= c.bio.truncate(60) %></p>
+        <p><%= c.bio.truncate(60) unless c.bio.nil? %></p>
     </div>
   </div>
 
