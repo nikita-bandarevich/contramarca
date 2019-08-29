@@ -19,10 +19,16 @@
     </div>
 
   <div class="searchicon">
-    <%= link_to stories_search_path do  %>
-      <i style="font-size: 13px; padding-right: 10px;" class="fas fa-search"></i>
-    <% end %>
+      <a class="no-style" data-toggle="modal" data-target="#search">
+        <i style="font-size: 13px; padding-right: 10px;" class="fas fa-search"></i>
+      </a>
   </div>
 
 </div>
 
+   <div class="form">
+    </div>
+
+</div>
+
+<%= render 'shared/search' %>

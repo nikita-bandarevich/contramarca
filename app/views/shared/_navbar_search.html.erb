@@ -7,13 +7,19 @@
     </div>
 
     <div class="form">
-      <%= form_tag stories_search_path, method: :get do %>
-      <%= text_field_tag :query,
-        params[:query],
-        class: "md-form mb-3 mt-3 h6",
-        placeholder: "search"
-      %>
-      <% end %>
+      <a class="no-style" data-toggle="modal" data-target="#search">
+        <i style="font-size: 13px; padding-right: 10px;" class="fas fa-search"></i>
+      </a>
     </div>
 
 </div>
+<style>
+  .no-style {
+    margin: 0px !important;
+    padding: 0px !important;
+    style: none;
+  }
+</style>
+
+
+<%= render 'shared/search' %>
