@@ -1,5 +1,4 @@
-<div class="container">
-  <div class="narrow-container authorcard">
+<div class="narrow-container authorcard">
     <div class="title mb-1">
       <h5>
       <%= u.first_name %>
@@ -7,16 +6,15 @@
       </h5>
     </div>
     <br>
-    <div class="bio mb-0">
+    <div class="bio m-0">
       <p class="mb-0">
         <%= u.bio %>
       </p>
     </div>
-
+​
     <% unless current_user == u %>
-     <%= link_to followings_path(followable_id: u.id), class: "btn-dark-grey mt-3", method: :post do %>
+     <%= link_to followings_path(followable_id: u.id), class: "btn-dark-grey mt-0", method: :post do %>
         <h3>follow</h3>
      <% end %>
     <% end %>
-  </div>
 </div>
