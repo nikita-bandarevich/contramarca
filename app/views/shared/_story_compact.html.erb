@@ -14,11 +14,11 @@
 
     <% if s.bookmarks.exists? %>
       <%= link_to bookmark_path(story: params[:id] || s.id  ), method: :post do %>
-        <i class="fas fa-bookmark fa-rotate-180"></i>
+        <i class="fas fa-bookmark"></i>
       <% end %>
     <% else %>
       <%= link_to bookmark_path(story: params[:id] || s.id  ), method: :post do %>
-        <i class="far fa-bookmark fa-rotate-180"></i>
+        <i class="far fa-bookmark "></i>
       <% end %>
     <% end %>
     <!-- Default dropleft button -->
