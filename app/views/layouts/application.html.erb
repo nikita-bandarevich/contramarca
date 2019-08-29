@@ -13,10 +13,12 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
+
+
     <% if controller.controller_name == "stories" && controller.action_name == "show"%>
       <%= render 'shared/navbar_author' %>
       <%= yield %>
-    <% elsif controller.controller_name == "stories" && controller.action_name == "index"%>
+    <% elsif controller.controller_name == "stories" && controller.action_name == "index" && user_signed_in? %>
       <%= render 'shared/navbar_logo' %>
       <%= yield %>
     <% elsif controller.controller_name == "stories" && controller.action_name == "search"%>
@@ -30,6 +32,8 @@
       <%= yield %>
      <% elsif controller.controller_name == "stories" && controller.action_name == "edit"%>
       <%= render 'shared/navbar_new' %>
+      <%= yield %>
+    <% elsif controller.controller_name == "stories" && controller.action_name == "index" && !user_signed_in? %>
       <%= yield %>
     <% else %>
         <%= render 'shared/navbar_blank'  %>
