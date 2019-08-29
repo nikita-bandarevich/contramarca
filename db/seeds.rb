@@ -8,11 +8,11 @@
 
 puts "starting seed file"
 
-StoryCategory.destroy_all
-Category.destroy_all
-Story.destroy_all
-User.destroy_all
 
+StoryCategory.destroy_all
+Story.destroy_all
+Category.destroy_all
+User.destroy_all
 
 Science = Category.create!(
   name: "Science",

@@ -1,14 +1,14 @@
 <%= link_to(user_path(c)) do %>
 
   <div class="card-author">
-
-      <div class="icon">
-        <%= image_tag "author_w.png" , alt: "alttext", :class => "icon2" %>
-      </div>
+    <div class="icon">
+      <%= image_tag "author_w.png" , alt: "alttext", class: "icon2" %>
+    </div>
 
     <div class="card-author-infos">
         <h2><%= c.last_name %></h2>
-        <p><%= c.bio.truncate(40) %></p>
+        <p><%= c.bio.truncate(60) unless c.bio.nil? %></p>
     </div>
   </div>
+
 <% end %>

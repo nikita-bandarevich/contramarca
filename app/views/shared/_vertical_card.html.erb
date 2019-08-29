@@ -6,7 +6,9 @@
     </div>
 
   <div class="card-author-infos">
-      <h2><%= c.name %></h2>
-      <p><%= c.description %></p>
+  <div>
+    <h2><%= c.name %></h2>
+    <p><%= c.description.truncate(60) %></p>
+  </div>
   </div>
 </div>
