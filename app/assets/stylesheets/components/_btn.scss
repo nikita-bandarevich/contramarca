@@ -202,6 +202,18 @@ input[type="submit"]:hover{
     color: #1f1f1f !important;
 }
 
+.btn-gold{
+    border:solid 1px $main-gold-color !important;
+    background: transparent;
+    color: $main-gold-color !important;
+}
+.btn-gold:hover{
+    border:solid 2px $main-gold-color !important;
+    background: $main-gold-color !important;
+    color: white !important;
+}
+
+
 .btn-dark,
 input[type="submit"]{
     border:solid 2px #1f1f1f;
