@@ -9,20 +9,25 @@
       <br>
       <br>
       <br>
+      <div class="row">
       <% @images.each do |img| %>
-        <%= cl_image_tag img.data %>
+      <div class="col">
+        <%= cl_image_tag img.data, width: "100%", height: "auto"%>
+        </div>
       <% end %>
+      </div>
+      <br><br>
 
       <%=  simple_form_for [@story, @image] do |f| %>
         <%= f.input :data %>
         <%= f.input :data_cache, as: :hidden %>
-        <%= f.submit 'Add photo', class:"btn-dark-grey" %>
+        <%= f.submit 'Add photo', class:"btn-dark-grey"%>
       <% end %>
       <br>
       <br>
       <br>
 
-      <%= link_to "Save", story_path(@story) %>
+      <%= link_to "Done", story_path(@story), class:"btn-gold" %>
 
     </div>
   </div>
