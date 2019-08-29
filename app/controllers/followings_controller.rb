@@ -5,6 +5,6 @@ class FollowingsController < ApplicationController
     @following.followable_id = params[:followable_id]
     @following.save
     authorize(@following)
-    redirect_to stories_path
+    redirect_to user_path(current_user)
   end
 end

@@ -1,19 +1,12 @@
-<%= link_to('#') do %>
-  <div class="card-trip">
+
+<div class="card-author">
 
     <div class="icon">
-        <%= image_tag "#{c.image}" , alt: "alttext", :class => "icon2" %>
+      <%= image_tag "#{c.image}" , alt: "alttext", :class => "icon2" %>
     </div>
 
-    <div class="card-trip-infos">
-      <div>
-        <h2><%= c.name %></h2>
-        <p><%= c.description %></p>
-        <br>
-      </div>
-    </div>
+  <div class="card-author-infos">
+      <h2><%= c.name %></h2>
+      <p><%= c.description %></p>
   </div>
-<% end %>
-
-
-<!-- , style="font-size: 60px; color: white;" -->
+</div>

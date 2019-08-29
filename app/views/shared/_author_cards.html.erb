@@ -1,4 +1,5 @@
 <%= link_to(user_path(c)) do %>
+
   <div class="card-author">
 
       <div class="icon">
@@ -6,10 +7,8 @@
       </div>
 
     <div class="card-author-infos">
-      <div>
         <h2><%= c.last_name %></h2>
         <p><%= c.bio.truncate(40) %></p>
-      </div>
     </div>
   </div>
 <% end %>
