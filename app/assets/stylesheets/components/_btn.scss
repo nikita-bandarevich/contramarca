@@ -204,13 +204,13 @@ input[type="submit"]:hover{
 
 .btn-gold{
     border:solid 1px $main-gold-color !important;
-    background: transparent;
-    color: $main-gold-color !important;
+    background: $main-gold-color !important;
+    color: black !important;
 }
 .btn-gold:hover{
-    border:solid 2px $main-gold-color !important;
-    background: $main-gold-color !important;
-    color: white !important;
+    border:solid 2px white !important;
+    background: white !important;
+    color: $main-gold-color !important;
 }
 
 

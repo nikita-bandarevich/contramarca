@@ -1,6 +1,6 @@
 
 <div class="container">
-  <% unless @stories.nil? %>
+  <% unless @stories.empty? %>
     <% if params[:query] %>
       <% @stories.each do |s| %>
         <br>
@@ -9,6 +9,10 @@
     <%# else %>
         <%#= render 'shared/categories' %>
     <% end %>
+  <% else %>
+    <h4>
+      No results for <%= params[:query] %>
+    </h4>
   <% end %>
 </div>
 
