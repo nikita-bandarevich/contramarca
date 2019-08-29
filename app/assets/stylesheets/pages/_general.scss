@@ -19,20 +19,20 @@ a:hover {
 }
 
 p {
-  color: #dadada;
+  color: white;
   font-size: 17px;
   line-height: 150%;
   // text-align: justify;
 }
 
 .small_text {
-  color: #dadada;
-  font-size: 15px;
+  color: white;
+  font-size: 18px;
   line-height: 100%;
 }
 
 h1 {
-  color: #bcbcbc;
+  color: white;
   font-weight: 600;
   font-size: 22px;
   line-height: 115%;
@@ -119,12 +119,12 @@ h5 {
 .length {
   background-size: cover;
   background-position: center;
-  padding-top: 250px;
+  padding-top: 300px;
   height: 100vh;
 }
 
 .home {
-  font-size: 12vw;
+  font-size: 7vw;
   font-weight: 600;
   letter-spacing: -0.035em;
   color: $main-gold-color;

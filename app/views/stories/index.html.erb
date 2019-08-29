@@ -4,9 +4,9 @@
     <div class="length">
       <h4 class="small_text">Contramarca<h4>
 
-      <h1 class="home mb-0">independent stories for cautious readers</h1>
+      <h1 class="home">independent stories for cautious readers</h1>
       <br>
-      <div class="mt-0">
+      <div class="mt">
         <%= link_to 'Sign-in', new_user_session_path, class: "btn btn-white btn-mid" %>
       </div>
 
@@ -26,10 +26,10 @@
 
   <h1 class="header">Authors</h1>
   <%= render 'shared/authors' %>
-
+  <br>
   <h1 class="header">Categories</h1>
   <%= render 'shared/categories' %>
-
+  <br>
   <!-- <h1 class="header">Feed</h1> -->
   <% if !user_signed_in? || current_user.followed_stories.empty? %>
     <% @stories.each do |s| %>

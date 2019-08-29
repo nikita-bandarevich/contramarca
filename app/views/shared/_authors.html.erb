@@ -1,10 +1,8 @@
 <div class="container">
-  <div class="row">
-  <% User.all.each do |c| %>
-  <div class="col-xs-6 col-md-3 col-lg-2 m-2">
-    <%= render 'shared/author_cards', c: c %>
-  </div>
-  <% end %>
+  <div class="author-cards-wrap">
+    <% User.all.each do |c| %>
+      <%= render 'shared/author_cards', c: c %>
+    <% end %>
   </div>
 </div>
 
