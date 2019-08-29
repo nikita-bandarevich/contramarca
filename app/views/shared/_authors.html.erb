@@ -1,0 +1,8 @@
+<div class="d-flex mb-5">
+  <% User.all.each do |c| %>
+    <%= render 'shared/author_cards', c: c %>
+  <% end %>
+</div>
+
+
+

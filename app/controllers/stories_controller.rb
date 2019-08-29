@@ -16,6 +16,12 @@ class StoriesController < ApplicationController
     authorize(@stories)
   end
 
+  # def category
+  #   @stories = policy_scope(Story)
+  #   @stories = @stories.where(sql_query, query: "%#{params[:query]}%").order(created_at: :desc)
+  #   authorize(@stories)
+  # end
+
   def show
     # authorize(@story) # -> show? inside storyPolicy
     @story = Story.find(params[:id])
