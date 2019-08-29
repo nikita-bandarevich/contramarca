@@ -5,12 +5,12 @@
 }
 
 .card-author {
-  height: 160px;
-  width: 120px;
-  flex: 0 0 0 auto;
+  height: 180px;
+  width: 180px;
+  flex: 0 0 auto;
   // background: none;
   // box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  border: 1px solid #8A8A8A;
+  border: 1px solid white;
   text-align: center;
   margin-right: 10px;
 }
@@ -31,21 +31,22 @@
 }
 
 .card-author h2 {
-  font-size: 14px;
+
+  font-size: 22px;
   font-weight: bold;
   margin: 0;
   color: $main-gold-color;
 }
 
 .card-author p {
-  font-size: 10px;
-  opacity: .7;
+  font-size: 14px;
+
   margin: 0;
 }
 
 
 .card-author .card-author-infos {
   padding: 16px;
-  text-align:center;
+  text-align: center;
 }
 

@@ -1,14 +1,14 @@
 
-<div class="card-trip">
+<div class="card-author">
 
     <div class="icon">
       <%= image_tag "#{c.image}" , alt: "alttext", :class => "icon2" %>
     </div>
 
-  <div class="card-trip-infos">
+  <div class="card-author-infos">
   <div>
     <h2><%= c.name %></h2>
-    <p><%= c.description %></p>
+    <p><%= c.description.truncate(60) %></p>
   </div>
   </div>
 </div>
