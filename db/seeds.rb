@@ -70,12 +70,12 @@ Anthropology = Category.create!(
   )
 
 Matthis = User.create!(
-  first_name: "Matthis",
-  last_name: "Parisot",
+  first_name: "Nikita",
+  last_name: "Bandarevich",
   author: "true",
-  email: "matthisParisot@mail.com",
+  email: "nikitaBandarevich@mail.com",
   password: "password",
-  username: "matthisParisot",
+  username: "nikitaBandarevich",
   bio: "Co-Founder of Contramarca"
   )
 
