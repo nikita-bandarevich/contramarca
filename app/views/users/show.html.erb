@@ -7,27 +7,23 @@
         <%# end %>
       <div>
         <div class="text-center">
-          <% if current_user %>
-            <h5><%= current_user.followings.where(followable_id: current_user).count %></h5>
-            <% end %>
+
+          <h5><%= @my_followers.count %></h5>
+
         </div>
           <br>
-        <%= link_to 'FOLLOWERS', bookmarks_path, class: "special-btn m-1" %>
+        <%= link_to 'FOLLOWERS', '#', class: "special-btn m-1" %>
       </div>
       <div>
         <div class="text-center">
-          <% if current_user %>
-          <h5><%= current_user.followings.where(follower_id: current_user).count %></h5>
-            <% end %>
+          <h5><%= @my_followings.count %></h5>
         </div>
         <br>
-        <%= link_to 'FOLLOWING', bookmarks_path, class: "special-btn m-1" %>
+        <%= link_to 'FOLLOWING', '#', class: "special-btn m-1" %>
       </div>
       <div>
         <div class="text-center">
-          <% if current_user %>
-          <h5><%= current_user.bookmarks.count %></h5>
-          <% end %>
+          <h5><%= @user.bookmarks.count %></h5>
         </div>
         <br>
         <%= link_to 'BOOKMARKS', bookmarks_path, class: "special-btn m-1" %>

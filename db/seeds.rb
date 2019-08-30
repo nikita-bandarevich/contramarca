@@ -96,7 +96,7 @@ lorenGrush = User.create!(
   email: "loren@mail.com",
   password: "password",
   username: "lorenGrush",
-  bio: "Science Journalist who is the daughter of two NASA engineers"
+  bio: "Science Journalist who is the son of two NASA engineers"
   )
 
 carlesIbanez = User.create!(
