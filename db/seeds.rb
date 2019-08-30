@@ -76,7 +76,7 @@ Matthis = User.create!(
   email: "nikitaBandarevich@mail.com",
   password: "password",
   username: "nikitaBandarevich",
-  bio: "Co-Founder of Contramarca"
+  bio: "Speculative Writer. Unknown Fields and Tomorrows Thoughts Today."
   )
 
 gloriaDickie = User.create!(
@@ -876,11 +876,11 @@ danielClery_1 = Story.create!(
   #category: "Science" "Space",
   content: "When scientists go looking for life on distant exoplanets, they generally focus on rocky worlds the size of Earth. But most of these so-called super-Earths orbit, not yellow dwarfs like our sun, but red dwarfs—which are less than 60% the sun’s size. Now, astronomers report that such exoplanets might not be the best places for harboring life for one key reason: They seem to lack habitable atmospheres.
 
-Red dwarfs are by far the most common stars in the Milky Way, but their planets may have a hard time holding onto an atmosphere, in part because these somewhat erratic stars subject them to powerful blasts of radiation.
+    Red dwarfs are by far the most common stars in the Milky Way, but their planets may have a hard time holding onto an atmosphere, in part because these somewhat erratic stars subject them to powerful blasts of radiation.
 
-Assessing whether such planets have atmospheres is difficult because they are light-years away from Earth—and their light gets lost in the glare of their stars. So one team of astronomers used data from 100 hours of observations by NASA’s Spitzer Space Telescope, which focuses on infrared light, to study LHS 3844b, a nearby exoplanet which is 1.3 times Earth’s diameter. HS 3844b (artist’s rendition, above) was one of the first planets discovered by NASA’s Transiting Exoplanet Survey Satellite following its launch in April 2018. At 50 light-years away, LHS 3844b is one of the closest exoplanets to Earth and it also has one of the fastest orbits—11 hours.
+    Assessing whether such planets have atmospheres is difficult because they are light-years away from Earth—and their light gets lost in the glare of their stars. So one team of astronomers used data from 100 hours of observations by NASA’s Spitzer Space Telescope, which focuses on infrared light, to study LHS 3844b, a nearby exoplanet which is 1.3 times Earth’s diameter. HS 3844b (artist’s rendition, above) was one of the first planets discovered by NASA’s Transiting Exoplanet Survey Satellite following its launch in April 2018. At 50 light-years away, LHS 3844b is one of the closest exoplanets to Earth and it also has one of the fastest orbits—11 hours.
 
-The team measured the brightness of the star-planet system as LHS 3844b moved around its orbit. From that, they could calculate the brightness of the planet—and hence its temperature. If LHS 3844b had an atmosphere, weather systems would transport heat around the planet and even out the distribution of temperature. But the team found that the planet is blisteringly hot directly under the noonday sun and close to absolute zero at midnight, suggesting little or no atmosphere spreading the heat, they report in Nature today.
+    The team measured the brightness of the star-planet system as LHS 3844b moved around its orbit. From that, they could calculate the brightness of the planet—and hence its temperature. If LHS 3844b had an atmosphere, weather systems would transport heat around the planet and even out the distribution of temperature. But the team found that the planet is blisteringly hot directly under the noonday sun and close to absolute zero at midnight, suggesting little or no atmosphere spreading the heat, they report in Nature today.
 
 
 This is just a single planet, but the results suggest finding a hospitable planet around a red dwarf may not be as easy as astronomers had hoped.",
