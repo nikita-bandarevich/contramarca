@@ -128,11 +128,22 @@ h5 {
 }
 
 .home {
-  font-size: 12vw;
+  font-size: 7vw;
   font-weight: 600;
   letter-spacing: -0.035em;
   color: $main-gold-color;
 }
+
+@media screen and (max-width: 600px) {
+  .home {
+    font-size: 12vw;
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    color: $main-gold-color;
+  }
+}
+
+
 
 .special-btn {
   font-family: $body-font;
