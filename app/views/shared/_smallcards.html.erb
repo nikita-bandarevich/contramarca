@@ -4,7 +4,7 @@
        <%= cl_image_tag s.images.first.data %>
      <% end %>
     <div class="card-product-infos">
-      <h3> <%= link_to "#{s.title.truncate(40)}", story_path(s) %></h3>
+      <h3> <%= link_to "#{s.title.truncate(55)}", story_path(s) %></h3>
       <p> <%= s.user.username %> </p>
     </div>
   </div>

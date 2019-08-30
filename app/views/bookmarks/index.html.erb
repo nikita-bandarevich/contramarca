@@ -1,14 +1,13 @@
 <div class="container">
-<br><br><br>
-  <h5>My bookmarks</h5>
-  <br><br><br>
+  <h2 class="header">Bookmarks</h2>
+  <br>
   <% if @my_saved_stories.count == 0 %>
   <br><br>
-  <h1>You have no saved stories yet</h1>
+  <h2 class="header">You have no saved stories yet</h2>
   <% else %>
   <% @my_saved_stories.each do |s| %>
     <%=render 'shared/smallcards', s: s %>
-    <br><br>
+    <br>
   <% end %>
   <% end %>
 
