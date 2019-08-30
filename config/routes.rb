@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :bookmarks, only: [:index]
   resources :followings, only: :create
 
-  resources :stories do
+  resources :stories, except: [:index] do
     resources :images, only: [:create, :index]
   end
 
