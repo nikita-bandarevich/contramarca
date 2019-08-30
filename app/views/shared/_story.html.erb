@@ -2,6 +2,29 @@
 <%# image_tag @image.where(image.story == story) %>
 
 <div class="mb-3">
+    <div class="d-flex justify-content-end mb-0" style="margin: 0 10px;">
+
+
+    <!-- Default dropleft button -->
+    <div class="btn-group dropleft">
+      <!-- <i class="fas fa-ellipsis-h dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i> -->
+      <% unless current_page? root_path %>
+        <button type="button" class="uri" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-ellipsis-h"></i>
+        </button>
+        <div class="dropdown-menu">
+          <%= link_to 'Edit', edit_story_path(s), class: "dropdown-item" if s.user == current_user %>
+          <%= link_to 'Delete', story_path(s), method: :delete, data: {confirm: "you sure mec?"}, class: "dropdown-item" if s.user == current_user %>
+        </div>
+      <% end %>
+    </div>
+
+    <%#= link_to '#' do %>
+      <!-- <i class="fas fa-ellipsis-h"></i> -->
+    <%# end %>
+  </div>
+
+
   <% if s.images %>
     <div id="carouselExampleIndicators" data-interval="false" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
