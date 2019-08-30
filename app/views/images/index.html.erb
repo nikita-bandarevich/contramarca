@@ -19,16 +19,14 @@
       <br><br>
 
       <%=  simple_form_for [@story, @image] do |f| %>
-        <%= f.input :data %>
+        <%= f.input :data, label: false, class: "btn-white-text" %>
         <%= f.input :data_cache, as: :hidden %>
-        <%= f.submit 'Add photo', class:"btn-dark-grey"%>
+        <%= f.submit 'Add photo', class:"btn btn-gold btn-mid" %>
       <% end %>
-      <br>
-      <br>
-      <br>
+     <br>
 
-      <%= link_to "Done", story_path(@story), class:"btn-gold" %>
-
+      <%= link_to "Done", story_path(@story), class:"btn btn-white btn'mid", style:"width:100%" %>
+      <br>
     </div>
   </div>
 </div>
